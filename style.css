@@ -4,12 +4,13 @@
   box-sizing:border-box;
 }
 
-background:linear-gradient(
+background:
+linear-gradient(
   180deg,
   #fff7ed 0%,
-  #ffe4e6 100%
+  #ffedd5 35%,
+  #fed7aa 100%
 );
-
 color:#7c2d12;
   min-height:100vh;
   display:flex;
