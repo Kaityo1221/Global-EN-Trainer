@@ -5,21 +5,42 @@
 }
 
 body{
-  font-family: sans-serif;
+  font-family:sans-serif;
+
   background:#0f172a;
   color:white;
+
   min-height:100vh;
 
   display:flex;
   justify-content:center;
   align-items:center;
 
-  overflow:hidden;
+  overflow-x:hidden;
 }
 
 .container{
-  text-align:center;
+  width:100%;
+  max-width:480px;
+
   padding:24px;
+
+  text-align:center;
+}
+
+h1{
+  font-size:36px;
+  font-weight:900;
+
+  letter-spacing:2px;
+}
+
+p{
+  margin-top:16px;
+
+  color:#94a3b8;
+
+  line-height:1.7;
 }
 
 .logo{
