@@ -1,0 +1,14 @@
+.quest-page{
+  width:100%;
+}
+
+.quest-title{
+  font-size:28px;
+  font-weight:800;
+}
+
+.quest-description{
+  margin-top:12px;
+  color:#94a3b8;
+  line-height:1.7;
+}
