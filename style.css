@@ -31,12 +31,16 @@ overflow-x:hidden;
 }
 
 h1{
-  font-size:36px;
+  font-size:72px;
   font-weight:900;
 
-  letter-spacing:2px;
-}
+  letter-spacing:6px;
 
+  color:white;
+
+  text-shadow:
+    0 0 18px rgba(37,99,235,0.45);
+}
 p{
   margin-top:16px;
 
