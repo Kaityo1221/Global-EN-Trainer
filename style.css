@@ -115,3 +115,17 @@ a:hover{
   color:#cbd5e1;
   letter-spacing:0;
 }
+html,
+body{
+  min-height:100%;
+}
+
+body{
+  align-items:flex-start;
+  padding-top:120px;
+  padding-bottom:120px;
+}
+
+.container{
+  margin:auto;
+}
