@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "category": "pokemon_name",
+    "question": "フシギダネの英語名は？",
+    "choices": [
+      "Bulbasaur",
+      "Charmander",
+      "Squirtle",
+      "Pikachu"
+    ],
+    "answer": "Bulbasaur"
+  }
+]
