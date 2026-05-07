@@ -113,16 +113,22 @@ a:hover{
   transform 0.2s,
   background 0.2s,
   box-shadow 0.2s;
+  transition:
+  transform 0.2s,
+  background 0.2s,
+  box-shadow 0.2s;
 }
 
 .menu-links a:hover{
-  transform:translateY(-2px);
+  transform:translateY(-4px);
 
   background:#ffedd5;
 
   border-color:#f97316;
-}
 
+  box-shadow:
+    0 12px 24px rgba(251,146,60,0.18);
+}
 .version-badge{
   position:fixed;
 
@@ -190,4 +196,10 @@ a:hover{
   color:#9a3412;
 
   letter-spacing:0;
+}
+.menu-links a:active{
+  transform:scale(0.97);
+
+  box-shadow:
+    0 2px 8px rgba(251,146,60,0.12);
 }
