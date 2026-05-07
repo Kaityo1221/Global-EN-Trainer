@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "category": "greeting",
+    "jp": "こんにちは！",
+    "en": "Hello!"
+  },
+  {
+    "id": 2,
+    "category": "meetup",
+    "jp": "こちらでチェックインできます。",
+    "en": "You can check in here."
+  }
+]
