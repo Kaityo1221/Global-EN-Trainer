@@ -5,15 +5,17 @@
   Pokémon Name Bank Script
 */
 
+let allPokemonData = [];
+
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
 });
 
 async function loadPokemonData(){
   const list = document.getElementById("pokemonList");
+  const search = document.getElementById("pokemonSearch");
 
   if(!list){
-    console.log("pokemonList が見つかりません");
     return;
   }
 
@@ -26,25 +28,29 @@ async function loadPokemonData(){
       throw new Error("pokemon.json の読み込み失敗: " + response.status);
     }
 
-    const pokemonData = await response.json();
+    allPokemonData = await response.json();
 
-    list.innerHTML = "";
+    renderPokemonList(allPokemonData);
 
-    pokemonData.forEach(pokemon => {
-      const card = document.createElement("div");
-      card.className = "pokemon-card";
+    if(search){
+      search.addEventListener("input", () => {
+        const keyword = search.value.trim().toLowerCase();
 
-      card.innerHTML = `
-        <div class="pokemon-no">No.${pokemon.no}</div>
-        <div class="pokemon-en">${pokemon.en}</div>
-        <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-      `;
+        const filtered = allPokemonData.filter(pokemon => {
+          return (
+            pokemon.no.includes(keyword) ||
+            pokemon.en.toLowerCase().includes(keyword) ||
+            (pokemon.jp && pokemon.jp.includes(keyword))
+          );
+        });
 
-      list.appendChild(card);
-    });
+        renderPokemonList(filtered);
+      });
+    }
 
   }catch(error){
     console.error(error);
+
     list.innerHTML = `
       <div class="pokemon-card">
         <div class="pokemon-en">読み込みエラー</div>
@@ -52,4 +58,33 @@ async function loadPokemonData(){
       </div>
     `;
   }
+}
+
+function renderPokemonList(data){
+  const list = document.getElementById("pokemonList");
+
+  list.innerHTML = "";
+
+  if(data.length === 0){
+    list.innerHTML = `
+      <div class="pokemon-card">
+        <div class="pokemon-en">No results</div>
+        <div class="pokemon-jp">該当するポケモンが見つかりません</div>
+      </div>
+    `;
+    return;
+  }
+
+  data.forEach(pokemon => {
+    const card = document.createElement("div");
+    card.className = "pokemon-card";
+
+    card.innerHTML = `
+      <div class="pokemon-no">No.${pokemon.no}</div>
+      <div class="pokemon-en">${pokemon.en}</div>
+      <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
+    `;
+
+    list.appendChild(card);
+  });
 }
