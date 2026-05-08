@@ -53,10 +53,13 @@
   display:flex;
 
   gap:10px;
+
+  width:100%;
 }
 
 .pokemon-search{
   flex:1;
+  min-width:0;
 
   padding:14px 16px;
 
@@ -72,7 +75,9 @@
 }
 
 .search-button{
-  padding:14px 18px;
+  flex:0 0 110px;
+
+  padding:14px 12px;
 
   border:none;
   border-radius:16px;
