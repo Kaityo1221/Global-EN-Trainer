@@ -1,14 +1,49 @@
-.bank-page{
-  width:100%;
+.pokemon-list{
+  margin-top:40px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:16px;
 }
 
-.bank-title{
+.pokemon-card{
+  padding:18px 20px;
+
+  border-radius:20px;
+
+  background:#fffaf5;
+
+  border:2px solid #fdba74;
+
+  box-shadow:
+    0 6px 18px rgba(251,146,60,0.14);
+
+  text-align:left;
+}
+
+.pokemon-no{
+  font-size:14px;
+
+  color:#c2410c;
+
+  margin-bottom:6px;
+}
+
+.pokemon-en{
   font-size:28px;
-  font-weight:800;
+
+  font-weight:900;
+
+  color:#9a3412;
 }
 
-.bank-description{
-  margin-top:12px;
-  color:#94a3b8;
-  line-height:1.7;
+.pokemon-jp{
+  margin-top:6px;
+
+  font-size:16px;
+
+  color:#9a3412;
+
+  opacity:0.75;
 }
