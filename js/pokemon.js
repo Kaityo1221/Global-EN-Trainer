@@ -32,21 +32,25 @@ async function loadPokemonData(){
 
     renderPokemonList(allPokemonData);
 
-    if(search){
-      search.addEventListener("input", () => {
-        const keyword = search.value.trim().toLowerCase();
+    const searchButton = document.getElementById("searchButton");
 
-        const filtered = allPokemonData.filter(pokemon => {
-          return (
-            pokemon.no.includes(keyword) ||
-            pokemon.en.toLowerCase().includes(keyword) ||
-            (pokemon.jp && pokemon.jp.includes(keyword))
-          );
-        });
+if(searchButton){
+  searchButton.addEventListener("click", () => {
 
-        renderPokemonList(filtered);
-      });
-    }
+    const keyword = search.value.trim().toLowerCase();
+
+    const filtered = allPokemonData.filter(pokemon => {
+      return (
+        pokemon.no.includes(keyword) ||
+        pokemon.en.toLowerCase().includes(keyword) ||
+        (pokemon.jp && pokemon.jp.includes(keyword))
+      );
+    });
+
+    renderPokemonList(filtered);
+
+  });
+}
 const searchButton = document.getElementById("searchButton");
 
 if(searchButton){
