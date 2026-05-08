@@ -30,7 +30,7 @@ async function loadPokemonData(){
 
     list.innerHTML = "";
 
-    pokemonData.slice(0, 20).forEach(pokemon => {
+    pokemonData.forEach(pokemon => {
       const card = document.createElement("div");
       card.className = "pokemon-card";
 
