@@ -206,3 +206,11 @@ a:hover{
   box-shadow:
     0 2px 8px rgba(251,146,60,0.12);
 }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124,45,18,0.25);
+  border-radius: 999px;
+}
