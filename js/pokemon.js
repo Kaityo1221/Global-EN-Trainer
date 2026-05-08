@@ -13,14 +13,17 @@ async function loadPokemonData(){
   const list = document.getElementById("pokemonList");
 
   if(!list){
+    console.log("pokemonList が見つかりません");
     return;
   }
+
+  list.innerHTML = "読み込み中...";
 
   try{
     const response = await fetch("../data/pokemon.json");
 
     if(!response.ok){
-      throw new Error("pokemon.json を読み込めませんでした");
+      throw new Error("pokemon.json の読み込み失敗: " + response.status);
     }
 
     const pokemonData = await response.json();
@@ -42,7 +45,11 @@ async function loadPokemonData(){
 
   }catch(error){
     console.error(error);
-
-    list.innerHTML = "データを読み込めませんでした。";
+    list.innerHTML = `
+      <div class="pokemon-card">
+        <div class="pokemon-en">読み込みエラー</div>
+        <div class="pokemon-jp">${error.message}</div>
+      </div>
+    `;
   }
 }
