@@ -32,7 +32,7 @@ async function loadPokemonData(){
     allPokemonData = await response.json();
 
     renderPokemonList(allPokemonData);
-
+    setupGenFilters();
     if(search && searchButton){
       searchButton.addEventListener("click", () => {
         runSearch();
@@ -112,5 +112,28 @@ function renderPokemonList(data){
     `;
 
     list.appendChild(card);
+  });
+}
+function setupGenFilters(){
+  const buttons = document.querySelectorAll(".filter-button");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const gen = button.dataset.gen;
+
+      if(gen === "all"){
+        renderPokemonList(allPokemonData);
+        return;
+      }
+
+      const filtered = allPokemonData.filter(pokemon => {
+        return String(pokemon.gen) === gen;
+      });
+
+      renderPokemonList(filtered);
+    });
   });
 }
