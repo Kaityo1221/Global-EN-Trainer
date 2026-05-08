@@ -112,3 +112,39 @@
 
   background:#ea580c;
 }
+.filter-area{
+  margin-top:18px;
+
+  display:flex;
+  gap:8px;
+
+  overflow-x:auto;
+
+  padding-bottom:6px;
+}
+
+.filter-button{
+  flex:0 0 auto;
+
+  padding:10px 14px;
+
+  border:none;
+  border-radius:999px;
+
+  background:#fffaf5;
+
+  color:#9a3412;
+
+  font-size:14px;
+  font-weight:800;
+
+  border:1px solid #fdba74;
+
+  cursor:pointer;
+}
+
+.filter-button.active{
+  background:#f97316;
+
+  color:white;
+}
