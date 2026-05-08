@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadPokemonData(){
   const list = document.getElementById("pokemonList");
   const search = document.getElementById("pokemonSearch");
+  const searchButton = document.getElementById("searchButton");
 
   if(!list){
     return;
@@ -32,32 +33,18 @@ async function loadPokemonData(){
 
     renderPokemonList(allPokemonData);
 
-    const searchButton = document.getElementById("searchButton");
+    if(search && searchButton){
+      searchButton.addEventListener("click", () => {
+        runSearch();
+      });
 
-if(searchButton){
-  searchButton.addEventListener("click", () => {
+      search.addEventListener("keydown", (event) => {
+        if(event.key === "Enter"){
+          runSearch();
+        }
+      });
+    }
 
-    const keyword = search.value.trim().toLowerCase();
-
-    const filtered = allPokemonData.filter(pokemon => {
-      return (
-        pokemon.no.includes(keyword) ||
-        pokemon.en.toLowerCase().includes(keyword) ||
-        (pokemon.jp && pokemon.jp.includes(keyword))
-      );
-    });
-
-    renderPokemonList(filtered);
-
-  });
-}
-const searchButton = document.getElementById("searchButton");
-
-if(searchButton){
-  searchButton.addEventListener("click", () => {
-    search.dispatchEvent(new Event("input"));
-  });
-}
   }catch(error){
     console.error(error);
 
@@ -70,8 +57,37 @@ if(searchButton){
   }
 }
 
+function runSearch(){
+  const search = document.getElementById("pokemonSearch");
+
+  if(!search){
+    return;
+  }
+
+  const keyword = search.value.trim().toLowerCase();
+
+  if(keyword === ""){
+    renderPokemonList(allPokemonData);
+    return;
+  }
+
+  const filtered = allPokemonData.filter(pokemon => {
+    return (
+      pokemon.no.includes(keyword) ||
+      pokemon.en.toLowerCase().includes(keyword) ||
+      (pokemon.jp && pokemon.jp.includes(keyword))
+    );
+  });
+
+  renderPokemonList(filtered);
+}
+
 function renderPokemonList(data){
   const list = document.getElementById("pokemonList");
+
+  if(!list){
+    return;
+  }
 
   list.innerHTML = "";
 
