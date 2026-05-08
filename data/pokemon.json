@@ -1,9 +1,7198 @@
 [
   {
     "no": "001",
-    "jp": "フシギダネ",
+    "jp": "",
     "en": "Bulbasaur",
     "gen": 1,
-    "types": ["くさ", "どく"]
+    "types": []
+  },
+  {
+    "no": "002",
+    "jp": "",
+    "en": "Ivysaur",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "003",
+    "jp": "",
+    "en": "Venusaur",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "004",
+    "jp": "",
+    "en": "Charmander",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "005",
+    "jp": "",
+    "en": "Charmeleon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "006",
+    "jp": "",
+    "en": "Charizard",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "007",
+    "jp": "",
+    "en": "Squirtle",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "008",
+    "jp": "",
+    "en": "Wartortle",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "009",
+    "jp": "",
+    "en": "Blastoise",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "010",
+    "jp": "",
+    "en": "Caterpie",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "011",
+    "jp": "",
+    "en": "Metapod",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "012",
+    "jp": "",
+    "en": "Butterfree",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "013",
+    "jp": "",
+    "en": "Weedle",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "014",
+    "jp": "",
+    "en": "Kakuna",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "015",
+    "jp": "",
+    "en": "Beedrill",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "016",
+    "jp": "",
+    "en": "Pidgey",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "017",
+    "jp": "",
+    "en": "Pidgeotto",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "018",
+    "jp": "",
+    "en": "Pidgeot",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "019",
+    "jp": "",
+    "en": "Rattata",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "020",
+    "jp": "",
+    "en": "Raticate",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "021",
+    "jp": "",
+    "en": "Spearow",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "022",
+    "jp": "",
+    "en": "Fearow",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "023",
+    "jp": "",
+    "en": "Ekans",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "024",
+    "jp": "",
+    "en": "Arbok",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "025",
+    "jp": "",
+    "en": "Pikachu",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "026",
+    "jp": "",
+    "en": "Raichu",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "027",
+    "jp": "",
+    "en": "Sandshrew",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "028",
+    "jp": "",
+    "en": "Sandslash",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "029",
+    "jp": "",
+    "en": "Nidoran♀",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "030",
+    "jp": "",
+    "en": "Nidorina",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "031",
+    "jp": "",
+    "en": "Nidoqueen",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "032",
+    "jp": "",
+    "en": "Nidoran♂",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "033",
+    "jp": "",
+    "en": "Nidorino",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "034",
+    "jp": "",
+    "en": "Nidoking",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "035",
+    "jp": "",
+    "en": "Clefairy",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "036",
+    "jp": "",
+    "en": "Clefable",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "037",
+    "jp": "",
+    "en": "Vulpix",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "038",
+    "jp": "",
+    "en": "Ninetales",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "039",
+    "jp": "",
+    "en": "Jigglypuff",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "040",
+    "jp": "",
+    "en": "Wigglytuff",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "041",
+    "jp": "",
+    "en": "Zubat",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "042",
+    "jp": "",
+    "en": "Golbat",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "043",
+    "jp": "",
+    "en": "Oddish",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "044",
+    "jp": "",
+    "en": "Gloom",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "045",
+    "jp": "",
+    "en": "Vileplume",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "046",
+    "jp": "",
+    "en": "Paras",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "047",
+    "jp": "",
+    "en": "Parasect",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "048",
+    "jp": "",
+    "en": "Venonat",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "049",
+    "jp": "",
+    "en": "Venomoth",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "050",
+    "jp": "",
+    "en": "Diglett",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "051",
+    "jp": "",
+    "en": "Dugtrio",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "052",
+    "jp": "",
+    "en": "Meowth",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "053",
+    "jp": "",
+    "en": "Persian",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "054",
+    "jp": "",
+    "en": "Psyduck",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "055",
+    "jp": "",
+    "en": "Golduck",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "056",
+    "jp": "",
+    "en": "Mankey",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "057",
+    "jp": "",
+    "en": "Primeape",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "058",
+    "jp": "",
+    "en": "Growlithe",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "059",
+    "jp": "",
+    "en": "Arcanine",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "060",
+    "jp": "",
+    "en": "Poliwag",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "061",
+    "jp": "",
+    "en": "Poliwhirl",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "062",
+    "jp": "",
+    "en": "Poliwrath",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "063",
+    "jp": "",
+    "en": "Abra",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "064",
+    "jp": "",
+    "en": "Kadabra",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "065",
+    "jp": "",
+    "en": "Alakazam",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "066",
+    "jp": "",
+    "en": "Machop",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "067",
+    "jp": "",
+    "en": "Machoke",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "068",
+    "jp": "",
+    "en": "Machamp",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "069",
+    "jp": "",
+    "en": "Bellsprout",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "070",
+    "jp": "",
+    "en": "Weepinbell",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "071",
+    "jp": "",
+    "en": "Victreebel",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "072",
+    "jp": "",
+    "en": "Tentacool",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "073",
+    "jp": "",
+    "en": "Tentacruel",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "074",
+    "jp": "",
+    "en": "Geodude",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "075",
+    "jp": "",
+    "en": "Graveler",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "076",
+    "jp": "",
+    "en": "Golem",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "077",
+    "jp": "",
+    "en": "Ponyta",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "078",
+    "jp": "",
+    "en": "Rapidash",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "079",
+    "jp": "",
+    "en": "Slowpoke",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "080",
+    "jp": "",
+    "en": "Slowbro",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "081",
+    "jp": "",
+    "en": "Magnemite",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "082",
+    "jp": "",
+    "en": "Magneton",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "083",
+    "jp": "",
+    "en": "Farfetch'd",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "084",
+    "jp": "",
+    "en": "Doduo",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "085",
+    "jp": "",
+    "en": "Dodrio",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "086",
+    "jp": "",
+    "en": "Seel",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "087",
+    "jp": "",
+    "en": "Dewgong",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "088",
+    "jp": "",
+    "en": "Grimer",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "089",
+    "jp": "",
+    "en": "Muk",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "090",
+    "jp": "",
+    "en": "Shellder",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "091",
+    "jp": "",
+    "en": "Cloyster",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "092",
+    "jp": "",
+    "en": "Gastly",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "093",
+    "jp": "",
+    "en": "Haunter",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "094",
+    "jp": "",
+    "en": "Gengar",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "095",
+    "jp": "",
+    "en": "Onix",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "096",
+    "jp": "",
+    "en": "Drowzee",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "097",
+    "jp": "",
+    "en": "Hypno",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "098",
+    "jp": "",
+    "en": "Krabby",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "099",
+    "jp": "",
+    "en": "Kingler",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "100",
+    "jp": "",
+    "en": "Voltorb",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "101",
+    "jp": "",
+    "en": "Electrode",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "102",
+    "jp": "",
+    "en": "Exeggcute",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "103",
+    "jp": "",
+    "en": "Exeggutor",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "104",
+    "jp": "",
+    "en": "Cubone",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "105",
+    "jp": "",
+    "en": "Marowak",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "106",
+    "jp": "",
+    "en": "Hitmonlee",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "107",
+    "jp": "",
+    "en": "Hitmonchan",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "108",
+    "jp": "",
+    "en": "Lickitung",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "109",
+    "jp": "",
+    "en": "Koffing",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "110",
+    "jp": "",
+    "en": "Weezing",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "111",
+    "jp": "",
+    "en": "Rhyhorn",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "112",
+    "jp": "",
+    "en": "Rhydon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "113",
+    "jp": "",
+    "en": "Chansey",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "114",
+    "jp": "",
+    "en": "Tangela",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "115",
+    "jp": "",
+    "en": "Kangaskhan",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "116",
+    "jp": "",
+    "en": "Horsea",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "117",
+    "jp": "",
+    "en": "Seadra",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "118",
+    "jp": "",
+    "en": "Goldeen",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "119",
+    "jp": "",
+    "en": "Seaking",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "120",
+    "jp": "",
+    "en": "Staryu",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "121",
+    "jp": "",
+    "en": "Starmie",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "122",
+    "jp": "",
+    "en": "Mr. Mime",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "123",
+    "jp": "",
+    "en": "Scyther",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "124",
+    "jp": "",
+    "en": "Jynx",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "125",
+    "jp": "",
+    "en": "Electabuzz",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "126",
+    "jp": "",
+    "en": "Magmar",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "127",
+    "jp": "",
+    "en": "Pinsir",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "128",
+    "jp": "",
+    "en": "Tauros",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "129",
+    "jp": "",
+    "en": "Magikarp",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "130",
+    "jp": "",
+    "en": "Gyarados",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "131",
+    "jp": "",
+    "en": "Lapras",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "132",
+    "jp": "",
+    "en": "Ditto",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "133",
+    "jp": "",
+    "en": "Eevee",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "134",
+    "jp": "",
+    "en": "Vaporeon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "135",
+    "jp": "",
+    "en": "Jolteon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "136",
+    "jp": "",
+    "en": "Flareon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "137",
+    "jp": "",
+    "en": "Porygon",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "138",
+    "jp": "",
+    "en": "Omanyte",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "139",
+    "jp": "",
+    "en": "Omastar",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "140",
+    "jp": "",
+    "en": "Kabuto",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "141",
+    "jp": "",
+    "en": "Kabutops",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "142",
+    "jp": "",
+    "en": "Aerodactyl",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "143",
+    "jp": "",
+    "en": "Snorlax",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "144",
+    "jp": "",
+    "en": "Articuno",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "145",
+    "jp": "",
+    "en": "Zapdos",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "146",
+    "jp": "",
+    "en": "Moltres",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "147",
+    "jp": "",
+    "en": "Dratini",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "148",
+    "jp": "",
+    "en": "Dragonair",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "149",
+    "jp": "",
+    "en": "Dragonite",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "150",
+    "jp": "",
+    "en": "Mewtwo",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "151",
+    "jp": "",
+    "en": "Mew",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "152",
+    "jp": "",
+    "en": "Chikorita",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "153",
+    "jp": "",
+    "en": "Bayleef",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "154",
+    "jp": "",
+    "en": "Meganium",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "155",
+    "jp": "",
+    "en": "Cyndaquil",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "156",
+    "jp": "",
+    "en": "Quilava",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "157",
+    "jp": "",
+    "en": "Typhlosion",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "158",
+    "jp": "",
+    "en": "Totodile",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "159",
+    "jp": "",
+    "en": "Croconaw",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "160",
+    "jp": "",
+    "en": "Feraligatr",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "161",
+    "jp": "",
+    "en": "Sentret",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "162",
+    "jp": "",
+    "en": "Furret",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "163",
+    "jp": "",
+    "en": "Hoothoot",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "164",
+    "jp": "",
+    "en": "Noctowl",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "165",
+    "jp": "",
+    "en": "Ledyba",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "166",
+    "jp": "",
+    "en": "Ledian",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "167",
+    "jp": "",
+    "en": "Spinarak",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "168",
+    "jp": "",
+    "en": "Ariados",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "169",
+    "jp": "",
+    "en": "Crobat",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "170",
+    "jp": "",
+    "en": "Chinchou",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "171",
+    "jp": "",
+    "en": "Lanturn",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "172",
+    "jp": "",
+    "en": "Pichu",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "173",
+    "jp": "",
+    "en": "Cleffa",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "174",
+    "jp": "",
+    "en": "Igglybuff",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "175",
+    "jp": "",
+    "en": "Togepi",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "176",
+    "jp": "",
+    "en": "Togetic",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "177",
+    "jp": "",
+    "en": "Natu",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "178",
+    "jp": "",
+    "en": "Xatu",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "179",
+    "jp": "",
+    "en": "Mareep",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "180",
+    "jp": "",
+    "en": "Flaaffy",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "181",
+    "jp": "",
+    "en": "Ampharos",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "182",
+    "jp": "",
+    "en": "Bellossom",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "183",
+    "jp": "",
+    "en": "Marill",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "184",
+    "jp": "",
+    "en": "Azumarill",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "185",
+    "jp": "",
+    "en": "Sudowoodo",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "186",
+    "jp": "",
+    "en": "Politoed",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "187",
+    "jp": "",
+    "en": "Hoppip",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "188",
+    "jp": "",
+    "en": "Skiploom",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "189",
+    "jp": "",
+    "en": "Jumpluff",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "190",
+    "jp": "",
+    "en": "Aipom",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "191",
+    "jp": "",
+    "en": "Sunkern",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "192",
+    "jp": "",
+    "en": "Sunflora",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "193",
+    "jp": "",
+    "en": "Yanma",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "194",
+    "jp": "",
+    "en": "Wooper",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "195",
+    "jp": "",
+    "en": "Quagsire",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "196",
+    "jp": "",
+    "en": "Espeon",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "197",
+    "jp": "",
+    "en": "Umbreon",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "198",
+    "jp": "",
+    "en": "Murkrow",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "199",
+    "jp": "",
+    "en": "Slowking",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "200",
+    "jp": "",
+    "en": "Misdreavus",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "201",
+    "jp": "",
+    "en": "Unown",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "202",
+    "jp": "",
+    "en": "Wobbuffet",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "203",
+    "jp": "",
+    "en": "Girafarig",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "204",
+    "jp": "",
+    "en": "Pineco",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "205",
+    "jp": "",
+    "en": "Forretress",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "206",
+    "jp": "",
+    "en": "Dunsparce",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "207",
+    "jp": "",
+    "en": "Gligar",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "208",
+    "jp": "",
+    "en": "Steelix",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "209",
+    "jp": "",
+    "en": "Snubbull",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "210",
+    "jp": "",
+    "en": "Granbull",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "211",
+    "jp": "",
+    "en": "Qwilfish",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "212",
+    "jp": "",
+    "en": "Scizor",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "213",
+    "jp": "",
+    "en": "Shuckle",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "214",
+    "jp": "",
+    "en": "Heracross",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "215",
+    "jp": "",
+    "en": "Sneasel",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "216",
+    "jp": "",
+    "en": "Teddiursa",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "217",
+    "jp": "",
+    "en": "Ursaring",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "218",
+    "jp": "",
+    "en": "Slugma",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "219",
+    "jp": "",
+    "en": "Magcargo",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "220",
+    "jp": "",
+    "en": "Swinub",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "221",
+    "jp": "",
+    "en": "Piloswine",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "222",
+    "jp": "",
+    "en": "Corsola",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "223",
+    "jp": "",
+    "en": "Remoraid",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "224",
+    "jp": "",
+    "en": "Octillery",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "225",
+    "jp": "",
+    "en": "Delibird",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "226",
+    "jp": "",
+    "en": "Mantine",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "227",
+    "jp": "",
+    "en": "Skarmory",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "228",
+    "jp": "",
+    "en": "Houndour",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "229",
+    "jp": "",
+    "en": "Houndoom",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "230",
+    "jp": "",
+    "en": "Kingdra",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "231",
+    "jp": "",
+    "en": "Phanpy",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "232",
+    "jp": "",
+    "en": "Donphan",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "233",
+    "jp": "",
+    "en": "Porygon2",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "234",
+    "jp": "",
+    "en": "Stantler",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "235",
+    "jp": "",
+    "en": "Smeargle",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "236",
+    "jp": "",
+    "en": "Tyrogue",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "237",
+    "jp": "",
+    "en": "Hitmontop",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "238",
+    "jp": "",
+    "en": "Smoochum",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "239",
+    "jp": "",
+    "en": "Elekid",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "240",
+    "jp": "",
+    "en": "Magby",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "241",
+    "jp": "",
+    "en": "Miltank",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "242",
+    "jp": "",
+    "en": "Blissey",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "243",
+    "jp": "",
+    "en": "Raikou",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "244",
+    "jp": "",
+    "en": "Entei",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "245",
+    "jp": "",
+    "en": "Suicune",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "246",
+    "jp": "",
+    "en": "Larvitar",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "247",
+    "jp": "",
+    "en": "Pupitar",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "248",
+    "jp": "",
+    "en": "Tyranitar",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "249",
+    "jp": "",
+    "en": "Lugia",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "250",
+    "jp": "",
+    "en": "Ho-Oh",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "251",
+    "jp": "",
+    "en": "Celebi",
+    "gen": 2,
+    "types": []
+  },
+  {
+    "no": "252",
+    "jp": "",
+    "en": "Treecko",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "253",
+    "jp": "",
+    "en": "Grovyle",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "254",
+    "jp": "",
+    "en": "Sceptile",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "255",
+    "jp": "",
+    "en": "Torchic",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "256",
+    "jp": "",
+    "en": "Combusken",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "257",
+    "jp": "",
+    "en": "Blaziken",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "258",
+    "jp": "",
+    "en": "Mudkip",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "259",
+    "jp": "",
+    "en": "Marshtomp",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "260",
+    "jp": "",
+    "en": "Swampert",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "261",
+    "jp": "",
+    "en": "Poochyena",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "262",
+    "jp": "",
+    "en": "Mightyena",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "263",
+    "jp": "",
+    "en": "Zigzagoon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "264",
+    "jp": "",
+    "en": "Linoone",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "265",
+    "jp": "",
+    "en": "Wurmple",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "266",
+    "jp": "",
+    "en": "Silcoon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "267",
+    "jp": "",
+    "en": "Beautifly",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "268",
+    "jp": "",
+    "en": "Cascoon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "269",
+    "jp": "",
+    "en": "Dustox",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "270",
+    "jp": "",
+    "en": "Lotad",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "271",
+    "jp": "",
+    "en": "Lombre",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "272",
+    "jp": "",
+    "en": "Ludicolo",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "273",
+    "jp": "",
+    "en": "Seedot",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "274",
+    "jp": "",
+    "en": "Nuzleaf",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "275",
+    "jp": "",
+    "en": "Shiftry",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "276",
+    "jp": "",
+    "en": "Taillow",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "277",
+    "jp": "",
+    "en": "Swellow",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "278",
+    "jp": "",
+    "en": "Wingull",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "279",
+    "jp": "",
+    "en": "Pelipper",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "280",
+    "jp": "",
+    "en": "Ralts",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "281",
+    "jp": "",
+    "en": "Kirlia",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "282",
+    "jp": "",
+    "en": "Gardevoir",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "283",
+    "jp": "",
+    "en": "Surskit",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "284",
+    "jp": "",
+    "en": "Masquerain",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "285",
+    "jp": "",
+    "en": "Shroomish",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "286",
+    "jp": "",
+    "en": "Breloom",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "287",
+    "jp": "",
+    "en": "Slakoth",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "288",
+    "jp": "",
+    "en": "Vigoroth",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "289",
+    "jp": "",
+    "en": "Slaking",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "290",
+    "jp": "",
+    "en": "Nincada",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "291",
+    "jp": "",
+    "en": "Ninjask",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "292",
+    "jp": "",
+    "en": "Shedinja",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "293",
+    "jp": "",
+    "en": "Whismur",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "294",
+    "jp": "",
+    "en": "Loudred",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "295",
+    "jp": "",
+    "en": "Exploud",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "296",
+    "jp": "",
+    "en": "Makuhita",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "297",
+    "jp": "",
+    "en": "Hariyama",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "298",
+    "jp": "",
+    "en": "Azurill",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "299",
+    "jp": "",
+    "en": "Nosepass",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "300",
+    "jp": "",
+    "en": "Skitty",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "301",
+    "jp": "",
+    "en": "Delcatty",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "302",
+    "jp": "",
+    "en": "Sableye",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "303",
+    "jp": "",
+    "en": "Mawile",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "304",
+    "jp": "",
+    "en": "Aron",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "305",
+    "jp": "",
+    "en": "Lairon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "306",
+    "jp": "",
+    "en": "Aggron",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "307",
+    "jp": "",
+    "en": "Meditite",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "308",
+    "jp": "",
+    "en": "Medicham",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "309",
+    "jp": "",
+    "en": "Electrike",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "310",
+    "jp": "",
+    "en": "Manectric",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "311",
+    "jp": "",
+    "en": "Plusle",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "312",
+    "jp": "",
+    "en": "Minun",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "313",
+    "jp": "",
+    "en": "Volbeat",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "314",
+    "jp": "",
+    "en": "Illumise",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "315",
+    "jp": "",
+    "en": "Roselia",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "316",
+    "jp": "",
+    "en": "Gulpin",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "317",
+    "jp": "",
+    "en": "Swalot",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "318",
+    "jp": "",
+    "en": "Carvanha",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "319",
+    "jp": "",
+    "en": "Sharpedo",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "320",
+    "jp": "",
+    "en": "Wailmer",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "321",
+    "jp": "",
+    "en": "Wailord",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "322",
+    "jp": "",
+    "en": "Numel",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "323",
+    "jp": "",
+    "en": "Camerupt",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "324",
+    "jp": "",
+    "en": "Torkoal",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "325",
+    "jp": "",
+    "en": "Spoink",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "326",
+    "jp": "",
+    "en": "Grumpig",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "327",
+    "jp": "",
+    "en": "Spinda",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "328",
+    "jp": "",
+    "en": "Trapinch",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "329",
+    "jp": "",
+    "en": "Vibrava",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "330",
+    "jp": "",
+    "en": "Flygon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "331",
+    "jp": "",
+    "en": "Cacnea",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "332",
+    "jp": "",
+    "en": "Cacturne",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "333",
+    "jp": "",
+    "en": "Swablu",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "334",
+    "jp": "",
+    "en": "Altaria",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "335",
+    "jp": "",
+    "en": "Zangoose",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "336",
+    "jp": "",
+    "en": "Seviper",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "337",
+    "jp": "",
+    "en": "Lunatone",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "338",
+    "jp": "",
+    "en": "Solrock",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "339",
+    "jp": "",
+    "en": "Barboach",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "340",
+    "jp": "",
+    "en": "Whiscash",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "341",
+    "jp": "",
+    "en": "Corphish",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "342",
+    "jp": "",
+    "en": "Crawdaunt",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "343",
+    "jp": "",
+    "en": "Baltoy",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "344",
+    "jp": "",
+    "en": "Claydol",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "345",
+    "jp": "",
+    "en": "Lileep",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "346",
+    "jp": "",
+    "en": "Cradily",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "347",
+    "jp": "",
+    "en": "Anorith",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "348",
+    "jp": "",
+    "en": "Armaldo",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "349",
+    "jp": "",
+    "en": "Feebas",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "350",
+    "jp": "",
+    "en": "Milotic",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "351",
+    "jp": "",
+    "en": "Castform",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "352",
+    "jp": "",
+    "en": "Kecleon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "353",
+    "jp": "",
+    "en": "Shuppet",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "354",
+    "jp": "",
+    "en": "Banette",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "355",
+    "jp": "",
+    "en": "Duskull",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "356",
+    "jp": "",
+    "en": "Dusclops",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "357",
+    "jp": "",
+    "en": "Tropius",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "358",
+    "jp": "",
+    "en": "Chimecho",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "359",
+    "jp": "",
+    "en": "Absol",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "360",
+    "jp": "",
+    "en": "Wynaut",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "361",
+    "jp": "",
+    "en": "Snorunt",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "362",
+    "jp": "",
+    "en": "Glalie",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "363",
+    "jp": "",
+    "en": "Spheal",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "364",
+    "jp": "",
+    "en": "Sealeo",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "365",
+    "jp": "",
+    "en": "Walrein",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "366",
+    "jp": "",
+    "en": "Clamperl",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "367",
+    "jp": "",
+    "en": "Huntail",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "368",
+    "jp": "",
+    "en": "Gorebyss",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "369",
+    "jp": "",
+    "en": "Relicanth",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "370",
+    "jp": "",
+    "en": "Luvdisc",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "371",
+    "jp": "",
+    "en": "Bagon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "372",
+    "jp": "",
+    "en": "Shelgon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "373",
+    "jp": "",
+    "en": "Salamence",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "374",
+    "jp": "",
+    "en": "Beldum",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "375",
+    "jp": "",
+    "en": "Metang",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "376",
+    "jp": "",
+    "en": "Metagross",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "377",
+    "jp": "",
+    "en": "Regirock",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "378",
+    "jp": "",
+    "en": "Regice",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "379",
+    "jp": "",
+    "en": "Registeel",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "380",
+    "jp": "",
+    "en": "Latias",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "381",
+    "jp": "",
+    "en": "Latios",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "382",
+    "jp": "",
+    "en": "Kyogre",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "383",
+    "jp": "",
+    "en": "Groudon",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "384",
+    "jp": "",
+    "en": "Rayquaza",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "385",
+    "jp": "",
+    "en": "Jirachi",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "386",
+    "jp": "",
+    "en": "Deoxys",
+    "gen": 3,
+    "types": []
+  },
+  {
+    "no": "387",
+    "jp": "",
+    "en": "Turtwig",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "388",
+    "jp": "",
+    "en": "Grotle",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "389",
+    "jp": "",
+    "en": "Torterra",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "390",
+    "jp": "",
+    "en": "Chimchar",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "391",
+    "jp": "",
+    "en": "Monferno",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "392",
+    "jp": "",
+    "en": "Infernape",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "393",
+    "jp": "",
+    "en": "Piplup",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "394",
+    "jp": "",
+    "en": "Prinplup",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "395",
+    "jp": "",
+    "en": "Empoleon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "396",
+    "jp": "",
+    "en": "Starly",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "397",
+    "jp": "",
+    "en": "Staravia",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "398",
+    "jp": "",
+    "en": "Staraptor",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "399",
+    "jp": "",
+    "en": "Bidoof",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "400",
+    "jp": "",
+    "en": "Bibarel",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "401",
+    "jp": "",
+    "en": "Kricketot",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "402",
+    "jp": "",
+    "en": "Kricketune",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "403",
+    "jp": "",
+    "en": "Shinx",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "404",
+    "jp": "",
+    "en": "Luxio",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "405",
+    "jp": "",
+    "en": "Luxray",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "406",
+    "jp": "",
+    "en": "Budew",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "407",
+    "jp": "",
+    "en": "Roserade",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "408",
+    "jp": "",
+    "en": "Cranidos",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "409",
+    "jp": "",
+    "en": "Rampardos",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "410",
+    "jp": "",
+    "en": "Shieldon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "411",
+    "jp": "",
+    "en": "Bastiodon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "412",
+    "jp": "",
+    "en": "Burmy",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "413",
+    "jp": "",
+    "en": "Wormadam",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "414",
+    "jp": "",
+    "en": "Mothim",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "415",
+    "jp": "",
+    "en": "Combee",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "416",
+    "jp": "",
+    "en": "Vespiquen",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "417",
+    "jp": "",
+    "en": "Pachirisu",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "418",
+    "jp": "",
+    "en": "Buizel",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "419",
+    "jp": "",
+    "en": "Floatzel",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "420",
+    "jp": "",
+    "en": "Cherubi",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "421",
+    "jp": "",
+    "en": "Cherrim",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "422",
+    "jp": "",
+    "en": "Shellos",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "423",
+    "jp": "",
+    "en": "Gastrodon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "424",
+    "jp": "",
+    "en": "Ambipom",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "425",
+    "jp": "",
+    "en": "Drifloon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "426",
+    "jp": "",
+    "en": "Drifblim",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "427",
+    "jp": "",
+    "en": "Buneary",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "428",
+    "jp": "",
+    "en": "Lopunny",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "429",
+    "jp": "",
+    "en": "Mismagius",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "430",
+    "jp": "",
+    "en": "Honchkrow",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "431",
+    "jp": "",
+    "en": "Glameow",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "432",
+    "jp": "",
+    "en": "Purugly",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "433",
+    "jp": "",
+    "en": "Chingling",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "434",
+    "jp": "",
+    "en": "Stunky",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "435",
+    "jp": "",
+    "en": "Skuntank",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "436",
+    "jp": "",
+    "en": "Bronzor",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "437",
+    "jp": "",
+    "en": "Bronzong",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "438",
+    "jp": "",
+    "en": "Bonsly",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "439",
+    "jp": "",
+    "en": "Mime Jr.",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "440",
+    "jp": "",
+    "en": "Happiny",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "441",
+    "jp": "",
+    "en": "Chatot",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "442",
+    "jp": "",
+    "en": "Spiritomb",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "443",
+    "jp": "",
+    "en": "Gible",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "444",
+    "jp": "",
+    "en": "Gabite",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "445",
+    "jp": "",
+    "en": "Garchomp",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "446",
+    "jp": "",
+    "en": "Munchlax",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "447",
+    "jp": "",
+    "en": "Riolu",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "448",
+    "jp": "",
+    "en": "Lucario",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "449",
+    "jp": "",
+    "en": "Hippopotas",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "450",
+    "jp": "",
+    "en": "Hippowdon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "451",
+    "jp": "",
+    "en": "Skorupi",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "452",
+    "jp": "",
+    "en": "Drapion",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "453",
+    "jp": "",
+    "en": "Croagunk",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "454",
+    "jp": "",
+    "en": "Toxicroak",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "455",
+    "jp": "",
+    "en": "Carnivine",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "456",
+    "jp": "",
+    "en": "Finneon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "457",
+    "jp": "",
+    "en": "Lumineon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "458",
+    "jp": "",
+    "en": "Mantyke",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "459",
+    "jp": "",
+    "en": "Snover",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "460",
+    "jp": "",
+    "en": "Abomasnow",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "461",
+    "jp": "",
+    "en": "Weavile",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "462",
+    "jp": "",
+    "en": "Magnezone",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "463",
+    "jp": "",
+    "en": "Lickilicky",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "464",
+    "jp": "",
+    "en": "Rhyperior",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "465",
+    "jp": "",
+    "en": "Tangrowth",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "466",
+    "jp": "",
+    "en": "Electivire",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "467",
+    "jp": "",
+    "en": "Magmortar",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "468",
+    "jp": "",
+    "en": "Togekiss",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "469",
+    "jp": "",
+    "en": "Yanmega",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "470",
+    "jp": "",
+    "en": "Leafeon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "471",
+    "jp": "",
+    "en": "Glaceon",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "472",
+    "jp": "",
+    "en": "Gliscor",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "473",
+    "jp": "",
+    "en": "Mamoswine",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "474",
+    "jp": "",
+    "en": "Porygon-Z",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "475",
+    "jp": "",
+    "en": "Gallade",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "476",
+    "jp": "",
+    "en": "Probopass",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "477",
+    "jp": "",
+    "en": "Dusknoir",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "478",
+    "jp": "",
+    "en": "Froslass",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "479",
+    "jp": "",
+    "en": "Rotom",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "480",
+    "jp": "",
+    "en": "Uxie",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "481",
+    "jp": "",
+    "en": "Mesprit",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "482",
+    "jp": "",
+    "en": "Azelf",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "483",
+    "jp": "",
+    "en": "Dialga",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "484",
+    "jp": "",
+    "en": "Palkia",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "485",
+    "jp": "",
+    "en": "Heatran",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "486",
+    "jp": "",
+    "en": "Regigigas",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "487",
+    "jp": "",
+    "en": "Giratina",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "488",
+    "jp": "",
+    "en": "Cresselia",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "489",
+    "jp": "",
+    "en": "Phione",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "490",
+    "jp": "",
+    "en": "Manaphy",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "491",
+    "jp": "",
+    "en": "Darkrai",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "492",
+    "jp": "",
+    "en": "Shaymin",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "493",
+    "jp": "",
+    "en": "Arceus",
+    "gen": 4,
+    "types": []
+  },
+  {
+    "no": "494",
+    "jp": "",
+    "en": "Victini",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "495",
+    "jp": "",
+    "en": "Snivy",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "496",
+    "jp": "",
+    "en": "Servine",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "497",
+    "jp": "",
+    "en": "Serperior",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "498",
+    "jp": "",
+    "en": "Tepig",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "499",
+    "jp": "",
+    "en": "Pignite",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "500",
+    "jp": "",
+    "en": "Emboar",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "501",
+    "jp": "",
+    "en": "Oshawott",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "502",
+    "jp": "",
+    "en": "Dewott",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "503",
+    "jp": "",
+    "en": "Samurott",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "504",
+    "jp": "",
+    "en": "Patrat",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "505",
+    "jp": "",
+    "en": "Watchog",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "506",
+    "jp": "",
+    "en": "Lillipup",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "507",
+    "jp": "",
+    "en": "Herdier",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "508",
+    "jp": "",
+    "en": "Stoutland",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "509",
+    "jp": "",
+    "en": "Purrloin",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "510",
+    "jp": "",
+    "en": "Liepard",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "511",
+    "jp": "",
+    "en": "Pansage",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "512",
+    "jp": "",
+    "en": "Simisage",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "513",
+    "jp": "",
+    "en": "Pansear",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "514",
+    "jp": "",
+    "en": "Simisear",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "515",
+    "jp": "",
+    "en": "Panpour",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "516",
+    "jp": "",
+    "en": "Simipour",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "517",
+    "jp": "",
+    "en": "Munna",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "518",
+    "jp": "",
+    "en": "Musharna",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "519",
+    "jp": "",
+    "en": "Pidove",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "520",
+    "jp": "",
+    "en": "Tranquill",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "521",
+    "jp": "",
+    "en": "Unfezant",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "522",
+    "jp": "",
+    "en": "Blitzle",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "523",
+    "jp": "",
+    "en": "Zebstrika",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "524",
+    "jp": "",
+    "en": "Roggenrola",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "525",
+    "jp": "",
+    "en": "Boldore",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "526",
+    "jp": "",
+    "en": "Gigalith",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "527",
+    "jp": "",
+    "en": "Woobat",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "528",
+    "jp": "",
+    "en": "Swoobat",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "529",
+    "jp": "",
+    "en": "Drilbur",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "530",
+    "jp": "",
+    "en": "Excadrill",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "531",
+    "jp": "",
+    "en": "Audino",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "532",
+    "jp": "",
+    "en": "Timburr",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "533",
+    "jp": "",
+    "en": "Gurdurr",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "534",
+    "jp": "",
+    "en": "Conkeldurr",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "535",
+    "jp": "",
+    "en": "Tympole",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "536",
+    "jp": "",
+    "en": "Palpitoad",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "537",
+    "jp": "",
+    "en": "Seismitoad",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "538",
+    "jp": "",
+    "en": "Throh",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "539",
+    "jp": "",
+    "en": "Sawk",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "540",
+    "jp": "",
+    "en": "Sewaddle",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "541",
+    "jp": "",
+    "en": "Swadloon",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "542",
+    "jp": "",
+    "en": "Leavanny",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "543",
+    "jp": "",
+    "en": "Venipede",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "544",
+    "jp": "",
+    "en": "Whirlipede",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "545",
+    "jp": "",
+    "en": "Scolipede",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "546",
+    "jp": "",
+    "en": "Cottonee",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "547",
+    "jp": "",
+    "en": "Whimsicott",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "548",
+    "jp": "",
+    "en": "Petilil",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "549",
+    "jp": "",
+    "en": "Lilligant",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "550",
+    "jp": "",
+    "en": "Basculin",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "551",
+    "jp": "",
+    "en": "Sandile",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "552",
+    "jp": "",
+    "en": "Krokorok",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "553",
+    "jp": "",
+    "en": "Krookodile",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "554",
+    "jp": "",
+    "en": "Darumaka",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "555",
+    "jp": "",
+    "en": "Darmanitan",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "556",
+    "jp": "",
+    "en": "Maractus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "557",
+    "jp": "",
+    "en": "Dwebble",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "558",
+    "jp": "",
+    "en": "Crustle",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "559",
+    "jp": "",
+    "en": "Scraggy",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "560",
+    "jp": "",
+    "en": "Scrafty",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "561",
+    "jp": "",
+    "en": "Sigilyph",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "562",
+    "jp": "",
+    "en": "Yamask",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "563",
+    "jp": "",
+    "en": "Cofagrigus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "564",
+    "jp": "",
+    "en": "Tirtouga",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "565",
+    "jp": "",
+    "en": "Carracosta",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "566",
+    "jp": "",
+    "en": "Archen",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "567",
+    "jp": "",
+    "en": "Archeops",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "568",
+    "jp": "",
+    "en": "Trubbish",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "569",
+    "jp": "",
+    "en": "Garbodor",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "570",
+    "jp": "",
+    "en": "Zorua",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "571",
+    "jp": "",
+    "en": "Zoroark",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "572",
+    "jp": "",
+    "en": "Minccino",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "573",
+    "jp": "",
+    "en": "Cinccino",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "574",
+    "jp": "",
+    "en": "Gothita",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "575",
+    "jp": "",
+    "en": "Gothorita",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "576",
+    "jp": "",
+    "en": "Gothitelle",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "577",
+    "jp": "",
+    "en": "Solosis",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "578",
+    "jp": "",
+    "en": "Duosion",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "579",
+    "jp": "",
+    "en": "Reuniclus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "580",
+    "jp": "",
+    "en": "Ducklett",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "581",
+    "jp": "",
+    "en": "Swanna",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "582",
+    "jp": "",
+    "en": "Vanillite",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "583",
+    "jp": "",
+    "en": "Vanillish",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "584",
+    "jp": "",
+    "en": "Vanilluxe",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "585",
+    "jp": "",
+    "en": "Deerling",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "586",
+    "jp": "",
+    "en": "Sawsbuck",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "587",
+    "jp": "",
+    "en": "Emolga",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "588",
+    "jp": "",
+    "en": "Karrablast",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "589",
+    "jp": "",
+    "en": "Escavalier",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "590",
+    "jp": "",
+    "en": "Foongus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "591",
+    "jp": "",
+    "en": "Amoonguss",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "592",
+    "jp": "",
+    "en": "Frillish",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "593",
+    "jp": "",
+    "en": "Jellicent",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "594",
+    "jp": "",
+    "en": "Alomomola",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "595",
+    "jp": "",
+    "en": "Joltik",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "596",
+    "jp": "",
+    "en": "Galvantula",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "597",
+    "jp": "",
+    "en": "Ferroseed",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "598",
+    "jp": "",
+    "en": "Ferrothorn",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "599",
+    "jp": "",
+    "en": "Klink",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "600",
+    "jp": "",
+    "en": "Klang",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "601",
+    "jp": "",
+    "en": "Klinklang",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "602",
+    "jp": "",
+    "en": "Tynamo",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "603",
+    "jp": "",
+    "en": "Eelektrik",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "604",
+    "jp": "",
+    "en": "Eelektross",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "605",
+    "jp": "",
+    "en": "Elgyem",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "606",
+    "jp": "",
+    "en": "Beheeyem",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "607",
+    "jp": "",
+    "en": "Litwick",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "608",
+    "jp": "",
+    "en": "Lampent",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "609",
+    "jp": "",
+    "en": "Chandelure",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "610",
+    "jp": "",
+    "en": "Axew",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "611",
+    "jp": "",
+    "en": "Fraxure",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "612",
+    "jp": "",
+    "en": "Haxorus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "613",
+    "jp": "",
+    "en": "Cubchoo",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "614",
+    "jp": "",
+    "en": "Beartic",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "615",
+    "jp": "",
+    "en": "Cryogonal",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "616",
+    "jp": "",
+    "en": "Shelmet",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "617",
+    "jp": "",
+    "en": "Accelgor",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "618",
+    "jp": "",
+    "en": "Stunfisk",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "619",
+    "jp": "",
+    "en": "Mienfoo",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "620",
+    "jp": "",
+    "en": "Mienshao",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "621",
+    "jp": "",
+    "en": "Druddigon",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "622",
+    "jp": "",
+    "en": "Golett",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "623",
+    "jp": "",
+    "en": "Golurk",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "624",
+    "jp": "",
+    "en": "Pawniard",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "625",
+    "jp": "",
+    "en": "Bisharp",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "626",
+    "jp": "",
+    "en": "Bouffalant",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "627",
+    "jp": "",
+    "en": "Rufflet",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "628",
+    "jp": "",
+    "en": "Braviary",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "629",
+    "jp": "",
+    "en": "Vullaby",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "630",
+    "jp": "",
+    "en": "Mandibuzz",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "631",
+    "jp": "",
+    "en": "Heatmor",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "632",
+    "jp": "",
+    "en": "Durant",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "633",
+    "jp": "",
+    "en": "Deino",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "634",
+    "jp": "",
+    "en": "Zweilous",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "635",
+    "jp": "",
+    "en": "Hydreigon",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "636",
+    "jp": "",
+    "en": "Larvesta",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "637",
+    "jp": "",
+    "en": "Volcarona",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "638",
+    "jp": "",
+    "en": "Cobalion",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "639",
+    "jp": "",
+    "en": "Terrakion",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "640",
+    "jp": "",
+    "en": "Virizion",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "641",
+    "jp": "",
+    "en": "Tornadus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "642",
+    "jp": "",
+    "en": "Thundurus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "643",
+    "jp": "",
+    "en": "Reshiram",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "644",
+    "jp": "",
+    "en": "Zekrom",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "645",
+    "jp": "",
+    "en": "Landorus",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "646",
+    "jp": "",
+    "en": "Kyurem",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "647",
+    "jp": "",
+    "en": "Keldeo",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "648",
+    "jp": "",
+    "en": "Meloetta",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "649",
+    "jp": "",
+    "en": "Genesect",
+    "gen": 5,
+    "types": []
+  },
+  {
+    "no": "650",
+    "jp": "",
+    "en": "Chespin",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "651",
+    "jp": "",
+    "en": "Quilladin",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "652",
+    "jp": "",
+    "en": "Chesnaught",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "653",
+    "jp": "",
+    "en": "Fennekin",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "654",
+    "jp": "",
+    "en": "Braixen",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "655",
+    "jp": "",
+    "en": "Delphox",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "656",
+    "jp": "",
+    "en": "Froakie",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "657",
+    "jp": "",
+    "en": "Frogadier",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "658",
+    "jp": "",
+    "en": "Greninja",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "659",
+    "jp": "",
+    "en": "Bunnelby",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "660",
+    "jp": "",
+    "en": "Diggersby",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "661",
+    "jp": "",
+    "en": "Fletchling",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "662",
+    "jp": "",
+    "en": "Fletchinder",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "663",
+    "jp": "",
+    "en": "Talonflame",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "664",
+    "jp": "",
+    "en": "Scatterbug",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "665",
+    "jp": "",
+    "en": "Spewpa",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "666",
+    "jp": "",
+    "en": "Vivillon",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "667",
+    "jp": "",
+    "en": "Litleo",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "668",
+    "jp": "",
+    "en": "Pyroar",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "669",
+    "jp": "",
+    "en": "Flabébé",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "670",
+    "jp": "",
+    "en": "Floette",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "671",
+    "jp": "",
+    "en": "Florges",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "672",
+    "jp": "",
+    "en": "Skiddo",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "673",
+    "jp": "",
+    "en": "Gogoat",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "674",
+    "jp": "",
+    "en": "Pancham",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "675",
+    "jp": "",
+    "en": "Pangoro",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "676",
+    "jp": "",
+    "en": "Furfrou",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "677",
+    "jp": "",
+    "en": "Espurr",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "678",
+    "jp": "",
+    "en": "Meowstic",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "679",
+    "jp": "",
+    "en": "Honedge",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "680",
+    "jp": "",
+    "en": "Doublade",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "681",
+    "jp": "",
+    "en": "Aegislash",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "682",
+    "jp": "",
+    "en": "Spritzee",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "683",
+    "jp": "",
+    "en": "Aromatisse",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "684",
+    "jp": "",
+    "en": "Swirlix",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "685",
+    "jp": "",
+    "en": "Slurpuff",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "686",
+    "jp": "",
+    "en": "Inkay",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "687",
+    "jp": "",
+    "en": "Malamar",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "688",
+    "jp": "",
+    "en": "Binacle",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "689",
+    "jp": "",
+    "en": "Barbaracle",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "690",
+    "jp": "",
+    "en": "Skrelp",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "691",
+    "jp": "",
+    "en": "Dragalge",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "692",
+    "jp": "",
+    "en": "Clauncher",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "693",
+    "jp": "",
+    "en": "Clawitzer",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "694",
+    "jp": "",
+    "en": "Helioptile",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "695",
+    "jp": "",
+    "en": "Heliolisk",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "696",
+    "jp": "",
+    "en": "Tyrunt",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "697",
+    "jp": "",
+    "en": "Tyrantrum",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "698",
+    "jp": "",
+    "en": "Amaura",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "699",
+    "jp": "",
+    "en": "Aurorus",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "700",
+    "jp": "",
+    "en": "Sylveon",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "701",
+    "jp": "",
+    "en": "Hawlucha",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "702",
+    "jp": "",
+    "en": "Dedenne",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "703",
+    "jp": "",
+    "en": "Carbink",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "704",
+    "jp": "",
+    "en": "Goomy",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "705",
+    "jp": "",
+    "en": "Sliggoo",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "706",
+    "jp": "",
+    "en": "Goodra",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "707",
+    "jp": "",
+    "en": "Klefki",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "708",
+    "jp": "",
+    "en": "Phantump",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "709",
+    "jp": "",
+    "en": "Trevenant",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "710",
+    "jp": "",
+    "en": "Pumpkaboo",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "711",
+    "jp": "",
+    "en": "Gourgeist",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "712",
+    "jp": "",
+    "en": "Bergmite",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "713",
+    "jp": "",
+    "en": "Avalugg",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "714",
+    "jp": "",
+    "en": "Noibat",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "715",
+    "jp": "",
+    "en": "Noivern",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "716",
+    "jp": "",
+    "en": "Xerneas",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "717",
+    "jp": "",
+    "en": "Yveltal",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "718",
+    "jp": "",
+    "en": "Zygarde",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "719",
+    "jp": "",
+    "en": "Diancie",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "720",
+    "jp": "",
+    "en": "Hoopa",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "721",
+    "jp": "",
+    "en": "Volcanion",
+    "gen": 6,
+    "types": []
+  },
+  {
+    "no": "722",
+    "jp": "",
+    "en": "Rowlet",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "723",
+    "jp": "",
+    "en": "Dartrix",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "724",
+    "jp": "",
+    "en": "Decidueye",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "725",
+    "jp": "",
+    "en": "Litten",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "726",
+    "jp": "",
+    "en": "Torracat",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "727",
+    "jp": "",
+    "en": "Incineroar",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "728",
+    "jp": "",
+    "en": "Popplio",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "729",
+    "jp": "",
+    "en": "Brionne",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "730",
+    "jp": "",
+    "en": "Primarina",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "731",
+    "jp": "",
+    "en": "Pikipek",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "732",
+    "jp": "",
+    "en": "Trumbeak",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "733",
+    "jp": "",
+    "en": "Toucannon",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "734",
+    "jp": "",
+    "en": "Yungoos",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "735",
+    "jp": "",
+    "en": "Gumshoos",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "736",
+    "jp": "",
+    "en": "Grubbin",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "737",
+    "jp": "",
+    "en": "Charjabug",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "738",
+    "jp": "",
+    "en": "Vikavolt",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "739",
+    "jp": "",
+    "en": "Crabrawler",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "740",
+    "jp": "",
+    "en": "Crabominable",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "741",
+    "jp": "",
+    "en": "Oricorio",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "742",
+    "jp": "",
+    "en": "Cutiefly",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "743",
+    "jp": "",
+    "en": "Ribombee",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "744",
+    "jp": "",
+    "en": "Rockruff",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "745",
+    "jp": "",
+    "en": "Lycanroc",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "746",
+    "jp": "",
+    "en": "Wishiwashi",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "747",
+    "jp": "",
+    "en": "Mareanie",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "748",
+    "jp": "",
+    "en": "Toxapex",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "749",
+    "jp": "",
+    "en": "Mudbray",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "750",
+    "jp": "",
+    "en": "Mudsdale",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "751",
+    "jp": "",
+    "en": "Dewpider",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "752",
+    "jp": "",
+    "en": "Araquanid",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "753",
+    "jp": "",
+    "en": "Fomantis",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "754",
+    "jp": "",
+    "en": "Lurantis",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "755",
+    "jp": "",
+    "en": "Morelull",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "756",
+    "jp": "",
+    "en": "Shiinotic",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "757",
+    "jp": "",
+    "en": "Salandit",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "758",
+    "jp": "",
+    "en": "Salazzle",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "759",
+    "jp": "",
+    "en": "Stufful",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "760",
+    "jp": "",
+    "en": "Bewear",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "761",
+    "jp": "",
+    "en": "Bounsweet",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "762",
+    "jp": "",
+    "en": "Steenee",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "763",
+    "jp": "",
+    "en": "Tsareena",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "764",
+    "jp": "",
+    "en": "Comfey",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "765",
+    "jp": "",
+    "en": "Oranguru",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "766",
+    "jp": "",
+    "en": "Passimian",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "767",
+    "jp": "",
+    "en": "Wimpod",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "768",
+    "jp": "",
+    "en": "Golisopod",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "769",
+    "jp": "",
+    "en": "Sandygast",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "770",
+    "jp": "",
+    "en": "Palossand",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "771",
+    "jp": "",
+    "en": "Pyukumuku",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "772",
+    "jp": "",
+    "en": "Type: Null",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "773",
+    "jp": "",
+    "en": "Silvally",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "774",
+    "jp": "",
+    "en": "Minior",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "775",
+    "jp": "",
+    "en": "Komala",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "776",
+    "jp": "",
+    "en": "Turtonator",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "777",
+    "jp": "",
+    "en": "Togedemaru",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "778",
+    "jp": "",
+    "en": "Mimikyu",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "779",
+    "jp": "",
+    "en": "Bruxish",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "780",
+    "jp": "",
+    "en": "Drampa",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "781",
+    "jp": "",
+    "en": "Dhelmise",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "782",
+    "jp": "",
+    "en": "Jangmo-o",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "783",
+    "jp": "",
+    "en": "Hakamo-o",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "784",
+    "jp": "",
+    "en": "Kommo-o",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "785",
+    "jp": "",
+    "en": "Tapu Koko",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "786",
+    "jp": "",
+    "en": "Tapu Lele",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "787",
+    "jp": "",
+    "en": "Tapu Bulu",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "788",
+    "jp": "",
+    "en": "Tapu Fini",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "789",
+    "jp": "",
+    "en": "Cosmog",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "790",
+    "jp": "",
+    "en": "Cosmoem",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "791",
+    "jp": "",
+    "en": "Solgaleo",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "792",
+    "jp": "",
+    "en": "Lunala",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "793",
+    "jp": "",
+    "en": "Nihilego",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "794",
+    "jp": "",
+    "en": "Buzzwole",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "795",
+    "jp": "",
+    "en": "Pheromosa",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "796",
+    "jp": "",
+    "en": "Xurkitree",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "797",
+    "jp": "",
+    "en": "Celesteela",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "798",
+    "jp": "",
+    "en": "Kartana",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "799",
+    "jp": "",
+    "en": "Guzzlord",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "800",
+    "jp": "",
+    "en": "Necrozma",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "801",
+    "jp": "",
+    "en": "Magearna",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "802",
+    "jp": "",
+    "en": "Marshadow",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "803",
+    "jp": "",
+    "en": "Poipole",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "804",
+    "jp": "",
+    "en": "Naganadel",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "805",
+    "jp": "",
+    "en": "Stakataka",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "806",
+    "jp": "",
+    "en": "Blacephalon",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "807",
+    "jp": "",
+    "en": "Zeraora",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "808",
+    "jp": "",
+    "en": "Meltan",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "809",
+    "jp": "",
+    "en": "Melmetal",
+    "gen": 7,
+    "types": []
+  },
+  {
+    "no": "810",
+    "jp": "",
+    "en": "Grookey",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "811",
+    "jp": "",
+    "en": "Thwackey",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "812",
+    "jp": "",
+    "en": "Rillaboom",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "813",
+    "jp": "",
+    "en": "Scorbunny",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "814",
+    "jp": "",
+    "en": "Raboot",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "815",
+    "jp": "",
+    "en": "Cinderace",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "816",
+    "jp": "",
+    "en": "Sobble",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "817",
+    "jp": "",
+    "en": "Drizzile",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "818",
+    "jp": "",
+    "en": "Inteleon",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "819",
+    "jp": "",
+    "en": "Skwovet",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "820",
+    "jp": "",
+    "en": "Greedent",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "821",
+    "jp": "",
+    "en": "Rookidee",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "822",
+    "jp": "",
+    "en": "Corvisquire",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "823",
+    "jp": "",
+    "en": "Corviknight",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "824",
+    "jp": "",
+    "en": "Blipbug",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "825",
+    "jp": "",
+    "en": "Dottler",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "826",
+    "jp": "",
+    "en": "Orbeetle",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "827",
+    "jp": "",
+    "en": "Nickit",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "828",
+    "jp": "",
+    "en": "Thievul",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "829",
+    "jp": "",
+    "en": "Gossifleur",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "830",
+    "jp": "",
+    "en": "Eldegoss",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "831",
+    "jp": "",
+    "en": "Wooloo",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "832",
+    "jp": "",
+    "en": "Dubwool",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "833",
+    "jp": "",
+    "en": "Chewtle",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "834",
+    "jp": "",
+    "en": "Drednaw",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "835",
+    "jp": "",
+    "en": "Yamper",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "836",
+    "jp": "",
+    "en": "Boltund",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "837",
+    "jp": "",
+    "en": "Rolycoly",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "838",
+    "jp": "",
+    "en": "Carkol",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "839",
+    "jp": "",
+    "en": "Coalossal",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "840",
+    "jp": "",
+    "en": "Applin",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "841",
+    "jp": "",
+    "en": "Flapple",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "842",
+    "jp": "",
+    "en": "Appletun",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "843",
+    "jp": "",
+    "en": "Silicobra",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "844",
+    "jp": "",
+    "en": "Sandaconda",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "845",
+    "jp": "",
+    "en": "Cramorant",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "846",
+    "jp": "",
+    "en": "Arrokuda",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "847",
+    "jp": "",
+    "en": "Barraskewda",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "848",
+    "jp": "",
+    "en": "Toxel",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "849",
+    "jp": "",
+    "en": "Toxtricity",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "850",
+    "jp": "",
+    "en": "Sizzlipede",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "851",
+    "jp": "",
+    "en": "Centiskorch",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "852",
+    "jp": "",
+    "en": "Clobbopus",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "853",
+    "jp": "",
+    "en": "Grapploct",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "854",
+    "jp": "",
+    "en": "Sinistea",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "855",
+    "jp": "",
+    "en": "Polteageist",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "856",
+    "jp": "",
+    "en": "Hatenna",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "857",
+    "jp": "",
+    "en": "Hattrem",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "858",
+    "jp": "",
+    "en": "Hatterene",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "859",
+    "jp": "",
+    "en": "Impidimp",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "860",
+    "jp": "",
+    "en": "Morgrem",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "861",
+    "jp": "",
+    "en": "Grimmsnarl",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "862",
+    "jp": "",
+    "en": "Obstagoon",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "863",
+    "jp": "",
+    "en": "Perrserker",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "864",
+    "jp": "",
+    "en": "Cursola",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "865",
+    "jp": "",
+    "en": "Sirfetch'd",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "866",
+    "jp": "",
+    "en": "Mr. Rime",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "867",
+    "jp": "",
+    "en": "Runerigus",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "868",
+    "jp": "",
+    "en": "Milcery",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "869",
+    "jp": "",
+    "en": "Alcremie",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "870",
+    "jp": "",
+    "en": "Falinks",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "871",
+    "jp": "",
+    "en": "Pincurchin",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "872",
+    "jp": "",
+    "en": "Snom",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "873",
+    "jp": "",
+    "en": "Frosmoth",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "874",
+    "jp": "",
+    "en": "Stonjourner",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "875",
+    "jp": "",
+    "en": "Eiscue",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "876",
+    "jp": "",
+    "en": "Indeedee",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "877",
+    "jp": "",
+    "en": "Morpeko",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "878",
+    "jp": "",
+    "en": "Cufant",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "879",
+    "jp": "",
+    "en": "Copperajah",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "880",
+    "jp": "",
+    "en": "Dracozolt",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "881",
+    "jp": "",
+    "en": "Arctozolt",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "882",
+    "jp": "",
+    "en": "Dracovish",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "883",
+    "jp": "",
+    "en": "Arctovish",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "884",
+    "jp": "",
+    "en": "Duraludon",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "885",
+    "jp": "",
+    "en": "Dreepy",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "886",
+    "jp": "",
+    "en": "Drakloak",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "887",
+    "jp": "",
+    "en": "Dragapult",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "888",
+    "jp": "",
+    "en": "Zacian",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "889",
+    "jp": "",
+    "en": "Zamazenta",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "890",
+    "jp": "",
+    "en": "Eternatus",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "891",
+    "jp": "",
+    "en": "Kubfu",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "892",
+    "jp": "",
+    "en": "Urshifu",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "893",
+    "jp": "",
+    "en": "Zarude",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "894",
+    "jp": "",
+    "en": "Regieleki",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "895",
+    "jp": "",
+    "en": "Regidrago",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "896",
+    "jp": "",
+    "en": "Glastrier",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "897",
+    "jp": "",
+    "en": "Spectrier",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "898",
+    "jp": "",
+    "en": "Calyrex",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "899",
+    "jp": "",
+    "en": "Wyrdeer",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "900",
+    "jp": "",
+    "en": "Kleavor",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "901",
+    "jp": "",
+    "en": "Ursaluna",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "902",
+    "jp": "",
+    "en": "Basculegion",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "903",
+    "jp": "",
+    "en": "Sneasler",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "904",
+    "jp": "",
+    "en": "Overqwil",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "905",
+    "jp": "",
+    "en": "Enamorus",
+    "gen": 8,
+    "types": []
+  },
+  {
+    "no": "906",
+    "jp": "",
+    "en": "Sprigatito",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "907",
+    "jp": "",
+    "en": "Floragato",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "908",
+    "jp": "",
+    "en": "Meowscarada",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "909",
+    "jp": "",
+    "en": "Fuecoco",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "910",
+    "jp": "",
+    "en": "Crocalor",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "911",
+    "jp": "",
+    "en": "Skeledirge",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "912",
+    "jp": "",
+    "en": "Quaxly",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "913",
+    "jp": "",
+    "en": "Quaxwell",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "914",
+    "jp": "",
+    "en": "Quaquaval",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "915",
+    "jp": "",
+    "en": "Lechonk",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "916",
+    "jp": "",
+    "en": "Oinkologne",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "917",
+    "jp": "",
+    "en": "Tarountula",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "918",
+    "jp": "",
+    "en": "Spidops",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "919",
+    "jp": "",
+    "en": "Nymble",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "920",
+    "jp": "",
+    "en": "Lokix",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "921",
+    "jp": "",
+    "en": "Pawmi",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "922",
+    "jp": "",
+    "en": "Pawmo",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "923",
+    "jp": "",
+    "en": "Pawmot",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "924",
+    "jp": "",
+    "en": "Tandemaus",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "925",
+    "jp": "",
+    "en": "Maushold",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "926",
+    "jp": "",
+    "en": "Fidough",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "927",
+    "jp": "",
+    "en": "Dachsbun",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "928",
+    "jp": "",
+    "en": "Smoliv",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "929",
+    "jp": "",
+    "en": "Dolliv",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "930",
+    "jp": "",
+    "en": "Arboliva",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "931",
+    "jp": "",
+    "en": "Squawkabilly",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "932",
+    "jp": "",
+    "en": "Nacli",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "933",
+    "jp": "",
+    "en": "Naclstack",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "934",
+    "jp": "",
+    "en": "Garganacl",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "935",
+    "jp": "",
+    "en": "Charcadet",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "936",
+    "jp": "",
+    "en": "Armarouge",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "937",
+    "jp": "",
+    "en": "Ceruledge",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "938",
+    "jp": "",
+    "en": "Tadbulb",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "939",
+    "jp": "",
+    "en": "Bellibolt",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "940",
+    "jp": "",
+    "en": "Wattrel",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "941",
+    "jp": "",
+    "en": "Kilowattrel",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "942",
+    "jp": "",
+    "en": "Maschiff",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "943",
+    "jp": "",
+    "en": "Mabosstiff",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "944",
+    "jp": "",
+    "en": "Shroodle",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "945",
+    "jp": "",
+    "en": "Grafaiai",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "946",
+    "jp": "",
+    "en": "Bramblin",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "947",
+    "jp": "",
+    "en": "Brambleghast",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "948",
+    "jp": "",
+    "en": "Toedscool",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "949",
+    "jp": "",
+    "en": "Toedscruel",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "950",
+    "jp": "",
+    "en": "Klawf",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "951",
+    "jp": "",
+    "en": "Capsakid",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "952",
+    "jp": "",
+    "en": "Scovillain",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "953",
+    "jp": "",
+    "en": "Rellor",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "954",
+    "jp": "",
+    "en": "Rabsca",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "955",
+    "jp": "",
+    "en": "Flittle",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "956",
+    "jp": "",
+    "en": "Espathra",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "957",
+    "jp": "",
+    "en": "Tinkatink",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "958",
+    "jp": "",
+    "en": "Tinkatuff",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "959",
+    "jp": "",
+    "en": "Tinkaton",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "960",
+    "jp": "",
+    "en": "Wiglett",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "961",
+    "jp": "",
+    "en": "Wugtrio",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "962",
+    "jp": "",
+    "en": "Bombirdier",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "963",
+    "jp": "",
+    "en": "Finizen",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "964",
+    "jp": "",
+    "en": "Palafin",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "965",
+    "jp": "",
+    "en": "Varoom",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "966",
+    "jp": "",
+    "en": "Revavroom",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "967",
+    "jp": "",
+    "en": "Cyclizar",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "968",
+    "jp": "",
+    "en": "Orthworm",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "969",
+    "jp": "",
+    "en": "Glimmet",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "970",
+    "jp": "",
+    "en": "Glimmora",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "971",
+    "jp": "",
+    "en": "Greavard",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "972",
+    "jp": "",
+    "en": "Houndstone",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "973",
+    "jp": "",
+    "en": "Flamigo",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "974",
+    "jp": "",
+    "en": "Cetoddle",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "975",
+    "jp": "",
+    "en": "Cetitan",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "976",
+    "jp": "",
+    "en": "Veluza",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "977",
+    "jp": "",
+    "en": "Dondozo",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "978",
+    "jp": "",
+    "en": "Tatsugiri",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "979",
+    "jp": "",
+    "en": "Annihilape",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "980",
+    "jp": "",
+    "en": "Clodsire",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "981",
+    "jp": "",
+    "en": "Farigiraf",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "982",
+    "jp": "",
+    "en": "Dudunsparce",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "983",
+    "jp": "",
+    "en": "Kingambit",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "984",
+    "jp": "",
+    "en": "Great Tusk",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "985",
+    "jp": "",
+    "en": "Scream Tail",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "986",
+    "jp": "",
+    "en": "Brute Bonnet",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "987",
+    "jp": "",
+    "en": "Flutter Mane",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "988",
+    "jp": "",
+    "en": "Slither Wing",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "989",
+    "jp": "",
+    "en": "Sandy Shocks",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "990",
+    "jp": "",
+    "en": "Iron Treads",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "991",
+    "jp": "",
+    "en": "Iron Bundle",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "992",
+    "jp": "",
+    "en": "Iron Hands",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "993",
+    "jp": "",
+    "en": "Iron Jugulis",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "994",
+    "jp": "",
+    "en": "Iron Moth",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "995",
+    "jp": "",
+    "en": "Iron Thorns",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "996",
+    "jp": "",
+    "en": "Frigibax",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "997",
+    "jp": "",
+    "en": "Arctibax",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "998",
+    "jp": "",
+    "en": "Baxcalibur",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "999",
+    "jp": "",
+    "en": "Gimmighoul",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1000",
+    "jp": "",
+    "en": "Gholdengo",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1001",
+    "jp": "",
+    "en": "Wo-Chien",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1002",
+    "jp": "",
+    "en": "Chien-Pao",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1003",
+    "jp": "",
+    "en": "Ting-Lu",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1004",
+    "jp": "",
+    "en": "Chi-Yu",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1005",
+    "jp": "",
+    "en": "Roaring Moon",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1006",
+    "jp": "",
+    "en": "Iron Valiant",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1007",
+    "jp": "",
+    "en": "Koraidon",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1008",
+    "jp": "",
+    "en": "Miraidon",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1009",
+    "jp": "",
+    "en": "Walking Wake",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1010",
+    "jp": "",
+    "en": "Iron Leaves",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1011",
+    "jp": "",
+    "en": "Dipplin",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1012",
+    "jp": "",
+    "en": "Poltchageist",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1013",
+    "jp": "",
+    "en": "Sinistcha",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1014",
+    "jp": "",
+    "en": "Okidogi",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1015",
+    "jp": "",
+    "en": "Munkidori",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1016",
+    "jp": "",
+    "en": "Fezandipiti",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1017",
+    "jp": "",
+    "en": "Ogerpon",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1018",
+    "jp": "",
+    "en": "Archaludon",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1019",
+    "jp": "",
+    "en": "Hydrapple",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1020",
+    "jp": "",
+    "en": "Gouging Fire",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1021",
+    "jp": "",
+    "en": "Raging Bolt",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1022",
+    "jp": "",
+    "en": "Iron Boulder",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1023",
+    "jp": "",
+    "en": "Iron Crown",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1024",
+    "jp": "",
+    "en": "Terapagos",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1025",
+    "jp": "",
+    "en": "Pecharunt",
+    "gen": 9,
+    "types": []
+  },
+  {
+    "no": "1026",
+    "jp": "ハブロウ",
+    "en": "Browt",
+    "gen": 10,
+    "types": []
+  },
+  {
+    "no": "1027",
+    "jp": "ポムケン",
+    "en": "Pombon",
+    "gen": 10,
+    "types": []
+  },
+  {
+    "no": "1028",
+    "jp": "ミオリー",
+    "en": "Gecqua",
+    "gen": 10,
+    "types": []
   }
 ]
