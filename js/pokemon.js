@@ -47,7 +47,13 @@ async function loadPokemonData(){
         renderPokemonList(filtered);
       });
     }
+const searchButton = document.getElementById("searchButton");
 
+if(searchButton){
+  searchButton.addEventListener("click", () => {
+    search.dispatchEvent(new Event("input"));
+  });
+}
   }catch(error){
     console.error(error);
 
