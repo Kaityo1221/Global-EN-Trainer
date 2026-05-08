@@ -1,42 +1,42 @@
 [
   {
     "no": "001",
-    "jp": "",
+    "jp": "フシギダネ",
     "en": "Bulbasaur",
     "gen": 1,
     "types": []
   },
   {
     "no": "002",
-    "jp": "",
+    "jp": "フシギソウ",
     "en": "Ivysaur",
     "gen": 1,
     "types": []
   },
   {
     "no": "003",
-    "jp": "",
+    "jp": "フシギバナ",
     "en": "Venusaur",
     "gen": 1,
     "types": []
   },
   {
     "no": "004",
-    "jp": "",
+    "jp": "ヒトカゲ",
     "en": "Charmander",
     "gen": 1,
     "types": []
   },
   {
     "no": "005",
-    "jp": "",
+    "jp": "リザード",
     "en": "Charmeleon",
     "gen": 1,
     "types": []
   },
   {
     "no": "006",
-    "jp": "",
+    "jp": "リザードン",
     "en": "Charizard",
     "gen": 1,
     "types": []
@@ -64,21 +64,21 @@
   },
   {
     "no": "010",
-    "jp": "",
+    "jp": "キャタピー",
     "en": "Caterpie",
     "gen": 1,
     "types": []
   },
   {
     "no": "011",
-    "jp": "",
+    "jp": "トランセル",
     "en": "Metapod",
     "gen": 1,
     "types": []
   },
   {
     "no": "012",
-    "jp": "",
+    "jp": "バタフリー",
     "en": "Butterfree",
     "gen": 1,
     "types": []
