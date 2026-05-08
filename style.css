@@ -218,3 +218,45 @@ a:hover{
 .social-links{
   margin-top:40px;
 }
+
+.menu-links a{
+  position:relative;
+  display:block;
+
+  padding:20px 24px;
+  margin-bottom:18px;
+
+  border-radius:18px;
+
+  background:#fffdf8;
+  color:#8b2e14;
+
+  text-decoration:none;
+
+  font-size:22px;
+  font-weight:800;
+  text-align:center;
+
+  box-shadow:
+    0 10px 22px rgba(255,140,60,0.16);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.menu-links a:hover,
+.menu-links a:active{
+  transform:
+    rotate(-3deg)
+    skew(4deg)
+    translate(8px,-6px);
+
+  background:#ff6b35;
+  color:#fff;
+
+  box-shadow:
+    -18px 18px 28px rgba(124,45,18,0.25);
+}
