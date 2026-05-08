@@ -214,3 +214,7 @@ a:hover{
   background: rgba(124,45,18,0.25);
   border-radius: 999px;
 }
+
+.social-links{
+  margin-top:40px;
+}
