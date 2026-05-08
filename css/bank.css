@@ -62,7 +62,7 @@
 .pokemon-search{
   flex:1;
   min-width:0;
-
+  width:100%;
   padding:14px 16px;
 
   border-radius:16px;
@@ -77,7 +77,7 @@
 }
 
 .search-button{
-  width:100px;
+  width:92px;
   flex-shrink:0;
 
   padding:14px 12px;
@@ -116,11 +116,18 @@
   margin-top:18px;
 
   display:flex;
-  gap:8px;
+
+  gap:10px;
 
   overflow-x:auto;
 
-  padding-bottom:6px;
+  overflow-y:hidden;
+
+  padding-bottom:8px;
+
+  width:100%;
+
+  -webkit-overflow-scrolling:touch;
 }
 
 .filter-button{
@@ -147,4 +154,7 @@
   background:#f97316;
 
   color:white;
+}
+.filter-area::-webkit-scrollbar{
+  display:none;
 }
