@@ -204,35 +204,35 @@
   },
   {
     "no": "030",
-    "jp": "",
+    "jp": "ニドリーナ",
     "en": "Nidorina",
     "gen": 1,
     "types": []
   },
   {
     "no": "031",
-    "jp": "",
+    "jp": "ニドクイーン",
     "en": "Nidoqueen",
     "gen": 1,
     "types": []
   },
   {
     "no": "032",
-    "jp": "",
+    "jp": "ニドラン♂",
     "en": "Nidoran♂",
     "gen": 1,
     "types": []
   },
   {
     "no": "033",
-    "jp": "",
+    "jp": "ニドリーノ",
     "en": "Nidorino",
     "gen": 1,
     "types": []
   },
   {
     "no": "034",
-    "jp": "",
+    "jp": "ニドキング",
     "en": "Nidoking",
     "gen": 1,
     "types": []
@@ -253,14 +253,14 @@
   },
   {
     "no": "037",
-    "jp": "",
+    "jp": "ロコン",
     "en": "Vulpix",
     "gen": 1,
     "types": []
   },
   {
     "no": "038",
-    "jp": "",
+    "jp": "キュウコン",
     "en": "Ninetales",
     "gen": 1,
     "types": []
@@ -281,14 +281,14 @@
   },
   {
     "no": "041",
-    "jp": "",
+    "jp": "ズバット",
     "en": "Zubat",
     "gen": 1,
     "types": []
   },
   {
     "no": "042",
-    "jp": "",
+    "jp": "ゴルバット",
     "en": "Golbat",
     "gen": 1,
     "types": []
@@ -316,14 +316,14 @@
   },
   {
     "no": "046",
-    "jp": "",
+    "jp": "パラス",
     "en": "Paras",
     "gen": 1,
     "types": []
   },
   {
     "no": "047",
-    "jp": "",
+    "jp": "パラセクト",
     "en": "Parasect",
     "gen": 1,
     "types": []
@@ -435,14 +435,14 @@
   },
   {
     "no": "063",
-    "jp": "",
+    "jp": "ケーシィ",
     "en": "Abra",
     "gen": 1,
     "types": []
   },
   {
     "no": "064",
-    "jp": "",
+    "jp": "ユンゲラー",
     "en": "Kadabra",
     "gen": 1,
     "types": []
@@ -450,27 +450,27 @@
   {
     "no": "065",
     "jp": "",
-    "en": "Alakazam",
+    "en": "フーディン",
     "gen": 1,
     "types": []
   },
   {
     "no": "066",
-    "jp": "",
+    "jp": "ワンリキー",
     "en": "Machop",
     "gen": 1,
     "types": []
   },
   {
     "no": "067",
-    "jp": "",
+    "jp": "ゴーリキー",
     "en": "Machoke",
     "gen": 1,
     "types": []
   },
   {
     "no": "068",
-    "jp": "",
+    "jp": "カイリキー",
     "en": "Machamp",
     "gen": 1,
     "types": []
