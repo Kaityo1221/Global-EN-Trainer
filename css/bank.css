@@ -158,3 +158,48 @@
 .filter-area::-webkit-scrollbar{
   display:none;
 }
+.pokemon-types{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  font-size:13px;
+  font-weight:700;
+  color:#475569;
+}
+.type-badge{
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  color:white;
+}
+
+.type-くさ{
+  background:#22c55e;
+}
+
+.type-どく{
+  background:#a855f7;
+}
+
+.type-ほのお{
+  background:#f97316;
+}
+
+.type-みず{
+  background:#3b82f6;
+}
+
+.type-でんき{
+  background:#facc15;
+  color:#78350f;
+}
+
+.type-むし{
+  background:#84cc16;
+}
+
+.type-ノーマル{
+  background:#94a3b8;
+}

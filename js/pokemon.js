@@ -23,13 +23,31 @@ async function loadPokemonData(){
   list.innerHTML = "読み込み中...";
 
   try{
-    const response = await fetch("../data/pokemon.json");
+    const genFiles = [
+  "../data/gen1.json",
+  "../data/gen2.json",
+  "../data/gen3.json",
+  "../data/gen4.json",
+  "../data/gen5.json",
+  "../data/gen6.json",
+  "../data/gen7.json",
+  "../data/gen8.json",
+  "../data/gen9.json"
+];
+
+const results = await Promise.all(
+  genFiles.map(async file => {
+    const response = await fetch(file);
 
     if(!response.ok){
-      throw new Error("pokemon.json の読み込み失敗: " + response.status);
+      throw new Error(file + " の読み込み失敗: " + response.status);
     }
 
-    allPokemonData = await response.json();
+    return await response.json();
+  })
+);
+
+allPokemonData = results.flat();
 
     renderPokemonList(allPokemonData);
     setupGenFilters();
@@ -106,11 +124,17 @@ function renderPokemonList(data){
     card.className = "pokemon-card";
 
     card.innerHTML = `
-      <div class="pokemon-no">No.${pokemon.no}</div>
-      <div class="pokemon-en">${pokemon.en}</div>
-      <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-    `;
-
+  <div class="pokemon-no">No.${pokemon.no}</div>
+  <div class="pokemon-en">${pokemon.en}</div>
+  <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
+  <div class="pokemon-types">
+  ${pokemon.types.map(type => `
+    <span class="type-badge type-${type}">
+      ${type}
+    </span>
+  `).join("")}
+</div>
+`;
     list.appendChild(card);
   });
 }
