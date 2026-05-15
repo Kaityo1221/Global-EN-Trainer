@@ -1,6 +1,7 @@
+[
   {
     "no": "001",
-    "jp": "フシギダ",
+    "jp": "フシギダネ",
     "en": "Bulbasaur",
     "gen": 1,
     "types": []
@@ -40,222 +41,419 @@
     "gen": 1,
     "types": []
   },
-  [
   {
     "no": "007",
     "jp": "ゼニガメ",
-    "en": "Squirtle"
+    "en": "Squirtle",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "008",
     "jp": "カメール",
-    "en": "Wartortle"
+    "en": "Wartortle",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "009",
     "jp": "カメックス",
-    "en": "Blastoise"
+    "en": "Blastoise",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "010",
+    "jp": "キャタピー",
+    "en": "Caterpie",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "011",
+    "jp": "トランセル",
+    "en": "Metapod",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "012",
+    "jp": "バタフリー",
+    "en": "Butterfree",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "013",
     "jp": "ビードル",
-    "en": "Weedle"
+    "en": "Weedle",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "014",
     "jp": "コクーン",
-    "en": "Kakuna"
+    "en": "Kakuna",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "015",
     "jp": "スピアー",
-    "en": "Beedrill"
+    "en": "Beedrill",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "016",
     "jp": "ポッポ",
-    "en": "Pidgey"
+    "en": "Pidgey",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "017",
     "jp": "ピジョン",
-    "en": "Pidgeotto"
+    "en": "Pidgeotto",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "018",
     "jp": "ピジョット",
-    "en": "Pidgeot"
+    "en": "Pidgeot",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "019",
     "jp": "コラッタ",
-    "en": "Rattata"
+    "en": "Rattata",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "020",
     "jp": "ラッタ",
-    "en": "Raticate"
+    "en": "Raticate",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "021",
     "jp": "オニスズメ",
-    "en": "Spearow"
+    "en": "Spearow",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "022",
     "jp": "オニドリル",
-    "en": "Fearow"
+    "en": "Fearow",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "023",
     "jp": "アーボ",
-    "en": "Ekans"
+    "en": "Ekans",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "024",
     "jp": "アーボック",
-    "en": "Arbok"
+    "en": "Arbok",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "025",
     "jp": "ピカチュウ",
-    "en": "Pikachu"
+    "en": "Pikachu",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "026",
     "jp": "ライチュウ",
-    "en": "Raichu"
+    "en": "Raichu",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "027",
     "jp": "サンド",
-    "en": "Sandshrew"
+    "en": "Sandshrew",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "028",
     "jp": "サンドパン",
-    "en": "Sandslash"
+    "en": "Sandslash",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "029",
     "jp": "ニドラン♀",
-    "en": "Nidoran♀"
+    "en": "Nidoran♀",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "030",
+    "jp": "ニドリーナ",
+    "en": "Nidorina",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "031",
+    "jp": "ニドクイーン",
+    "en": "Nidoqueen",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "032",
+    "jp": "ニドラン♂",
+    "en": "Nidoran♂",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "033",
+    "jp": "ニドリーノ",
+    "en": "Nidorino",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "034",
+    "jp": "ニドキング",
+    "en": "Nidoking",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "035",
     "jp": "ピッピ",
-    "en": "Clefairy"
+    "en": "Clefairy",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "036",
     "jp": "ピクシー",
-    "en": "Clefable"
+    "en": "Clefable",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "037",
+    "jp": "ロコン",
+    "en": "Vulpix",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "038",
+    "jp": "キュウコン",
+    "en": "Ninetales",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "039",
     "jp": "プリン",
-    "en": "Jigglypuff"
+    "en": "Jigglypuff",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "040",
     "jp": "プクリン",
-    "en": "Wigglytuff"
+    "en": "Wigglytuff",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "041",
+    "jp": "ズバット",
+    "en": "Zubat",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "042",
+    "jp": "ゴルバット",
+    "en": "Golbat",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "043",
     "jp": "ナゾノクサ",
-    "en": "Oddish"
+    "en": "Oddish",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "044",
     "jp": "クサイハナ",
-    "en": "Gloom"
+    "en": "Gloom",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "045",
     "jp": "ラフレシア",
-    "en": "Vileplume"
+    "en": "Vileplume",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "046",
+    "jp": "パラス",
+    "en": "Paras",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "047",
+    "jp": "パラセクト",
+    "en": "Parasect",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "048",
     "jp": "コンパン",
-    "en": "Venonat"
+    "en": "Venonat",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "049",
     "jp": "モルフォン",
-    "en": "Venomoth"
+    "en": "Venomoth",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "050",
     "jp": "ディグダ",
-    "en": "Diglett"
+    "en": "Diglett",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "051",
     "jp": "ダグトリオ",
-    "en": "Dugtrio"
+    "en": "Dugtrio",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "052",
     "jp": "ニャース",
-    "en": "Meowth"
+    "en": "Meowth",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "053",
     "jp": "ペルシアン",
-    "en": "Persian"
+    "en": "Persian",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "054",
     "jp": "コダック",
-    "en": "Psyduck"
+    "en": "Psyduck",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "055",
     "jp": "ゴルダック",
-    "en": "Golduck"
+    "en": "Golduck",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "056",
     "jp": "マンキー",
-    "en": "Mankey"
+    "en": "Mankey",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "057",
     "jp": "オコリザル",
-    "en": "Primeape"
+    "en": "Primeape",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "058",
     "jp": "ガーディ",
-    "en": "Growlithe"
+    "en": "Growlithe",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "059",
     "jp": "ウインディ",
-    "en": "Arcanine"
+    "en": "Arcanine",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "060",
     "jp": "ニョロモ",
-    "en": "Poliwag"
+    "en": "Poliwag",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "061",
     "jp": "ニョロゾ",
-    "en": "Poliwhirl"
+    "en": "Poliwhirl",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "062",
     "jp": "ニョロボン",
-    "en": "Poliwrath"
+    "en": "Poliwrath",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "063",
+    "jp": "ケーシィ",
+    "en": "Abra",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "064",
+    "jp": "ユンゲラー",
+    "en": "Kadabra",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "065",
     "jp": "フーディン",
-    "en": "Alakazam"
-  }
+    "en": "Alakazam",
+    "gen": 1,
+    "types": []
+  },
   {
     "no": "066",
     "jp": "ワンリキー",
@@ -279,493 +477,584 @@
   },
   {
     "no": "069",
-    "jp": "マダツボミ",
+    "jp": "",
     "en": "Bellsprout",
     "gen": 1,
     "types": []
   },
   {
     "no": "070",
-    "jp": "ウツドン",
+    "jp": "",
     "en": "Weepinbell",
     "gen": 1,
     "types": []
   },
   {
     "no": "071",
-    "jp": "ウツボット",
+    "jp": "",
     "en": "Victreebel",
     "gen": 1,
     "types": []
   },
   {
     "no": "072",
-    "jp": "メノクラゲ",
+    "jp": "",
     "en": "Tentacool",
     "gen": 1,
     "types": []
   },
   {
     "no": "073",
-    "jp": "ドククラゲ",
+    "jp": "",
     "en": "Tentacruel",
     "gen": 1,
     "types": []
   },
   {
     "no": "074",
-    "jp": "イシツブテ",
+    "jp": "",
     "en": "Geodude",
     "gen": 1,
     "types": []
   },
   {
     "no": "075",
-    "jp": "ゴローン",
+    "jp": "",
     "en": "Graveler",
     "gen": 1,
     "types": []
   },
   {
     "no": "076",
-    "jp": "ゴローニャ",
+    "jp": "",
     "en": "Golem",
     "gen": 1,
     "types": []
   },
   {
     "no": "077",
-    "jp": "ポニータ",
+    "jp": "",
     "en": "Ponyta",
     "gen": 1,
     "types": []
   },
   {
     "no": "078",
-    "jp": "ギャロップ",
+    "jp": "",
     "en": "Rapidash",
     "gen": 1,
     "types": []
   },
   {
     "no": "079",
-    "jp": "ヤドン",
+    "jp": "",
     "en": "Slowpoke",
     "gen": 1,
     "types": []
   },
   {
     "no": "080",
-    "jp": "ヤドラン",
+    "jp": "",
     "en": "Slowbro",
     "gen": 1,
     "types": []
   },
   {
     "no": "081",
-    "jp": "コイル",
+    "jp": "",
     "en": "Magnemite",
     "gen": 1,
     "types": []
   },
   {
     "no": "082",
-    "jp": "レアコイル",
+    "jp": "",
     "en": "Magneton",
     "gen": 1,
     "types": []
   },
   {
     "no": "083",
-    "jp": "カモネギ",
+    "jp": "",
     "en": "Farfetch'd",
     "gen": 1,
     "types": []
   },
-{
-  "no": "084",
-  "jp": "ドードー",
-  "en": "Doduo",
-  "gen": 1,
-  "types": []
-},
-{
-  "no": "085",
-  "jp": "ドードリオ",
-  "en": "Dodrio",
-  "gen": 1,
-  "types": []
-},
-{
-  "no": "086",
-  "jp": "パウワウ",
-  "en": "Seel",
-  "gen": 1,
-  "types": []
-}
+  {
+    "no": "084",
+    "jp": "",
+    "en": "Doduo",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "085",
+    "jp": "",
+    "en": "Dodrio",
+    "gen": 1,
+    "types": []
+  },
+  {
+    "no": "086",
+    "jp": "",
+    "en": "Seel",
+    "gen": 1,
+    "types": []
+  },
   {
     "no": "087",
-    "jp": "ジュゴン",
+    "jp": "",
     "en": "Dewgong",
     "gen": 1,
     "types": []
   },
   {
     "no": "088",
-    "jp": "ベトベター",
+    "jp": "",
     "en": "Grimer",
     "gen": 1,
     "types": []
   },
   {
     "no": "089",
-    "jp": "ベトベトン",
+    "jp": "",
     "en": "Muk",
     "gen": 1,
     "types": []
   },
   {
     "no": "090",
-    "jp": "シェルダー",
+    "jp": "",
     "en": "Shellder",
     "gen": 1,
     "types": []
   },
   {
     "no": "091",
-    "jp": "パルシェン",
+    "jp": "",
     "en": "Cloyster",
     "gen": 1,
     "types": []
   },
   {
     "no": "092",
-    "jp": "ゴース",
+    "jp": "",
     "en": "Gastly",
     "gen": 1,
     "types": []
   },
   {
     "no": "093",
-    "jp": "ゴースト",
+    "jp": "",
     "en": "Haunter",
     "gen": 1,
     "types": []
   },
   {
     "no": "094",
-    "jp": "ゲンガー",
+    "jp": "",
     "en": "Gengar",
     "gen": 1,
     "types": []
   },
   {
     "no": "095",
-    "jp": "イワーク",
+    "jp": "",
     "en": "Onix",
     "gen": 1,
     "types": []
   },
   {
     "no": "096",
-    "jp": "スリープ",
+    "jp": "",
     "en": "Drowzee",
     "gen": 1,
     "types": []
   },
   {
     "no": "097",
-    "jp": "スリーパー",
+    "jp": "",
     "en": "Hypno",
     "gen": 1,
     "types": []
   },
   {
     "no": "098",
-    "jp": "クラブ",
+    "jp": "",
     "en": "Krabby",
     "gen": 1,
     "types": []
   },
   {
     "no": "099",
-    "jp": "キングラー",
+    "jp": "",
     "en": "Kingler",
     "gen": 1,
     "types": []
   },
   {
     "no": "100",
-    "jp": "ビリリダマ",
+    "jp": "",
     "en": "Voltorb",
     "gen": 1,
     "types": []
   },
   {
     "no": "101",
-    "jp": "マルマイン",
+    "jp": "",
     "en": "Electrode",
     "gen": 1,
     "types": []
   },
   {
     "no": "102",
-    "jp": "タマタマ",
+    "jp": "",
     "en": "Exeggcute",
     "gen": 1,
     "types": []
   },
   {
     "no": "103",
-    "jp": "ナッシー",
+    "jp": "",
     "en": "Exeggutor",
     "gen": 1,
     "types": []
   },
   {
     "no": "104",
-    "jp": "カラカラ",
+    "jp": "",
     "en": "Cubone",
     "gen": 1,
     "types": []
   },
   {
     "no": "105",
-    "jp": "ガラガラ",
+    "jp": "",
     "en": "Marowak",
     "gen": 1,
     "types": []
-  }
-,
+  },
   {
     "no": "106",
-    "jp": "サワムラー",
-    "en": "Hitmonlee"
+    "jp": "",
+    "en": "Hitmonlee",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "107",
-    "jp": "エビワラー",
-    "en": "Hitmonchan"
+    "jp": "",
+    "en": "Hitmonchan",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "108",
-    "jp": "ベロリンガ",
-    "en": "Lickitung"
+    "jp": "",
+    "en": "Lickitung",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "109",
-    "jp": "ドガース",
-    "en": "Koffing"
+    "jp": "",
+    "en": "Koffing",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "110",
-    "jp": "マタドガス",
-    "en": "Weezing"
+    "jp": "",
+    "en": "Weezing",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "111",
-    "jp": "サイホーン",
-    "en": "Rhyhorn"
+    "jp": "",
+    "en": "Rhyhorn",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "112",
-    "jp": "サイドン",
-    "en": "Rhydon"
+    "jp": "",
+    "en": "Rhydon",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "113",
-    "jp": "ラッキー",
-    "en": "Chansey"
+    "jp": "",
+    "en": "Chansey",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "114",
-    "jp": "モンジャラ",
-    "en": "Tangela"
+    "jp": "",
+    "en": "Tangela",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "115",
-    "jp": "ガルーラ",
-    "en": "Kangaskhan"
+    "jp": "",
+    "en": "Kangaskhan",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "116",
-    "jp": "タッツー",
-    "en": "Horsea"
+    "jp": "",
+    "en": "Horsea",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "117",
-    "jp": "シードラ",
-    "en": "Seadra"
+    "jp": "",
+    "en": "Seadra",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "118",
-    "jp": "トサキント",
-    "en": "Goldeen"
+    "jp": "",
+    "en": "Goldeen",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "119",
-    "jp": "アズマオウ",
-    "en": "Seaking"
+    "jp": "",
+    "en": "Seaking",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "120",
-    "jp": "ヒトデマン",
-    "en": "Staryu"
+    "jp": "",
+    "en": "Staryu",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "121",
-    "jp": "スターミー",
-    "en": "Starmie"
+    "jp": "",
+    "en": "Starmie",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "122",
-    "jp": "バリヤード",
-    "en": "Mr. Mime"
+    "jp": "",
+    "en": "Mr. Mime",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "123",
-    "jp": "ストライク",
-    "en": "Scyther"
+    "jp": "",
+    "en": "Scyther",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "124",
-    "jp": "ルージュラ",
-    "en": "Jynx"
+    "jp": "",
+    "en": "Jynx",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "125",
-    "jp": "エレブー",
-    "en": "Electabuzz"
+    "jp": "",
+    "en": "Electabuzz",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "126",
-    "jp": "ブーバー",
-    "en": "Magmar"
+    "jp": "",
+    "en": "Magmar",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "127",
-    "jp": "カイロス",
-    "en": "Pinsir"
+    "jp": "",
+    "en": "Pinsir",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "128",
-    "jp": "ケンタロス",
-    "en": "Tauros"
+    "jp": "",
+    "en": "Tauros",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "129",
-    "jp": "コイキング",
-    "en": "Magikarp"
+    "jp": "",
+    "en": "Magikarp",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "130",
-    "jp": "ギャラドス",
-    "en": "Gyarados"
+    "jp": "",
+    "en": "Gyarados",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "131",
-    "jp": "ラプラス",
-    "en": "Lapras"
+    "jp": "",
+    "en": "Lapras",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "132",
-    "jp": "メタモン",
-    "en": "Ditto"
+    "jp": "",
+    "en": "Ditto",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "133",
-    "jp": "イーブイ",
-    "en": "Eevee"
+    "jp": "",
+    "en": "Eevee",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "134",
-    "jp": "シャワーズ",
-    "en": "Vaporeon"
+    "jp": "",
+    "en": "Vaporeon",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "135",
-    "jp": "サンダース",
-    "en": "Jolteon"
+    "jp": "",
+    "en": "Jolteon",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "136",
-    "jp": "ブースター",
-    "en": "Flareon"
+    "jp": "",
+    "en": "Flareon",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "137",
-    "jp": "ポリゴン",
-    "en": "Porygon"
+    "jp": "",
+    "en": "Porygon",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "138",
-    "jp": "オムナイト",
-    "en": "Omanyte"
+    "jp": "",
+    "en": "Omanyte",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "139",
-    "jp": "オムスター",
-    "en": "Omastar"
+    "jp": "",
+    "en": "Omastar",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "140",
-    "jp": "カブト",
-    "en": "Kabuto"
+    "jp": "",
+    "en": "Kabuto",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "141",
-    "jp": "カブトプス",
-    "en": "Kabutops"
+    "jp": "",
+    "en": "Kabutops",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "142",
-    "jp": "プテラ",
-    "en": "Aerodactyl"
+    "jp": "",
+    "en": "Aerodactyl",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "143",
-    "jp": "カビゴン",
-    "en": "Snorlax"
+    "jp": "",
+    "en": "Snorlax",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "144",
-    "jp": "フリーザー",
-    "en": "Articuno"
+    "jp": "",
+    "en": "Articuno",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "145",
-    "jp": "サンダー",
-    "en": "Zapdos"
+    "jp": "",
+    "en": "Zapdos",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "146",
-    "jp": "ファイヤー",
-    "en": "Moltres"
+    "jp": "",
+    "en": "Moltres",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "147",
-    "jp": "ミニリュウ",
-    "en": "Dratini"
+    "jp": "",
+    "en": "Dratini",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "148",
-    "jp": "ハクリュー",
-    "en": "Dragonair"
+    "jp": "",
+    "en": "Dragonair",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "149",
-    "jp": "カイリュー",
-    "en": "Dragonite"
+    "jp": "",
+    "en": "Dragonite",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "150",
-    "jp": "ミュウツー",
-    "en": "Mewtwo"
+    "jp": "",
+    "en": "Mewtwo",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "151",
-    "jp": "ミュウ",
-    "en": "Mew"
+    "jp": "",
+    "en": "Mew",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "152",
