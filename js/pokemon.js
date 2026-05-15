@@ -127,7 +127,13 @@ function renderPokemonList(data){
   <div class="pokemon-no">No.${pokemon.no}</div>
   <div class="pokemon-en">${pokemon.en}</div>
   <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-  <div class="pokemon-types">${pokemon.types.join(" / ")}</div>
+  <div class="pokemon-types">
+  ${pokemon.types.map(type => `
+    <span class="type-badge type-${type}">
+      ${type}
+    </span>
+  `).join("")}
+</div>
 `;
     list.appendChild(card);
   });
