@@ -158,3 +158,12 @@
 .filter-area::-webkit-scrollbar{
   display:none;
 }
+.pokemon-types{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  font-size:13px;
+  font-weight:700;
+  color:#475569;
+}
