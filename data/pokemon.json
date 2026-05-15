@@ -400,103 +400,144 @@
   {
     "no": "086",
     "jp": "パウワウ",
-    "en": "Seel"
+    "en": "Seel",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "087",
     "jp": "ジュゴン",
-    "en": "Dewgong"
+    "en": "Dewgong",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "088",
     "jp": "ベトベター",
-    "en": "Grimer"
+    "en": "Grimer",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "089",
     "jp": "ベトベトン",
-    "en": "Muk"
+    "en": "Muk",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "090",
     "jp": "シェルダー",
-    "en": "Shellder"
+    "en": "Shellder",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "091",
     "jp": "パルシェン",
-    "en": "Cloyster"
+    "en": "Cloyster",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "092",
     "jp": "ゴース",
-    "en": "Gastly"
+    "en": "Gastly",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "093",
     "jp": "ゴースト",
-    "en": "Haunter"
+    "en": "Haunter",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "094",
     "jp": "ゲンガー",
-    "en": "Gengar"
+    "en": "Gengar",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "095",
     "jp": "イワーク",
-    "en": "Onix"
+    "en": "Onix",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "096",
     "jp": "スリープ",
-    "en": "Drowzee"
+    "en": "Drowzee",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "097",
     "jp": "スリーパー",
-    "en": "Hypno"
+    "en": "Hypno",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "098",
     "jp": "クラブ",
-    "en": "Krabby"
+    "en": "Krabby",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "099",
     "jp": "キングラー",
-    "en": "Kingler"
+    "en": "Kingler",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "100",
     "jp": "ビリリダマ",
-    "en": "Voltorb"
+    "en": "Voltorb",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "101",
     "jp": "マルマイン",
-    "en": "Electrode"
+    "en": "Electrode",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "102",
     "jp": "タマタマ",
-    "en": "Exeggcute"
+    "en": "Exeggcute",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "103",
     "jp": "ナッシー",
-    "en": "Exeggutor"
+    "en": "Exeggutor",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "104",
     "jp": "カラカラ",
-    "en": "Cubone"
+    "en": "Cubone",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "105",
     "jp": "ガラガラ",
-    "en": "Marowak"
-  },
+    "en": "Marowak",
+    "gen": 1,
+    "types": []
+  }
+,
   {
     "no": "106",
     "jp": "サワムラー",
