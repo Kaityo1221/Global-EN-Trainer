@@ -171,35 +171,29 @@
   padding:6px 10px;
   border-radius:999px;
   font-size:12px;
-  font-weight:700;
+  font-weight:800;
   color:white;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
 }
 
-.type-くさ{
-  background:#22c55e;
-}
-
-.type-どく{
-  background:#a855f7;
-}
-
-.type-ほのお{
-  background:#f97316;
-}
-
-.type-みず{
-  background:#3b82f6;
-}
-
-.type-でんき{
-  background:#facc15;
-  color:#78350f;
-}
-
-.type-むし{
-  background:#84cc16;
-}
-
-.type-ノーマル{
-  background:#94a3b8;
-}
+.type-ノーマル{ background:#94a3b8; }
+.type-ほのお{ background:#f97316; }
+.type-みず{ background:#3b82f6; }
+.type-でんき{ background:#facc15; color:#78350f; }
+.type-くさ{ background:#22c55e; }
+.type-こおり{ background:#67e8f9; color:#164e63; }
+.type-かくとう{ background:#dc2626; }
+.type-どく{ background:#a855f7; }
+.type-じめん{ background:#ca8a04; }
+.type-ひこう{ background:#60a5fa; }
+.type-エスパー{ background:#ec4899; }
+.type-むし{ background:#84cc16; }
+.type-いわ{ background:#a16207; }
+.type-ゴースト{ background:#6366f1; }
+.type-ドラゴン{ background:#7c3aed; }
+.type-あく{ background:#334155; }
+.type-はがね{ background:#64748b; }
+.type-フェアリー{ background:#f472b6; }
