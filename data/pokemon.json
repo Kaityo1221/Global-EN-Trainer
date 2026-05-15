@@ -476,229 +476,229 @@
     "types": []
   },
   {
-    "no": "069",
-    "jp": "",
-    "en": "Bellsprout",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "070",
-    "jp": "",
-    "en": "Weepinbell",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "071",
-    "jp": "",
-    "en": "Victreebel",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "072",
-    "jp": "",
-    "en": "Tentacool",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "073",
-    "jp": "",
-    "en": "Tentacruel",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "074",
-    "jp": "",
-    "en": "Geodude",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "075",
-    "jp": "",
-    "en": "Graveler",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "076",
-    "jp": "",
-    "en": "Golem",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "077",
-    "jp": "",
-    "en": "Ponyta",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "078",
-    "jp": "",
-    "en": "Rapidash",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "079",
-    "jp": "",
-    "en": "Slowpoke",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "080",
-    "jp": "",
-    "en": "Slowbro",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "081",
-    "jp": "",
-    "en": "Magnemite",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "082",
-    "jp": "",
-    "en": "Magneton",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "083",
-    "jp": "",
-    "en": "Farfetch'd",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "084",
-    "jp": "",
-    "en": "Doduo",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "085",
-    "jp": "",
-    "en": "Dodrio",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "086",
-    "jp": "",
-    "en": "Seel",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "087",
-    "jp": "",
-    "en": "Dewgong",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "088",
-    "jp": "",
-    "en": "Grimer",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "089",
-    "jp": "",
-    "en": "Muk",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "090",
-    "jp": "",
-    "en": "Shellder",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "091",
-    "jp": "",
-    "en": "Cloyster",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "092",
-    "jp": "",
-    "en": "Gastly",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "093",
-    "jp": "",
-    "en": "Haunter",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "094",
-    "jp": "",
-    "en": "Gengar",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "095",
-    "jp": "",
-    "en": "Onix",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "096",
-    "jp": "",
-    "en": "Drowzee",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "097",
-    "jp": "",
-    "en": "Hypno",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "098",
-    "jp": "",
-    "en": "Krabby",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "099",
-    "jp": "",
-    "en": "Kingler",
-    "gen": 1,
-    "types": []
-  },
-  {
-    "no": "100",
-    "jp": "",
-    "en": "Voltorb",
-    "gen": 1,
-    "types": []
-  },
+  "no": "069",
+  "jp": "マダツボミ",
+  "en": "Bellsprout",
+  "gen": 1,
+  "types": ["Grass", "Poison"]
+},
+{
+  "no": "070",
+  "jp": "ウツドン",
+  "en": "Weepinbell",
+  "gen": 1,
+  "types": ["Grass", "Poison"]
+},
+{
+  "no": "071",
+  "jp": "ウツボット",
+  "en": "Victreebel",
+  "gen": 1,
+  "types": ["Grass", "Poison"]
+},
+{
+  "no": "072",
+  "jp": "メノクラゲ",
+  "en": "Tentacool",
+  "gen": 1,
+  "types": ["Water", "Poison"]
+},
+{
+  "no": "073",
+  "jp": "ドククラゲ",
+  "en": "Tentacruel",
+  "gen": 1,
+  "types": ["Water", "Poison"]
+},
+{
+  "no": "074",
+  "jp": "イシツブテ",
+  "en": "Geodude",
+  "gen": 1,
+  "types": ["Rock", "Ground"]
+},
+{
+  "no": "075",
+  "jp": "ゴローン",
+  "en": "Graveler",
+  "gen": 1,
+  "types": ["Rock", "Ground"]
+},
+{
+  "no": "076",
+  "jp": "ゴローニャ",
+  "en": "Golem",
+  "gen": 1,
+  "types": ["Rock", "Ground"]
+},
+{
+  "no": "077",
+  "jp": "ポニータ",
+  "en": "Ponyta",
+  "gen": 1,
+  "types": ["Fire"]
+},
+{
+  "no": "078",
+  "jp": "ギャロップ",
+  "en": "Rapidash",
+  "gen": 1,
+  "types": ["Fire"]
+},
+{
+  "no": "079",
+  "jp": "ヤドン",
+  "en": "Slowpoke",
+  "gen": 1,
+  "types": ["Water", "Psychic"]
+},
+{
+  "no": "080",
+  "jp": "ヤドラン",
+  "en": "Slowbro",
+  "gen": 1,
+  "types": ["Water", "Psychic"]
+},
+{
+  "no": "081",
+  "jp": "コイル",
+  "en": "Magnemite",
+  "gen": 1,
+  "types": ["Electric", "Steel"]
+},
+{
+  "no": "082",
+  "jp": "レアコイル",
+  "en": "Magneton",
+  "gen": 1,
+  "types": ["Electric", "Steel"]
+},
+{
+  "no": "083",
+  "jp": "カモネギ",
+  "en": "Farfetch'd",
+  "gen": 1,
+  "types": ["Normal", "Flying"]
+},
+{
+  "no": "084",
+  "jp": "ドードー",
+  "en": "Doduo",
+  "gen": 1,
+  "types": ["Normal", "Flying"]
+},
+{
+  "no": "085",
+  "jp": "ドードリオ",
+  "en": "Dodrio",
+  "gen": 1,
+  "types": ["Normal", "Flying"]
+},
+{
+  "no": "086",
+  "jp": "パウワウ",
+  "en": "Seel",
+  "gen": 1,
+  "types": ["Water"]
+},
+{
+  "no": "087",
+  "jp": "ジュゴン",
+  "en": "Dewgong",
+  "gen": 1,
+  "types": ["Water", "Ice"]
+},
+{
+  "no": "088",
+  "jp": "ベトベター",
+  "en": "Grimer",
+  "gen": 1,
+  "types": ["Poison"]
+},
+{
+  "no": "089",
+  "jp": "ベトベトン",
+  "en": "Muk",
+  "gen": 1,
+  "types": ["Poison"]
+},
+{
+  "no": "090",
+  "jp": "シェルダー",
+  "en": "Shellder",
+  "gen": 1,
+  "types": ["Water"]
+},
+{
+  "no": "091",
+  "jp": "パルシェン",
+  "en": "Cloyster",
+  "gen": 1,
+  "types": ["Water", "Ice"]
+},
+{
+  "no": "092",
+  "jp": "ゴース",
+  "en": "Gastly",
+  "gen": 1,
+  "types": ["Ghost", "Poison"]
+},
+{
+  "no": "093",
+  "jp": "ゴースト",
+  "en": "Haunter",
+  "gen": 1,
+  "types": ["Ghost", "Poison"]
+},
+{
+  "no": "094",
+  "jp": "ゲンガー",
+  "en": "Gengar",
+  "gen": 1,
+  "types": ["Ghost", "Poison"]
+},
+{
+  "no": "095",
+  "jp": "イワーク",
+  "en": "Onix",
+  "gen": 1,
+  "types": ["Rock", "Ground"]
+},
+{
+  "no": "096",
+  "jp": "スリープ",
+  "en": "Drowzee",
+  "gen": 1,
+  "types": ["Psychic"]
+},
+{
+  "no": "097",
+  "jp": "スリーパー",
+  "en": "Hypno",
+  "gen": 1,
+  "types": ["Psychic"]
+},
+{
+  "no": "098",
+  "jp": "クラブ",
+  "en": "Krabby",
+  "gen": 1,
+  "types": ["Water"]
+},
+{
+  "no": "099",
+  "jp": "キングラー",
+  "en": "Kingler",
+  "gen": 1,
+  "types": ["Water"]
+},
+{
+  "no": "100",
+  "jp": "ビリリダマ",
+  "en": "Voltorb",
+  "gen": 1,
+  "types": ["Electric"]
+},
   {
     "no": "101",
     "jp": "",
