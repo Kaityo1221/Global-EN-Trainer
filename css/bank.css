@@ -179,6 +179,187 @@
   line-height:1;
 }
 
+.pokemon-list{
+  margin-top:40px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:16px;
+}
+
+.pokemon-card{
+  padding:18px 20px;
+
+  border-radius:20px;
+
+  background:#fffaf5;
+
+  border:2px solid #fdba74;
+
+  box-shadow:
+    0 6px 18px rgba(251,146,60,0.14);
+
+  text-align:left;
+}
+
+.pokemon-no{
+  font-size:14px;
+
+  color:#c2410c;
+
+  margin-bottom:6px;
+}
+
+.pokemon-en{
+  font-size:28px;
+
+  font-weight:900;
+
+  color:#9a3412;
+}
+
+.pokemon-jp{
+  margin-top:6px;
+
+  font-size:16px;
+
+  color:#9a3412;
+
+  opacity:0.75;
+}
+.search-area{
+  margin-top:28px;
+
+  display:flex;
+
+  gap:10px;
+
+  width:100%;
+
+  overflow:hidden;
+}
+
+.pokemon-search{
+  flex:1;
+  min-width:0;
+  width:100%;
+  padding:14px 16px;
+
+  border-radius:16px;
+
+  border:2px solid #fdba74;
+
+  background:#fffaf5;
+
+  color:#7c2d12;
+
+  font-size:16px;
+}
+
+.search-button{
+  width:92px;
+  flex-shrink:0;
+
+  padding:14px 12px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#f97316;
+
+  color:white;
+
+  font-size:16px;
+  font-weight:800;
+
+  cursor:pointer;
+  white-space:nowrap;
+
+  box-shadow:
+    0 6px 14px rgba(249,115,22,0.25);
+
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.15s;
+}
+
+.search-button:active{
+  transform:scale(0.94);
+
+  box-shadow:
+    0 2px 6px rgba(249,115,22,0.18);
+
+  background:#ea580c;
+}
+.filter-area{
+  margin-top:18px;
+
+  display:flex;
+
+  gap:10px;
+
+  overflow-x:auto;
+
+  overflow-y:hidden;
+
+  padding-bottom:8px;
+
+  width:100%;
+
+  -webkit-overflow-scrolling:touch;
+}
+
+.filter-button{
+  flex:0 0 auto;
+
+  padding:10px 14px;
+
+  border:none;
+  border-radius:999px;
+
+  background:#fffaf5;
+
+  color:#9a3412;
+
+  font-size:14px;
+  font-weight:800;
+
+  border:1px solid #fdba74;
+
+  cursor:pointer;
+}
+
+.filter-button.active{
+  background:#f97316;
+
+  color:white;
+}
+.filter-area::-webkit-scrollbar{
+  display:none;
+}
+.pokemon-types{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  font-size:13px;
+  font-weight:700;
+  color:#475569;
+}
+.type-badge{
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:800;
+  color:white;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+}
+
 .type-ノーマル{ background:#94a3b8; }
 .type-ほのお{ background:#f97316; }
 .type-みず{ background:#3b82f6; }
