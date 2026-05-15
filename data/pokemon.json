@@ -260,103 +260,143 @@
   {
     "no": "066",
     "jp": "ワンリキー",
-    "en": "Machop"
+    "en": "Machop",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "067",
     "jp": "ゴーリキー",
-    "en": "Machoke"
+    "en": "Machoke",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "068",
     "jp": "カイリキー",
-    "en": "Machamp"
+    "en": "Machamp",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "069",
     "jp": "マダツボミ",
-    "en": "Bellsprout"
+    "en": "Bellsprout",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "070",
     "jp": "ウツドン",
-    "en": "Weepinbell"
+    "en": "Weepinbell",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "071",
     "jp": "ウツボット",
-    "en": "Victreebel"
+    "en": "Victreebel",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "072",
     "jp": "メノクラゲ",
-    "en": "Tentacool"
+    "en": "Tentacool",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "073",
     "jp": "ドククラゲ",
-    "en": "Tentacruel"
+    "en": "Tentacruel",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "074",
     "jp": "イシツブテ",
-    "en": "Geodude"
+    "en": "Geodude",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "075",
     "jp": "ゴローン",
-    "en": "Graveler"
+    "en": "Graveler",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "076",
     "jp": "ゴローニャ",
-    "en": "Golem"
+    "en": "Golem",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "077",
     "jp": "ポニータ",
-    "en": "Ponyta"
+    "en": "Ponyta",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "078",
     "jp": "ギャロップ",
-    "en": "Rapidash"
+    "en": "Rapidash",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "079",
     "jp": "ヤドン",
-    "en": "Slowpoke"
+    "en": "Slowpoke",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "080",
     "jp": "ヤドラン",
-    "en": "Slowbro"
+    "en": "Slowbro",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "081",
     "jp": "コイル",
-    "en": "Magnemite"
+    "en": "Magnemite",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "082",
     "jp": "レアコイル",
-    "en": "Magneton"
+    "en": "Magneton",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "083",
     "jp": "カモネギ",
-    "en": "Farfetch'd"
+    "en": "Farfetch'd",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "084",
     "jp": "ドードー",
-    "en": "Doduo"
+    "en": "Doduo",
+    "gen": 1,
+    "types": []
   },
   {
     "no": "085",
     "jp": "ドードリオ",
-    "en": "Dodrio"
-  },
+    "en": "Dodrio",
+    "gen": 1,
+    "types": []
+  }
   {
     "no": "086",
     "jp": "パウワウ",
