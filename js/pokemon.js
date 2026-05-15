@@ -99,7 +99,30 @@ function runSearch(){
 
   renderPokemonList(filtered);
 }
+function getTypeClass(type){
+  const typeMap = {
+    "ノーマル": "normal",
+    "ほのお": "fire",
+    "みず": "water",
+    "でんき": "electric",
+    "くさ": "grass",
+    "こおり": "ice",
+    "かくとう": "fighting",
+    "どく": "poison",
+    "じめん": "ground",
+    "ひこう": "flying",
+    "エスパー": "psychic",
+    "むし": "bug",
+    "いわ": "rock",
+    "ゴースト": "ghost",
+    "ドラゴン": "dragon",
+    "あく": "dark",
+    "はがね": "steel",
+    "フェアリー": "fairy"
+  };
 
+  return typeMap[type] || "unknown";
+}
 function renderPokemonList(data){
   const list = document.getElementById("pokemonList");
 
@@ -126,9 +149,10 @@ function renderPokemonList(data){
     card.innerHTML = `
   <div class="pokemon-no">No.${pokemon.no}</div>
   <div class="pokemon-en">${pokemon.en}</div>
-  <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</<div class="pokemon-types">
+  <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}
+ <div class="pokemon-types">
   ${pokemon.types.map(type => `
-    <span class="type-badge type-${type}">
+    <span class="type-badge type-${getTypeClass(type)}">
       ${type}
     </span>
   `).join("")}
