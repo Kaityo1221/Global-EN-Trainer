@@ -132,7 +132,7 @@ function renderPokemonList(data){
       ${type}
     </span>
   `).join("")}
-</div>ふ
+</div>
 `;
     list.appendChild(card);
   });
