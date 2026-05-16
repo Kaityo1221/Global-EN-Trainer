@@ -1,5 +1,3 @@
-
-
 "use strict";
 
 /*
@@ -215,7 +213,7 @@ window.speakPokemon = function(name){
 }
 window.changeSpeechRate = function(){
 
-  const rateButton = document.querySelector(".rate-button");
+  const rateButton = document.querySelector(".floating-rate-button");
 
   if(speechRate === 0.7){
     speechRate = 0.9;
