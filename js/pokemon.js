@@ -152,11 +152,16 @@ function renderPokemonList(data){
   <div class="pokemon-en">${pokemon.en}</div>
 
   <button
-    class="speak-button"
-    onclick="speakPokemon('${pokemon.en}')"
+  class="speak-button"
+  onclick="speakPokemon('${pokemon.en}')"
+>
+  <img
+  src="../images/speaker.png"
+  alt="speak"
+  class="speaker-icon"
+>
   >
-    🔊
-  </button>
+</button>
 </div>
   <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
   <div class="pokemon-types">
