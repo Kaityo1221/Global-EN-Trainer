@@ -151,10 +151,6 @@ function renderPokemonList(data){
   <div class="pokemon-name-row">
   <div class="pokemon-en">${pokemon.en}</div>
 
-  <button
-  class="speak-button"
-  onclick="speakPokemon('${pokemon.en}')"
->
  <button
   class="speak-button"
   onclick="speakPokemon('${pokemon.en}')"
@@ -163,8 +159,6 @@ function renderPokemonList(data){
     src="../images/speaker.png"
     alt="speak"
     class="speaker-icon"
-  >
-</button>
   >
 </button>
 </div>
