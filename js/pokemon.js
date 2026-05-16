@@ -1,3 +1,5 @@
+
+
 "use strict";
 
 /*
@@ -6,6 +8,8 @@
 */
 
 let allPokemonData = [];
+
+speech.rate = speechRate;
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
@@ -212,4 +216,21 @@ window.speakPokemon = function(name){
   speechSynthesis.cancel();
 
   speechSynthesis.speak(speech);
+}
+window.changeSpeechRate = function(){
+
+  if(speechRate === 0.7){
+    speechRate = 0.9;
+    alert("発音速度：通常");
+    return;
+  }
+
+  if(speechRate === 0.9){
+    speechRate = 1.15;
+    alert("発音速度：速め");
+    return;
+  }
+
+  speechRate = 0.7;
+  alert("発音速度：ゆっくり");
 }
