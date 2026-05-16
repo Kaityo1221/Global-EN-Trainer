@@ -156,7 +156,7 @@ function renderPokemonList(data){
   onclick="speakPokemon('${pokemon.en}')"
 >
   <img
-    src="../images/speaker.png"
+    src="../assets/images/speaker.png"
     alt="speak"
     class="speaker-icon"
   >
