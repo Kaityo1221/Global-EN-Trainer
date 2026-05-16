@@ -9,7 +9,7 @@
 
 let allPokemonData = [];
 
-speech.rate = speechRate;
+let speechRate = 0.9;
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
@@ -206,15 +206,11 @@ window.speakPokemon = function(name){
   const speech = new SpeechSynthesisUtterance(name);
 
   speech.lang = "en-US";
-
-  speech.rate = 0.9;
-
+  speech.rate = speechRate;
   speech.pitch = 1;
-
   speech.volume = 1;
 
   speechSynthesis.cancel();
-
   speechSynthesis.speak(speech);
 }
 window.changeSpeechRate = function(){
