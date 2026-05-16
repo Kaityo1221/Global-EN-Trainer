@@ -215,18 +215,20 @@ window.speakPokemon = function(name){
 }
 window.changeSpeechRate = function(){
 
+  const rateButton = document.querySelector(".rate-button");
+
   if(speechRate === 0.7){
     speechRate = 0.9;
-    alert("発音速度：通常");
+    if(rateButton) rateButton.textContent = "発音速度：通常";
     return;
   }
 
   if(speechRate === 0.9){
     speechRate = 1.15;
-    alert("発音速度：速め");
+    if(rateButton) rateButton.textContent = "発音速度：速め";
     return;
   }
 
   speechRate = 0.7;
-  alert("発音速度：ゆっくり");
+  if(rateButton) rateButton.textContent = "発音速度：ゆっくり";
 }
