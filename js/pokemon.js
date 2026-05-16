@@ -232,3 +232,9 @@ window.changeSpeechRate = function(){
   speechRate = 0.7;
   if(rateButton) rateButton.textContent = "発音速度：ゆっくり";
 }
+window.scrollToTop = function(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
