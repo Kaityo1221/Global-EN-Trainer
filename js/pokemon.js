@@ -148,7 +148,16 @@ function renderPokemonList(data){
 
     card.innerHTML = `
   <div class="pokemon-no">No.${pokemon.no}</div>
+  <div class="pokemon-name-row">
   <div class="pokemon-en">${pokemon.en}</div>
+
+  <button
+    class="speak-button"
+    onclick="speakPokemon('${pokemon.en}')"
+  >
+    🔊
+  </button>
+</div>
   <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
   <div class="pokemon-types">
     ${pokemon.types.map(type => `
@@ -183,4 +192,20 @@ function setupGenFilters(){
       renderPokemonList(filtered);
     });
   });
+}
+window.speakPokemon = function(name){
+
+  const speech = new SpeechSynthesisUtterance(name);
+
+  speech.lang = "en-US";
+
+  speech.rate = 0.9;
+
+  speech.pitch = 1;
+
+  speech.volume = 1;
+
+  speechSynthesis.cancel();
+
+  speechSynthesis.speak(speech);
 }
