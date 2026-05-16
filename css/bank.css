@@ -444,9 +444,11 @@
 }
 .floating-control{
   position:fixed;
+
   left:0;
   right:0;
-  bottom:18px;
+
+  bottom:calc(92px + env(safe-area-inset-bottom));
 
   z-index:9999;
 
