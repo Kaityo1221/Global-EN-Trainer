@@ -423,22 +423,78 @@
 .speak-button:active{
   transform:scale(0.92);
 }
-.rate-area{
-  margin-top:14px;
-}
 
-.rate-button{
-  padding:10px 18px;
+.side-top-button{
+  position:fixed;
+
+  left:10px;
+  bottom:120px;
+
+  z-index:9999;
+
+  width:48px;
+  height:120px;
+
   border:none;
-  border-radius:999px;
-  background:#a78bfa;
-  color:white;
-  font-size:14px;
-  font-weight:800;
+  border-radius:24px;
+
+  background:#fffaf5;
+
+  color:#9a3412;
+
+  border:2px solid #fdba74;
+
+  font-size:18px;
+  font-weight:900;
+
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:
+    0 8px 20px rgba(124,45,18,0.18);
+
   cursor:pointer;
-  box-shadow:0 6px 14px rgba(167,139,250,0.25);
 }
 
-.rate-button:active{
+.side-rate-button{
+  position:fixed;
+
+  right:10px;
+  bottom:120px;
+
+  z-index:9999;
+
+  width:48px;
+  height:120px;
+
+  border:none;
+  border-radius:24px;
+
+  background:#a78bfa;
+
+  color:white;
+
+  font-size:18px;
+  font-weight:900;
+
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:
+    0 8px 20px rgba(124,45,18,0.18);
+
+  cursor:pointer;
+}
+
+.side-top-button:active,
+.side-rate-button:active{
   transform:scale(0.94);
 }

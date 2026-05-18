@@ -12,7 +12,7 @@
   <title>Pokémon Name Bank - GET</title>
 
   <link rel="stylesheet" href="../style.css?v=7">
-  <link rel="stylesheet" href="../css/bank.css?v=10">
+  <link rel="stylesheet" href="../css/bank.css?v=11">
 </head>
 
 <body>
@@ -39,11 +39,6 @@
     </button>
 
   </div>
-<div class="rate-area">
-  <button class="rate-button" onclick="changeSpeechRate()">
-    発音速度：通常
-  </button>
-</div>
   <div class="filter-area">
     <button class="filter-button active" data-gen="all">All</button>
     <button class="filter-button" data-gen="1">Gen 1</button>
@@ -65,7 +60,24 @@
 </div>
 
 <script src="../script.js"></script>
-<script src="../js/pokemon.js?v=9"></script>
+<script src="../js/pokemon.js?v=10"></script>
+<<button
+  id="scrollTopBtn"
+  class="side-top-button">
+  ↑上へ
+</button>
 
+<button
+  id="speedToggle"
+  class="side-rate-button">
+  速度
+</button>
+
+<button
+  class="side-rate-button"
+  onclick="changeSpeechRate()">
+  速度：<br>通常
+</button>
+</div>
 </body>
 </html>
