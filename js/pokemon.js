@@ -217,18 +217,29 @@ window.changeSpeechRate = function(){
 
   if(speechRate === 0.7){
     speechRate = 0.9;
-    if(rateButton) rateButton.textContent = "速度";
+
+    if(rateButton){
+      rateButton.innerHTML = "速度：<br>通常";
+    }
+
     return;
   }
 
   if(speechRate === 0.9){
     speechRate = 1.15;
-    if(rateButton) rateButton.textContent = "速度";
+
+    if(rateButton){
+      rateButton.innerHTML = "速度：<br>速め";
+    }
+
     return;
   }
 
   speechRate = 0.7;
-  if(rateButton) rateButton.textContent = "速度";
+
+  if(rateButton){
+    rateButton.innerHTML = "速度：<br>ゆっくり";
+  }
 }
 window.scrollToTop = function(){
   window.scrollTo({
