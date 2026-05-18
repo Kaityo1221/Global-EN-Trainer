@@ -1,3 +1,5 @@
+
+
 "use strict";
 
 /*
@@ -6,6 +8,8 @@
 */
 
 let allPokemonData = [];
+
+let speechRate = 0.9;
 
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
@@ -202,14 +206,29 @@ window.speakPokemon = function(name){
   const speech = new SpeechSynthesisUtterance(name);
 
   speech.lang = "en-US";
-
-  speech.rate = 0.9;
-
+  speech.rate = speechRate;
   speech.pitch = 1;
-
   speech.volume = 1;
 
   speechSynthesis.cancel();
-
   speechSynthesis.speak(speech);
+}
+window.changeSpeechRate = function(){
+
+  const rateButton = document.querySelector(".rate-button");
+
+  if(speechRate === 0.7){
+    speechRate = 0.9;
+    if(rateButton) rateButton.textContent = "発音速度：通常";
+    return;
+  }
+
+  if(speechRate === 0.9){
+    speechRate = 1.15;
+    if(rateButton) rateButton.textContent = "発音速度：速め";
+    return;
+  }
+
+  speechRate = 0.7;
+  if(rateButton) rateButton.textContent = "発音速度：ゆっくり";
 }
