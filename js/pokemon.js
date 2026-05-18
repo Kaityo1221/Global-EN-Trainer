@@ -213,22 +213,22 @@ window.speakPokemon = function(name){
 }
 window.changeSpeechRate = function(){
 
-  const rateButton = document.querySelector(".floating-rate-button");
+  const rateButton = document.querySelector(".side-rate-button");
 
   if(speechRate === 0.7){
     speechRate = 0.9;
-    if(rateButton) rateButton.textContent = "発音速度：通常";
+    if(rateButton) rateButton.textContent = "速度";
     return;
   }
 
   if(speechRate === 0.9){
     speechRate = 1.15;
-    if(rateButton) rateButton.textContent = "発音速度：速め";
+    if(rateButton) rateButton.textContent = "速度";
     return;
   }
 
   speechRate = 0.7;
-  if(rateButton) rateButton.textContent = "発音速度：ゆっくり";
+  if(rateButton) rateButton.textContent = "速度";
 }
 window.scrollToTop = function(){
   window.scrollTo({
