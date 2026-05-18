@@ -450,11 +450,11 @@
 
   z-index:9999;
 
-  width:64px;
-  height:88px;
+  width:56px;
+  height:150px;
 
   border:none;
-  border-radius:22px;
+  border-radius:28px;
 
   background:#fffaf5;
 
@@ -462,10 +462,15 @@
 
   border:2px solid #fdba74;
 
-  font-size:15px;
+  font-size:18px;
   font-weight:900;
 
-  line-height:1.4;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
   box-shadow:
     0 8px 20px rgba(124,45,18,0.18);
@@ -481,20 +486,25 @@
 
   z-index:9999;
 
-  width:82px;
-  height:88px;
+  width:56px;
+  height:150px;
 
   border:none;
-  border-radius:22px;
+  border-radius:28px;
 
   background:#a78bfa;
 
   color:white;
 
-  font-size:14px;
+  font-size:18px;
   font-weight:900;
 
-  line-height:1.4;
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
   box-shadow:
     0 8px 20px rgba(124,45,18,0.18);
