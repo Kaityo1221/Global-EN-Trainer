@@ -460,42 +460,7 @@
   cursor:pointer;
 }
 
-.side-rate-button{
-  position:fixed;
-
-  right:4px;
-  bottom:120px;
-
-  z-index:9999;
-
-  width:60px;
-  height:170px;
-
-  border:none;
-  border-radius:999px;
-
-  background:#a78bfa;
-
-  color:white;
-
-  font-size:14px;
-  font-weight:900;
-
-  box-shadow:
-    0 8px 20px rgba(124,45,18,0.18);
-
-  cursor:pointer;
-
-  writing-mode:vertical-rl;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  letter-spacing:-2px;
-
-  padding:12px 0;
-}
+!
 .side-top-button:active,
 .side-rate-button:active{
   transform:scale(0.94);
