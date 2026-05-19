@@ -488,9 +488,6 @@
 
   cursor:pointer;
 
-  writing-mode:vertical-rl;
-  text-orientation:upright;
-
   display:flex;
   align-items:center;
   justify-content:center;
