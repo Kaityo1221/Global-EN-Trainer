@@ -213,13 +213,13 @@ window.speakPokemon = function(name){
 }
 window.changeSpeechRate = function(){
 
-  const rateButton = document.getElementById("speedToggle");
+  const button = document.getElementById("sideRateButton");
 
   if(speechRate === 0.7){
     speechRate = 0.9;
 
-    if(rateButton){
-      rateButton.textContent = "速度：通常";
+    if(button){
+      button.innerHTML = "速さ：通常";
     }
 
     return;
@@ -228,8 +228,8 @@ window.changeSpeechRate = function(){
   if(speechRate === 0.9){
     speechRate = 1.15;
 
-    if(rateButton){
-      rateButton.textContent = "速度：速め";
+    if(button){
+      button.innerHTML = "速さ：速め";
     }
 
     return;
@@ -237,8 +237,8 @@ window.changeSpeechRate = function(){
 
   speechRate = 0.7;
 
-  if(rateButton){
-    rateButton.textContent = "速度：ゆっくり";
+  if(button){
+    button.innerHTML = "速さ：ゆっくり";
   }
 }
 window.scrollToTop = function(){
