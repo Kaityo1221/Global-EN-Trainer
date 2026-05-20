@@ -247,7 +247,6 @@ window.scrollToTop = function(){
     behavior: "smooth"
   });
 }
-const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 if(scrollTopBtn){
 
@@ -257,7 +256,4 @@ if(scrollTopBtn){
       top:0,
       behavior:"smooth"
     });
-
-  });
-
-}
+    {
