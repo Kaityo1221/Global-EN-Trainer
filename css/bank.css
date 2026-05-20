@@ -448,13 +448,13 @@ pokemon-list{
   font-weight:900;
 
   writing-mode:vertical-rl;
-text-orientation:upright;
+  text-orientation:upright;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
-  letter-spacing:-1px;
+  letter-spacing:-2px;
 
   padding:8px 0;
 
