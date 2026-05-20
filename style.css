@@ -600,3 +600,17 @@ a:hover{
     padding:16px;
   }
 }
+body::before{
+  content:"";
+
+  position:fixed;
+  inset:0;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,192,203,0.18), transparent 180px),
+    radial-gradient(circle at 80% 30%, rgba(253,186,116,0.14), transparent 220px),
+    radial-gradient(circle at 60% 80%, rgba(251,113,133,0.12), transparent 180px);
+
+  pointer-events:none;
+  z-index:-1;
+}
