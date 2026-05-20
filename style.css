@@ -662,3 +662,29 @@ body::before{
     padding:16px;
   }
 }
+.hero-sheep{
+  width:88px;
+
+  margin-bottom:14px;
+
+  filter:
+    drop-shadow(0 8px 18px rgba(251,113,133,0.22));
+
+  animation:sheepFloat 4s ease-in-out infinite;
+}
+
+@keyframes sheepFloat{
+
+  0%{
+    transform:translateY(0px) rotate(-2deg);
+  }
+
+  50%{
+    transform:translateY(-8px) rotate(2deg);
+  }
+
+  100%{
+    transform:translateY(0px) rotate(-2deg);
+  }
+
+}
