@@ -666,8 +666,9 @@ body::before{
 
 .hero-sheep{
   width:88px;
-margin-top:28px;
-  margin-bottom:28px;
+
+  margin-top:34px;
+  margin-bottom:10px;
 
   position:relative;
   z-index:1;
