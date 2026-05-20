@@ -503,3 +503,35 @@ pokemon-list{
 .side-rate-button:active{
   transform:scale(0.94);
 }
+.menu-button{
+  position:fixed;
+
+  top:18px;
+  right:16px;
+
+  z-index:9999;
+
+  width:48px;
+  height:48px;
+
+  border:none;
+  border-radius:16px;
+
+  background:#fffaf5;
+
+  border:2px solid #fdba74;
+
+  color:#9a3412;
+
+  font-size:24px;
+  font-weight:900;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  box-shadow:
+    0 6px 18px rgba(124,45,18,0.18);
+
+  cursor:pointer;
+}
