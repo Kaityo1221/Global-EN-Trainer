@@ -535,3 +535,70 @@ pokemon-list{
 
   cursor:pointer;
 }
+.side-menu{
+  position:fixed;
+  top:0;
+  right:-260px;
+
+  width:240px;
+  height:100vh;
+
+  z-index:10000;
+
+  background:#fffaf5;
+  border-left:2px solid #fdba74;
+
+  box-shadow:
+    -8px 0 24px rgba(124,45,18,0.18);
+
+  padding:80px 20px 20px;
+
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+
+  transition:right 0.25s ease;
+}
+
+.side-menu.open{
+  right:0;
+}
+
+.side-menu a{
+  padding:14px 16px;
+
+  border-radius:16px;
+
+  background:#fff7ed;
+
+  color:#9a3412;
+
+  font-size:18px;
+  font-weight:900;
+
+  text-decoration:none;
+
+  border:1px solid #fdba74;
+}
+
+.menu-close-button{
+  position:absolute;
+  top:20px;
+  right:18px;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:14px;
+
+  background:#f97316;
+
+  color:white;
+
+  font-size:24px;
+  font-weight:900;
+
+  cursor:pointer;
+}
+
