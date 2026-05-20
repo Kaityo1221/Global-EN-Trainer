@@ -662,17 +662,21 @@ body::before{
     padding:16px;
   }
 }
+
+
 .hero-sheep{
   width:88px;
-
+margin-top:18px;
   margin-bottom:14px;
+
+  position:relative;
+  z-index:1;
 
   filter:
     drop-shadow(0 8px 18px rgba(251,113,133,0.22));
 
   animation:sheepFloat 4s ease-in-out infinite;
 }
-
 @keyframes sheepFloat{
 
   0%{
@@ -688,20 +692,6 @@ body::before{
   }
 
 }
-.hero-sheep{
-  width:88px;
-
-  margin-bottom:14px;
-
-  position:relative;
-  z-index:1;
-
-  filter:
-    drop-shadow(0 8px 18px rgba(251,113,133,0.22));
-
-  animation:sheepFloat 4s ease-in-out infinite;
-}
-
 .hero-sheep::before{
   content:"";
 }
