@@ -447,7 +447,8 @@ pokemon-list{
   font-size:12px;
   font-weight:900;
 
-  writing-mode:horizontal-tb;
+  writing-mode:vertical-rl;
+text-orientation:upright;
 
   display:flex;
   align-items:center;
