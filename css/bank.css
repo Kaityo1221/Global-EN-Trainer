@@ -432,7 +432,7 @@ pokemon-list{
 
   z-index:9999;
 
-  width:38px;
+  width:28px;
   height:170px;
 
   border:none;
@@ -447,7 +447,7 @@ pokemon-list{
   font-size:12px;
   font-weight:900;
 
-  writing-mode:vertical-rl;
+  writing-mode:horizontal-tb;
 
   display:flex;
   align-items:center;
