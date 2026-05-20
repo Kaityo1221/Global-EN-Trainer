@@ -756,124 +756,287 @@ body::before{
   }
 
 }
-/* ===== Today's Pokemon ===== */
+/* ===== Today's Pokemon Special Card ===== */
 
 .today-card{
-  margin-top:22px;
+  position:relative;
+  overflow:hidden;
 
-  padding:20px;
+  margin-top:24px;
+  padding:24px;
 
-  border-radius:28px;
+  border-radius:30px;
+
+  text-align:left;
 
   background:
     linear-gradient(
       135deg,
-      rgba(255,255,255,0.82),
-      rgba(255,247,237,0.68)
+      rgba(255,255,255,0.9),
+      rgba(255,250,220,0.82)
     );
 
-  border:2px solid rgba(251,146,60,0.14);
+  border:2px solid rgba(250,204,21,0.45);
 
   box-shadow:
-    0 12px 30px rgba(251,146,60,0.10);
+    0 0 0 1px rgba(255,255,255,0.7) inset,
+    0 0 24px rgba(250,204,21,0.34),
+    0 16px 34px rgba(251,146,60,0.16);
+}
 
-  text-align:left;
+.today-card::before{
+  content:"";
+
+  position:absolute;
+  inset:-2px;
+
+  border-radius:32px;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255,255,255,0.9) 45%,
+      transparent 70%
+    );
+
+  transform:translateX(-120%);
+  animation:todayShine 5s ease-in-out infinite;
+
+  pointer-events:none;
+}
+
+.today-card::after{
+  content:"";
+  position:absolute;
+
+  inset:10px;
+
+  border-radius:24px;
+
+  border:1px solid rgba(255,255,255,0.7);
+
+  pointer-events:none;
+}
+
+.today-bg-symbol{
+  position:absolute;
+
+  right:26px;
+  bottom:8px;
+
+  font-size:118px;
+  font-weight:900;
+
+  opacity:0.11;
+
+  transform:rotate(-12deg);
+
+  pointer-events:none;
 }
 
 .today-top{
+  position:relative;
+  z-index:1;
+
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap:12px;
 }
 
 .today-label{
-  font-size:12px;
+  font-size:13px;
   font-weight:900;
 
   letter-spacing:1px;
 
-  color:#fb7185;
+  color:#ea580c;
 }
 
 .today-type{
-  padding:6px 10px;
+  padding:7px 13px;
 
   border-radius:999px;
 
-  font-size:10px;
+  font-size:11px;
   font-weight:900;
 
   letter-spacing:1px;
-}
 
-.today-type.electric{
-  background:#fff7cc;
-  color:#ca8a04;
+  background:rgba(255,255,255,0.72);
 }
 
 .today-name{
-  margin-top:14px;
+  position:relative;
+  z-index:1;
 
-  font-size:34px;
+  margin-top:22px;
+
+  font-size:44px;
+  line-height:1;
   font-weight:900;
 
-  color:#9a3412;
-
   letter-spacing:1px;
+
+  color:#7c2d12;
 }
 
 .today-jp{
-  margin-top:2px;
+  position:relative;
+  z-index:1;
 
-  font-size:15px;
+  margin-top:10px;
+
+  font-size:16px;
+  font-weight:700;
 
   color:#7c2d12;
 
-  opacity:0.75;
+  opacity:0.8;
 }
 
 .today-bottom{
-  margin-top:18px;
+  position:relative;
+  z-index:1;
+
+  margin-top:24px;
 
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap:12px;
 }
 
 .today-no{
-  font-size:14px;
-  font-weight:800;
-
-  color:#c2410c;
-
-  opacity:0.7;
-}
-
-.today-button{
-  border:none;
-
-  padding:10px 18px;
+  padding:9px 14px;
 
   border-radius:999px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #fb7185,
-      #fdba74
-    );
-
-  color:white;
-
-  font-size:12px;
+  font-size:15px;
   font-weight:900;
 
+  background:rgba(255,255,255,0.62);
+}
+
+.today-button{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+
+  padding:11px 20px;
+
+  border-radius:999px;
+
+  color:#ffffff;
+
+  font-size:13px;
+  font-weight:900;
   letter-spacing:1px;
 
+  text-decoration:none;
+
   box-shadow:
-    0 8px 18px rgba(251,113,133,0.18);
+    0 10px 20px rgba(251,113,133,0.22);
 }
 
 .today-button:active{
   transform:scale(0.95);
+}
+
+@keyframes todayShine{
+  0%{
+    transform:translateX(-120%);
+  }
+
+  45%{
+    transform:translateX(120%);
+  }
+
+  100%{
+    transform:translateX(120%);
+  }
+}
+
+/* ===== Type Colors ===== */
+
+.type-electric{
+  background:
+    linear-gradient(135deg, #fffdf2, #fff7c2);
+  border-color:rgba(250,204,21,0.55);
+  box-shadow:
+    0 0 26px rgba(250,204,21,0.42),
+    0 16px 34px rgba(251,146,60,0.16);
+}
+
+.type-electric .today-type,
+.type-electric .today-no{
+  color:#ca8a04;
+}
+
+.type-electric .today-button{
+  background:linear-gradient(135deg, #facc15, #fb7185);
+}
+
+.type-psychic{
+  background:
+    linear-gradient(135deg, #fff7ff, #f3e8ff);
+  border-color:rgba(168,85,247,0.45);
+  box-shadow:
+    0 0 26px rgba(168,85,247,0.32),
+    0 16px 34px rgba(251,146,60,0.12);
+}
+
+.type-psychic .today-type,
+.type-psychic .today-no{
+  color:#7e22ce;
+}
+
+.type-psychic .today-button{
+  background:linear-gradient(135deg, #a855f7, #fb7185);
+}
+
+.type-fire{
+  background:
+    linear-gradient(135deg, #fff7ed, #fed7aa);
+  border-color:rgba(249,115,22,0.45);
+}
+
+.type-fire .today-type,
+.type-fire .today-no{
+  color:#ea580c;
+}
+
+.type-fire .today-button{
+  background:linear-gradient(135deg, #f97316, #fb7185);
+}
+
+.type-water{
+  background:
+    linear-gradient(135deg, #f0f9ff, #dbeafe);
+  border-color:rgba(59,130,246,0.38);
+}
+
+.type-water .today-type,
+.type-water .today-no{
+  color:#2563eb;
+}
+
+.type-water .today-button{
+  background:linear-gradient(135deg, #3b82f6, #38bdf8);
+}
+
+.type-grass{
+  background:
+    linear-gradient(135deg, #f0fdf4, #dcfce7);
+  border-color:rgba(34,197,94,0.38);
+}
+
+.type-grass .today-type,
+.type-grass .today-no{
+  color:#16a34a;
+}
+
+.type-grass .today-button{
+  background:linear-gradient(135deg, #22c55e, #86efac);
 }

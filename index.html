@@ -11,7 +11,7 @@
   <title>GET - Global EN Trainer</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?=v2">
+ <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
@@ -75,36 +75,39 @@
     <a class="start-button" href="pages/dailyquiz.html">
       START QUEST
     </a>
-    <div class="today-card">
+   <div class="today-card type-electric" id="todayCard">
+
+  <div class="today-bg-symbol" id="todaySymbol">
+    ⚡
+  </div>
 
   <div class="today-top">
     <span class="today-label">
-      Today's Pokémon
+      ✨ Today's Pokémon
     </span>
 
-    <span class="today-type electric">
+    <span class="today-type" id="todayType">
       ELECTRIC
     </span>
   </div>
 
-  <div class="today-name">
+  <div class="today-name" id="todayName">
     Pikachu
   </div>
 
-  <div class="today-jp">
+  <div class="today-jp" id="todayJP">
     ピカチュウ
   </div>
 
   <div class="today-bottom">
-
-    <span class="today-no">
+    <span class="today-no" id="todayNo">
       No.025
     </span>
 
-    <button class="today-button">
+    <a class="today-button" href="pages/namebank.html">
       LEARN
-    </button>
-
+      <span>›</span>
+    </a>
   </div>
 
 </div>
@@ -189,8 +192,8 @@ function toggleUpdateLog(){
   }
 }
 </script>
-
-<script src="script.js"></script>
+<script src="data/todayPokemon.js?v=2"></script>
+<script src="script.js?v=2"></script>
 
 </body>
 </html>
