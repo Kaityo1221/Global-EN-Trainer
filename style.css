@@ -414,16 +414,6 @@ a:hover{
   background:#ffedd5;
 }
 
-.hero-card h1{
-  margin:18px 0 4px;
-
-  font-size:64px;
-  line-height:1;
-  font-weight:900;
-
-  color:#9a3412;
-}
-
 .hero-subtitle{
   margin:0;
 
@@ -596,9 +586,26 @@ a:hover{
   .hero-card{
     padding:28px 18px 24px;
     border-radius:28px;
-    animation:heroFloat 6s ease-in-out infinite;
-  @keyframes heroFloat{
+  }
 
+  .hero-card h1{
+    font-size:56px;
+  }
+
+  .menu-grid{
+    grid-template-columns:1fr;
+  }
+
+  .menu-card{
+    padding:16px;
+  }
+}
+
+.hero-card{
+  animation:heroFloat 6s ease-in-out infinite;
+}
+
+@keyframes heroFloat{
   0%{
     transform:translateY(0px);
   }
@@ -610,7 +617,6 @@ a:hover{
   100%{
     transform:translateY(0px);
   }
-
 }
   }
 
