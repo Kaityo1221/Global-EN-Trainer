@@ -596,6 +596,22 @@ a:hover{
   .hero-card{
     padding:28px 18px 24px;
     border-radius:28px;
+    animation:heroFloat 6s ease-in-out infinite;
+  @keyframes heroFloat{
+
+  0%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-6px);
+  }
+
+  100%{
+    transform:translateY(0px);
+  }
+
+}
   }
 
   .hero-card h1{
