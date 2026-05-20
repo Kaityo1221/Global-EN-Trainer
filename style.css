@@ -701,7 +701,8 @@ body::before{
   position:relative;
 
   width:120px;
-  margin:0 auto 14px;
+
+  margin:34px auto 20px;
 }
 
 .sheep-glow{
