@@ -124,7 +124,7 @@ function loadTodayPokemon(){
     return;
   }
 
-  const today = new Date("2026-06-01");
+  const today = new Date();
 
   const seed =
     today.getFullYear() * 10000 +
