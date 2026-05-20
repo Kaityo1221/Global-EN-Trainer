@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<button class="menu-button">
+<button class="menu-button" onclick="openMenu()">
   ☰
 </button>
 <div class="container">
@@ -62,7 +62,7 @@
 </div>
 
 <script src="../script.js"></script>
-<script src="../js/pokemon.js?v=12"></script>
+<script src="../js/pokemon.js?v=13"></script>
 <button
   id="scrollTopBtn"
   class="side-top-button"
@@ -78,6 +78,15 @@
 >
   速さ：通常
 </button>
+</div>
+<div id="sideMenu" class="side-menu">
+  <button class="menu-close-button" onclick="closeMenu()">×</button>
+
+  <a href="../index.html">Home</a>
+  <a href="./namebank.html">Name Bank</a>
+  <a href="./dailyquiz.html">Daily Quiz</a>
+  <a href="./quest.html">EN Quest</a>
+  <a href="./settings.html">Settings</a>
 </div>
 </body>
 </html>
