@@ -42,7 +42,42 @@
   <p>
     Daily Pokémon EN Challenge
   </p>
+<section class="quiz-card">
 
+  <div class="quiz-status">
+    <span id="quizCount">
+      1 / 10
+    </span>
+
+    <span id="quizScore">
+      Score 0
+    </span>
+  </div>
+
+  <div class="quiz-question-label">
+    このポケモンの英語名は？
+  </div>
+
+  <div class="quiz-question" id="quizQuestion">
+    Loading...
+  </div>
+
+  <div class="quiz-options" id="quizOptions">
+  </div>
+
+  <div class="quiz-result" id="quizResult">
+  </div>
+
+  <button
+    class="quiz-next-button"
+    id="quizNextButton"
+    onclick="nextQuiz()"
+    disabled
+  >
+    Next
+  </button>
+
+</section>
   <section class="quiz-card">
 
     <div class="quiz-status">
