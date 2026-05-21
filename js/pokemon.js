@@ -48,10 +48,19 @@ const results = await Promise.all(
     return await response.json();
   })
 );
-
 allPokemonData = results.flat();
+const params = new URLSearchParams(window.location.search);
+const searchKeyword = params.get("search");
 
-    renderPokemonList(allPokemonData);
+if(searchKeyword && search){
+  search.value = searchKeyword;
+
+  renderPokemonList(
+    filterPokemonByKeyword(searchKeyword)
+  );
+}else{
+  renderPokemonList(allPokemonData);
+}
     setupGenFilters();
     if(search && searchButton){
       searchButton.addEventListener("click", () => {
@@ -76,7 +85,21 @@ allPokemonData = results.flat();
     `;
   }
 }
+function filterPokemonByKeyword(keyword){
+  const normalizedKeyword = keyword.trim().toLowerCase();
 
+  if(normalizedKeyword === ""){
+    return allPokemonData;
+  }
+
+  return allPokemonData.filter(pokemon => {
+    return (
+      pokemon.no.includes(normalizedKeyword) ||
+      pokemon.en.toLowerCase().includes(normalizedKeyword) ||
+      (pokemon.jp && pokemon.jp.includes(keyword))
+    );
+  });
+}
 function runSearch(){
   const search = document.getElementById("pokemonSearch");
 
@@ -84,23 +107,14 @@ function runSearch(){
     return;
   }
 
-  const keyword = search.value.trim().toLowerCase();
+  const keyword = search.value.trim();
 
-  if(keyword === ""){
-    renderPokemonList(allPokemonData);
-    return;
-  }
-
-  const filtered = allPokemonData.filter(pokemon => {
-    return (
-      pokemon.no.includes(keyword) ||
-      pokemon.en.toLowerCase().includes(keyword) ||
-      (pokemon.jp && pokemon.jp.includes(keyword))
-    );
-  });
-
-  renderPokemonList(filtered);
+  renderPokemonList(
+    filterPokemonByKeyword(keyword)
+  );
 }
+
+
 function getTypeClass(type){
   const typeMap = {
     "ノーマル": "normal",
@@ -165,8 +179,8 @@ function renderPokemonList(data){
 </button>
 </div>
   <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-  <div class="pokemon-types">
-    ${pokemon.types.map(type => `
+    <div class="pokemon-types">
+    ${(pokemon.types || []).map(type => `
       <span class="type-badge type-${getTypeClass(type)}">
         ${type}
       </span>

@@ -1032,3 +1032,170 @@ body::before{
 .type-grass .today-button{
   background:linear-gradient(135deg, #22c55e, #86efac);
 }
+.type-normal{
+  background:linear-gradient(135deg, #fffaf5, #f5f5f4);
+  border-color:rgba(120,113,108,0.28);
+}
+
+.type-normal .today-type,
+.type-normal .today-no{
+  color:#78716c;
+}
+
+.type-normal .today-button{
+  background:linear-gradient(135deg, #a8a29e, #fb7185);
+}
+
+.type-poison{
+  background:linear-gradient(135deg, #faf5ff, #f3e8ff);
+  border-color:rgba(147,51,234,0.38);
+}
+
+.type-poison .today-type,
+.type-poison .today-no{
+  color:#9333ea;
+}
+
+.type-poison .today-button{
+  background:linear-gradient(135deg, #9333ea, #fb7185);
+}
+
+.type-ground{
+  background:linear-gradient(135deg, #fff7ed, #fde68a);
+  border-color:rgba(180,83,9,0.35);
+}
+
+.type-ground .today-type,
+.type-ground .today-no{
+  color:#92400e;
+}
+
+.type-ground .today-button{
+  background:linear-gradient(135deg, #b45309, #fdba74);
+}
+
+.type-flying{
+  background:linear-gradient(135deg, #f0f9ff, #e0e7ff);
+  border-color:rgba(99,102,241,0.32);
+}
+
+.type-flying .today-type,
+.type-flying .today-no{
+  color:#4f46e5;
+}
+
+.type-flying .today-button{
+  background:linear-gradient(135deg, #818cf8, #38bdf8);
+}
+
+.type-bug{
+  background:linear-gradient(135deg, #f7fee7, #ecfccb);
+  border-color:rgba(101,163,13,0.35);
+}
+
+.type-bug .today-type,
+.type-bug .today-no{
+  color:#4d7c0f;
+}
+
+.type-bug .today-button{
+  background:linear-gradient(135deg, #65a30d, #bef264);
+}
+
+.type-rock{
+  background:linear-gradient(135deg, #fafaf9, #e7e5e4);
+  border-color:rgba(120,113,108,0.36);
+}
+
+.type-rock .today-type,
+.type-rock .today-no{
+  color:#57534e;
+}
+
+.type-rock .today-button{
+  background:linear-gradient(135deg, #78716c, #d6d3d1);
+}
+
+.type-ghost{
+  background:linear-gradient(135deg, #f5f3ff, #ddd6fe);
+  border-color:rgba(109,40,217,0.38);
+}
+
+.type-ghost .today-type,
+.type-ghost .today-no{
+  color:#5b21b6;
+}
+
+.type-ghost .today-button{
+  background:linear-gradient(135deg, #6d28d9, #a78bfa);
+}
+
+.type-dragon{
+  background:linear-gradient(135deg, #eef2ff, #cffafe);
+  border-color:rgba(37,99,235,0.35);
+}
+
+.type-dragon .today-type,
+.type-dragon .today-no{
+  color:#1d4ed8;
+}
+
+.type-dragon .today-button{
+  background:linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.type-ice{
+  background:linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border-color:rgba(20,184,166,0.35);
+}
+
+.type-ice .today-type,
+.type-ice .today-no{
+  color:#0f766e;
+}
+
+.type-ice .today-button{
+  background:linear-gradient(135deg, #14b8a6, #67e8f9);
+}
+
+.type-fighting{
+  background:linear-gradient(135deg, #fff1f2, #fecaca);
+  border-color:rgba(220,38,38,0.35);
+}
+
+.type-fighting .today-type,
+.type-fighting .today-no{
+  color:#b91c1c;
+}
+
+.type-fighting .today-button{
+  background:linear-gradient(135deg, #dc2626, #fb7185);
+}
+
+.type-steel{
+  background:linear-gradient(135deg, #f8fafc, #e2e8f0);
+  border-color:rgba(71,85,105,0.28);
+}
+
+.type-steel .today-type,
+.type-steel .today-no{
+  color:#475569;
+}
+
+.type-steel .today-button{
+  background:linear-gradient(135deg, #64748b, #cbd5e1);
+}
+
+.type-fairy{
+  background:linear-gradient(135deg, #fff1f2, #fce7f3);
+  border-color:rgba(236,72,153,0.32);
+}
+
+.type-fairy .today-type,
+.type-fairy .today-no{
+  color:#db2777;
+}
+
+.type-fairy .today-button{
+  background:linear-gradient(135deg, #ec4899, #f9a8d4);
+}

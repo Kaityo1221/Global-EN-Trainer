@@ -135,7 +135,7 @@ function loadTodayPokemon(){
     todayPokemonList[
       seed % todayPokemonList.length
     ];
-
+currentTodayPokemon = pokemon;
   const mainType = getMainType(pokemon);
   const typeClass = getTypeClass(mainType);
 
@@ -164,4 +164,14 @@ function loadTodayPokemon(){
 }
 
 document.addEventListener("DOMContentLoaded", loadTodayPokemon);
+let currentTodayPokemon = null;
 
+function goTodayPokemonDetail(){
+  if(!currentTodayPokemon){
+    return;
+  }
+
+  const keyword = encodeURIComponent(currentTodayPokemon.en);
+
+  location.href = "pages/namebank.html?search=" + keyword;
+}
