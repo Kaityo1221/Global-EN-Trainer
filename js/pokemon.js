@@ -48,7 +48,7 @@ const results = await Promise.all(
     return await response.json();
   })
 );
-
+allPokemonData = results.flat();
 const params = new URLSearchParams(window.location.search);
 const searchKeyword = params.get("search");
 
@@ -114,16 +114,7 @@ function runSearch(){
   );
 }
 
-  const filtered = allPokemonData.filter(pokemon => {
-    return (
-      pokemon.no.includes(keyword) ||
-      pokemon.en.toLowerCase().includes(keyword) ||
-      (pokemon.jp && pokemon.jp.includes(keyword))
-    );
-  });
 
-  renderPokemonList(filtered);
-}
 function getTypeClass(type){
   const typeMap = {
     "ノーマル": "normal",
