@@ -164,3 +164,6 @@
     font-size:18px;
   }
 }
+.quiz-next-button{
+  display:none;
+}
