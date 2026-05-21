@@ -179,8 +179,8 @@ function renderPokemonList(data){
 </button>
 </div>
   <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-  <div class="pokemon-types">
-    ${pokemon.types.map(type => `
+    <div class="pokemon-types">
+    ${(pokemon.types || []).map(type => `
       <span class="type-badge type-${getTypeClass(type)}">
         ${type}
       </span>
