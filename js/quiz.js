@@ -1,19 +1,15 @@
 "use strict";
 
 /*
-  ====================================
-  GET - Daily Quiz
-  ====================================
+  GET - Global EN Trainer
+  Daily Quiz Script
 */
 
 let allQuizPokemon = [];
-
 let currentQuizPokemon = null;
-
 let currentAnswer = "";
 
 let quizCount = 1;
-
 let score = 0;
 
 const maxQuiz = 10;
@@ -25,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadQuizData(){
 
   try{
-
     const genFiles = [
       "../data/gen1.json",
       "../data/gen2.json",
@@ -39,9 +34,7 @@ async function loadQuizData(){
     ];
 
     const results = await Promise.all(
-
       genFiles.map(async file => {
-
         const response = await fetch(file);
 
         if(!response.ok){
@@ -49,9 +42,7 @@ async function loadQuizData(){
         }
 
         return await response.json();
-
       })
-
     );
 
     allQuizPokemon = results.flat();
@@ -59,12 +50,10 @@ async function loadQuizData(){
     generateQuiz();
 
   }catch(error){
-
     console.error(error);
 
     document.getElementById("quizQuestion").textContent =
       "読み込みエラー";
-
   }
 
 }
@@ -72,17 +61,13 @@ async function loadQuizData(){
 function generateQuiz(){
 
   document.getElementById("quizResult").textContent = "";
-
   document.getElementById("quizNextButton").disabled = true;
 
   const randomIndex =
     Math.floor(Math.random() * allQuizPokemon.length);
 
-  currentQuizPokemon =
-    allQuizPokemon[randomIndex];
-
-  currentAnswer =
-    currentQuizPokemon.en;
+  currentQuizPokemon = allQuizPokemon[randomIndex];
+  currentAnswer = currentQuizPokemon.en;
 
   document.getElementById("quizQuestion").textContent =
     currentQuizPokemon.jp;
@@ -107,7 +92,6 @@ function generateOptions(){
   let choices = [currentAnswer];
 
   while(choices.length < 4){
-
     const randomPokemon =
       allQuizPokemon[
         Math.floor(Math.random() * allQuizPokemon.length)
@@ -116,18 +100,14 @@ function generateOptions(){
     if(!choices.includes(randomPokemon.en)){
       choices.push(randomPokemon.en);
     }
-
   }
 
   choices = shuffleArray(choices);
 
   choices.forEach(choice => {
-
-    const button =
-      document.createElement("button");
+    const button = document.createElement("button");
 
     button.className = "quiz-option-button";
-
     button.textContent = choice;
 
     button.onclick = () => {
@@ -135,7 +115,6 @@ function generateOptions(){
     };
 
     optionsContainer.appendChild(button);
-
   });
 
 }
@@ -152,30 +131,20 @@ function checkAnswer(choice, clickedButton){
       button.classList.add("correct");
     }
 
-    if(
-      button === clickedButton &&
-      choice !== currentAnswer
-    ){
+    if(button === clickedButton && choice !== currentAnswer){
       button.classList.add("wrong");
     }
-
   });
 
   const result =
     document.getElementById("quizResult");
 
   if(choice === currentAnswer){
-
     score++;
 
-    result.textContent =
-      "⭕ Correct!";
-
+    result.textContent = "⭕ Correct!";
   }else{
-
-    result.textContent =
-      "❌ Wrong... 正解: " + currentAnswer;
-
+    result.textContent = "❌ Wrong... 正解: " + currentAnswer;
   }
 
   document.getElementById("quizScore").textContent =
@@ -190,11 +159,8 @@ window.nextQuiz = function(){
   quizCount++;
 
   if(quizCount > maxQuiz){
-
     showFinalResult();
-
     return;
-
   }
 
   generateQuiz();
@@ -207,9 +173,7 @@ function showFinalResult(){
     document.querySelector(".quiz-card");
 
   card.innerHTML = `
-
     <div class="quiz-finish">
-
       <h2>Quiz Complete!</h2>
 
       <div class="final-score">
@@ -222,15 +186,11 @@ function showFinalResult(){
       >
         Play Again
       </button>
-
     </div>
-
   `;
 
 }
 
 function shuffleArray(array){
-
   return array.sort(() => Math.random() - 0.5);
-
 }
