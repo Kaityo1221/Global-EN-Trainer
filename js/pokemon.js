@@ -52,6 +52,27 @@ const results = await Promise.all(
 allPokemonData = results.flat();
 
     renderPokemonList(allPokemonData);
+
+const params = new URLSearchParams(window.location.search);
+const searchKeyword = params.get("search");
+
+if(searchKeyword && search){
+
+  search.value = searchKeyword;
+
+  renderPokemonList(
+    allPokemonData.filter(pokemon =>
+
+      pokemon.en.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+
+      pokemon.jp.includes(searchKeyword) ||
+
+      pokemon.no.includes(searchKeyword)
+
+    )
+  );
+
+}
     setupGenFilters();
     if(search && searchButton){
       searchButton.addEventListener("click", () => {
