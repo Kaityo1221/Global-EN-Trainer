@@ -135,7 +135,7 @@ function loadTodayPokemon(){
     todayPokemonList[
       seed % todayPokemonList.length
     ];
-
+currentTodayPokemon = pokemon;
   const mainType = getMainType(pokemon);
   const typeClass = getTypeClass(mainType);
 
