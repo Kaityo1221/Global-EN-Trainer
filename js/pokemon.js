@@ -49,29 +49,17 @@ const results = await Promise.all(
   })
 );
 
-allPokemonData = results.flat();
-
-    renderPokemonList(allPokemonData);
-
 const params = new URLSearchParams(window.location.search);
 const searchKeyword = params.get("search");
 
 if(searchKeyword && search){
-
   search.value = searchKeyword;
 
   renderPokemonList(
-    allPokemonData.filter(pokemon =>
-
-      pokemon.en.toLowerCase().includes(searchKeyword.toLowerCase()) ||
-
-      pokemon.jp.includes(searchKeyword) ||
-
-      pokemon.no.includes(searchKeyword)
-
-    )
+    filterPokemonByKeyword(searchKeyword)
   );
-
+}else{
+  renderPokemonList(allPokemonData);
 }
     setupGenFilters();
     if(search && searchButton){
@@ -97,7 +85,21 @@ if(searchKeyword && search){
     `;
   }
 }
+function filterPokemonByKeyword(keyword){
+  const normalizedKeyword = keyword.trim().toLowerCase();
 
+  if(normalizedKeyword === ""){
+    return allPokemonData;
+  }
+
+  return allPokemonData.filter(pokemon => {
+    return (
+      pokemon.no.includes(normalizedKeyword) ||
+      pokemon.en.toLowerCase().includes(normalizedKeyword) ||
+      (pokemon.jp && pokemon.jp.includes(keyword))
+    );
+  });
+}
 function runSearch(){
   const search = document.getElementById("pokemonSearch");
 
@@ -105,12 +107,12 @@ function runSearch(){
     return;
   }
 
-  const keyword = search.value.trim().toLowerCase();
+  const keyword = search.value.trim();
 
-  if(keyword === ""){
-    renderPokemonList(allPokemonData);
-    return;
-  }
+  renderPokemonList(
+    filterPokemonByKeyword(keyword)
+  );
+}
 
   const filtered = allPokemonData.filter(pokemon => {
     return (
