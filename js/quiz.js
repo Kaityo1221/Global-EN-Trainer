@@ -151,7 +151,11 @@ function checkAnswer(choice, clickedButton){
     "Score " + score;
 
   document.getElementById("quizNextButton").disabled = false;
+const card =
+  document.querySelector(".quiz-card");
 
+card.classList.add("magictime", "openDownRightOut");
+);
 }
 
 window.nextQuiz = function(){
