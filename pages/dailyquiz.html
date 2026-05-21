@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="robots" content="noindex, nofollow">
-<meta name="googlebot" content="noindex, nofollow">
-<meta name="bingbot" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
 
-<title>GET - Global EN Trainer</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<title>Daily Quiz - GET</title>
+  <title>Daily Quiz - GET</title>
 
-<link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../css/quiz.css">
+  <link rel="stylesheet" href="../style.css?v=8">
+  <link rel="stylesheet" href="../css/quiz.css?v=1">
 </head>
 
 <body>
+
 <button class="menu-button" onclick="openMenu()">
   ☰
 </button>
 
 <div id="sideMenu" class="side-menu">
 
-  <button
-    class="menu-close-button"
-    onclick="closeMenu()"
-  >
+  <button class="menu-close-button" onclick="closeMenu()">
     ×
   </button>
 
   <a href="../index.html">Home</a>
-
-  <a href="./namebank.html">
-    Name Bank
-  </a>
-
-  <a href="./dailyquiz.html">
-    Daily Quiz
-  </a>
-
-  <a href="./quest.html">
-    EN Quest
-  </a>
-
-  <a href="./settings.html">
-    Settings
-  </a>
+  <a href="./namebank.html">Name Bank</a>
+  <a href="./dailyquiz.html">Daily Quiz</a>
+  <a href="./quest.html">EN Quest</a>
+  <a href="./settings.html">Settings</a>
 
 </div>
-<div class="container">
+
+<div class="container quiz-container">
 
   <h1>Daily Quiz</h1>
 
@@ -61,10 +43,47 @@
     Daily Pokémon EN Challenge
   </p>
 
+  <section class="quiz-card">
+
+    <div class="quiz-status">
+      <span id="quizCount">
+        1 / 10
+      </span>
+
+      <span id="quizScore">
+        Score 0
+      </span>
+    </div>
+
+    <div class="quiz-question-label">
+      このポケモンの英語名は？
+    </div>
+
+    <div class="quiz-question" id="quizQuestion">
+      Loading...
+    </div>
+
+    <div class="quiz-options" id="quizOptions">
+    </div>
+
+    <div class="quiz-result" id="quizResult">
+    </div>
+
+    <button
+      class="quiz-next-button"
+      id="quizNextButton"
+      onclick="nextQuiz()"
+      disabled
+    >
+      Next
+    </button>
+
+  </section>
+
 </div>
 
-<script src="../script.js"></script>
-<script src="../js/quiz.js"></script>
+<script src="../script.js?v=8"></script>
+<script src="../js/quiz.js?v=1"></script>
 
 </body>
 </html>
