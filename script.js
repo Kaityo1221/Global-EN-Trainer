@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("GET initialized");
 
 });
-
+let currentTodayPokemon = null;
 /* =========================
    Common Side Menu
 ========================= */
@@ -130,11 +130,39 @@ function loadTodayPokemon(){
     today.getFullYear() * 10000 +
     (today.getMonth() + 1) * 100 +
     today.getDate();
+const legendaryPokemonNos = [
+  "144", // Articuno
+  "145", // Zapdos
+  "146", // Moltres
+  "150", // Mewtwo
+  "151"  // Mew
+];
+  let pokemon;
 
-  const pokemon =
+/*
+  5%でレア演出
+*/
+const isRare = true;
+
+if(isRare){
+
+  const legendaryList = todayPokemonList.filter(p =>
+    legendaryPokemonNos.includes(p.no)
+  );
+
+  pokemon =
+    legendaryList[
+      seed % legendaryList.length
+    ];
+
+}else{
+
+  pokemon =
     todayPokemonList[
       seed % todayPokemonList.length
     ];
+
+}
 currentTodayPokemon = pokemon;
   const mainType = getMainType(pokemon);
   const typeClass = getTypeClass(mainType);
@@ -145,7 +173,12 @@ currentTodayPokemon = pokemon;
     return;
   }
 
-  card.className = "today-card type-" + typeClass;
+  card.className =
+  "today-card type-" + typeClass;
+
+if(isRare){
+  card.classList.add("today-rare");
+}
 
   document.getElementById("todaySymbol").textContent =
     getTypeSymbol(mainType);
@@ -164,7 +197,6 @@ currentTodayPokemon = pokemon;
 }
 
 document.addEventListener("DOMContentLoaded", loadTodayPokemon);
-let currentTodayPokemon = null;
 
 function goTodayPokemonDetail(){
   if(!currentTodayPokemon){

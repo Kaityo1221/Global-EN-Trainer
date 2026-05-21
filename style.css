@@ -1199,3 +1199,47 @@ body::before{
 .type-fairy .today-button{
   background:linear-gradient(135deg, #ec4899, #f9a8d4);
 }
+
+/* ===== Rare Legendary Mode ===== */
+
+.today-rare{
+  animation:
+    rareGlow 2s ease-in-out infinite;
+
+  border-color:#fde047;
+
+  box-shadow:
+    0 0 18px rgba(255,255,255,0.7),
+    0 0 40px rgba(250,204,21,0.8),
+    0 0 80px rgba(251,191,36,0.55);
+}
+
+.today-rare::after{
+  border:1px solid rgba(255,255,255,0.95);
+}
+
+.today-rare .today-label::before{
+  content:"🌟 ";
+}
+
+.today-rare .today-name{
+  text-shadow:
+    0 0 12px rgba(255,255,255,0.7),
+    0 0 24px rgba(250,204,21,0.65);
+}
+
+@keyframes rareGlow{
+
+  0%{
+    transform:scale(1);
+  }
+
+  50%{
+    transform:scale(1.015);
+  }
+
+  100%{
+    transform:scale(1);
+  }
+
+}
