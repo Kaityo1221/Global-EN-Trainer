@@ -155,7 +155,12 @@ const card =
   document.querySelector(".quiz-card");
 
 card.classList.add("magictime", "openDownRightOut");
-);
+
+setTimeout(() => {
+  card.classList.remove("magictime", "openDownRightOut");
+
+  nextQuiz();
+}, 700);
 }
 
 window.nextQuiz = function(){
