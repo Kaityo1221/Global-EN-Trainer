@@ -230,41 +230,144 @@ function getQuizEffectType(){
   return map[mainType] || "normal";
 }
 
-function playCorrectTypeEffect(){
-  const card =
-    document.getElementById("quizCard");
+function playCorrectTypeEffect(types){
+
+  const card = document.querySelector(".quiz-card");
 
   if(!card){
     return;
   }
 
-  const effectType = getQuizEffectType();
+  /* =========================
+     FIRE
+  ========================= */
 
-  card.classList.remove(
-    "quiz-effect-fire",
-    "quiz-effect-grass",
-    "quiz-effect-steel"
-  );
+  if(types.includes("ほのお")){
 
-  void card.offsetWidth;
+    const fire = document.createElement("div");
 
-  if(effectType === "fire"){
-    card.classList.add("quiz-effect-fire");
+    fire.className = "fire-effect";
+
+    card.appendChild(fire);
+
+    setTimeout(() => {
+      fire.remove();
+    }, 900);
   }
 
-  if(effectType === "grass"){
-    card.classList.add("quiz-effect-grass");
+  /* =========================
+     GRASS
+  ========================= */
+
+  if(types.includes("くさ")){
+
+    const leaf = document.createElement("div");
+
+    leaf.className = "grass-effect";
+
+    card.appendChild(leaf);
+
+    setTimeout(() => {
+      leaf.remove();
+    }, 1000);
   }
 
-  if(effectType === "steel"){
-    card.classList.add("quiz-effect-steel");
+  /* =========================
+     STEEL
+  ========================= */
+
+  if(types.includes("はがね")){
+
+    const steel = document.createElement("div");
+
+    steel.className = "steel-effect";
+
+    card.appendChild(steel);
+
+    setTimeout(() => {
+      steel.remove();
+    }, 700);
   }
 
-  setTimeout(() => {
-    card.classList.remove(
-      "quiz-effect-fire",
-      "quiz-effect-grass",
-      "quiz-effect-steel"
-    );
-  }, 600);
+  /* =========================
+     WATER
+  ========================= */
+
+  if(types.includes("みず")){
+
+    const wrap = document.createElement("div");
+
+    wrap.className = "water-effect";
+
+    for(let i = 0; i < 14; i++){
+
+      const drop = document.createElement("div");
+
+      drop.className = "water-drop";
+
+      drop.style.left = Math.random() * 100 + "%";
+
+      drop.style.animationDelay =
+        (Math.random() * 0.3) + "s";
+
+      wrap.appendChild(drop);
+    }
+
+    card.appendChild(wrap);
+
+    setTimeout(() => {
+      wrap.remove();
+    }, 1200);
+  }
+
+  /* =========================
+     ELECTRIC
+  ========================= */
+
+  if(types.includes("でんき")){
+
+    const flash = document.createElement("div");
+
+    flash.className = "electric-flash";
+
+    card.appendChild(flash);
+
+    setTimeout(() => {
+      flash.remove();
+    }, 500);
+  }
+
+  /* =========================
+     GHOST
+  ========================= */
+
+  if(types.includes("ゴースト")){
+
+    const ghost = document.createElement("div");
+
+    ghost.className = "ghost-effect";
+
+    card.appendChild(ghost);
+
+    setTimeout(() => {
+      ghost.remove();
+    }, 1200);
+  }
+
+  /* =========================
+     DRAGON
+  ========================= */
+
+  if(types.includes("ドラゴン")){
+
+    const aura = document.createElement("div");
+
+    aura.className = "dragon-aura";
+
+    card.appendChild(aura);
+
+    setTimeout(() => {
+      aura.remove();
+    }, 1000);
+  }
 }
