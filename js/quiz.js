@@ -164,20 +164,10 @@ function checkAnswer(choice, clickedButton){
     "Score " + score;
 
   document.getElementById("quizNextButton").disabled = false;
-const card =
-  document.getElementById("quizCard");
-
-card.classList.remove("open-down-right-out");
-
-void card.offsetWidth;
-
-card.classList.add("open-down-right-out");
 
 setTimeout(() => {
-  card.classList.remove("open-down-right-out");
-
   nextQuiz();
-}, 1100);
+}, 800);
 
 }
 window.nextQuiz = function(){
