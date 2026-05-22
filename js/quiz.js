@@ -154,7 +154,7 @@ function checkAnswer(choice, clickedButton){
 
   result.textContent = "⭕ Correct!";
 
-  playCorrectTypeEffect();
+  playCorrectTypeEffect(currentQuizPokemon.types || []);
 }
   else{
     result.textContent = "❌ Wrong... 正解: " + currentAnswer;
