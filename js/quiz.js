@@ -243,7 +243,7 @@ function clearQuizEffects(){
 
   document
     .querySelectorAll(
-      ".normal-effect, .fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura, .ice-effect, .dark-effect, .fairy-effect, .psychic-ring, .fighting-impact, .poison-effect, .ground-effect, .flying-effect, .bug-effect, .rock-effect"
+      ".normal-effect, .fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura, .ice-effect, .dark-effect, .fairy-effect, .psychic-ring, .fighting-effect, .fighting-impact, .fighting-crack, .poison-effect, .ground-effect, .flying-effect, .bug-effect, .rock-effect"
     )
     .forEach(effect => {
       effect.remove();
