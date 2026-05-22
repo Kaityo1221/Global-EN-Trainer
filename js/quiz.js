@@ -407,18 +407,29 @@ function playCorrectTypeEffect(types = []){
      FIGHTING
   ========================= */
 
-  if(types.includes("かくとう")){
+if(types.includes("かくとう")){
 
-    const impact = document.createElement("div");
+  const fighting = document.createElement("div");
 
-    impact.className = "fighting-impact";
+  fighting.className = "fighting-effect";
 
-    card.appendChild(impact);
+  const crack = document.createElement("div");
 
-    setTimeout(() => {
-      impact.remove();
-    }, 600);
-  }
+  crack.className = "fighting-crack";
+
+  const impact = document.createElement("div");
+
+  impact.className = "fighting-impact";
+
+  fighting.appendChild(crack);
+  fighting.appendChild(impact);
+
+  card.appendChild(fighting);
+
+  setTimeout(() => {
+    fighting.remove();
+  }, 750);
+}
 
   /* =========================
      POISON
