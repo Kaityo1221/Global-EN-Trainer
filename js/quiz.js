@@ -238,9 +238,9 @@ function getQuizEffectType(){
 function clearQuizEffects(){
 
   document
-  .querySelectorAll(
-    ".fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura, .ice-effect, .dark-effect, .fairy-effect, .psychic-ring"
-  )
+    .querySelectorAll(
+      ".normal-effect, .fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura, .ice-effect, .dark-effect, .fairy-effect, .psychic-ring, .fighting-impact, .poison-effect, .ground-effect, .flying-effect, .bug-effect, .rock-effect"
+    )
     .forEach(effect => {
       effect.remove();
     });
@@ -252,6 +252,27 @@ function playCorrectTypeEffect(types = []){
 
   if(!card){
     return;
+  }
+
+  if(!Array.isArray(types) || types.length === 0){
+    types = ["ノーマル"];
+  }
+
+  /* =========================
+     NORMAL
+  ========================= */
+
+  if(types.includes("ノーマル")){
+
+    const normal = document.createElement("div");
+
+    normal.className = "normal-effect";
+
+    card.appendChild(normal);
+
+    setTimeout(() => {
+      normal.remove();
+    }, 500);
   }
 
   /* =========================
@@ -268,41 +289,7 @@ function playCorrectTypeEffect(types = []){
 
     setTimeout(() => {
       fire.remove();
-    }, 900);
-  }
-
-  /* =========================
-     GRASS
-  ========================= */
-
-  if(types.includes("くさ")){
-
-    const leaf = document.createElement("div");
-
-    leaf.className = "grass-effect";
-
-    card.appendChild(leaf);
-
-    setTimeout(() => {
-      leaf.remove();
-    }, 1000);
-  }
-
-  /* =========================
-     STEEL
-  ========================= */
-
-  if(types.includes("はがね")){
-
-    const steel = document.createElement("div");
-
-    steel.className = "steel-effect";
-
-    card.appendChild(steel);
-
-    setTimeout(() => {
-      steel.remove();
-    }, 700);
+    }, 800);
   }
 
   /* =========================
@@ -315,16 +302,17 @@ function playCorrectTypeEffect(types = []){
 
     wrap.className = "water-effect";
 
-    for(let i = 0; i < 14; i++){
+    for(let i = 0; i < 12; i++){
 
       const drop = document.createElement("div");
 
       drop.className = "water-drop";
 
-      drop.style.left = Math.random() * 100 + "%";
+      drop.style.left =
+        Math.random() * 100 + "%";
 
       drop.style.animationDelay =
-        (Math.random() * 0.3) + "s";
+        Math.random() * 0.18 + "s";
 
       wrap.appendChild(drop);
     }
@@ -333,7 +321,7 @@ function playCorrectTypeEffect(types = []){
 
     setTimeout(() => {
       wrap.remove();
-    }, 1200);
+    }, 900);
   }
 
   /* =========================
@@ -354,6 +342,229 @@ function playCorrectTypeEffect(types = []){
   }
 
   /* =========================
+     GRASS
+  ========================= */
+
+  if(types.includes("くさ")){
+
+    const grass = document.createElement("div");
+
+    grass.className = "grass-effect";
+
+    card.appendChild(grass);
+
+    setTimeout(() => {
+      grass.remove();
+    }, 800);
+  }
+
+  /* =========================
+     ICE
+  ========================= */
+
+  if(types.includes("こおり")){
+
+    const ice = document.createElement("div");
+
+    ice.className = "ice-effect";
+
+    card.appendChild(ice);
+
+    setTimeout(() => {
+      ice.remove();
+    }, 800);
+  }
+
+  /* =========================
+     FIGHTING
+  ========================= */
+
+  if(types.includes("かくとう")){
+
+    const impact = document.createElement("div");
+
+    impact.className = "fighting-impact";
+
+    card.appendChild(impact);
+
+    setTimeout(() => {
+      impact.remove();
+    }, 600);
+  }
+
+  /* =========================
+     POISON
+  ========================= */
+
+  if(types.includes("どく")){
+
+    const poison = document.createElement("div");
+
+    poison.className = "poison-effect";
+
+    for(let i = 0; i < 8; i++){
+
+      const bubble = document.createElement("div");
+
+      bubble.className = "poison-bubble";
+
+      bubble.style.left =
+        Math.random() * 100 + "%";
+
+      bubble.style.animationDelay =
+        Math.random() * 0.2 + "s";
+
+      poison.appendChild(bubble);
+    }
+
+    card.appendChild(poison);
+
+    setTimeout(() => {
+      poison.remove();
+    }, 900);
+  }
+
+  /* =========================
+     GROUND
+  ========================= */
+
+  if(types.includes("じめん")){
+
+    const ground = document.createElement("div");
+
+    ground.className = "ground-effect";
+
+    card.appendChild(ground);
+
+    setTimeout(() => {
+      ground.remove();
+    }, 600);
+  }
+
+  /* =========================
+     FLYING
+  ========================= */
+
+  if(types.includes("ひこう")){
+
+    const flying = document.createElement("div");
+
+    flying.className = "flying-effect";
+
+    for(let i = 0; i < 5; i++){
+
+      const line = document.createElement("div");
+
+      line.className = "wind-line";
+
+      line.style.top =
+        (20 + Math.random() * 60) + "%";
+
+      line.style.animationDelay =
+        Math.random() * 0.18 + "s";
+
+      flying.appendChild(line);
+    }
+
+    card.appendChild(flying);
+
+    setTimeout(() => {
+      flying.remove();
+    }, 750);
+  }
+
+  /* =========================
+     PSYCHIC
+  ========================= */
+
+  if(types.includes("エスパー")){
+
+    const ring = document.createElement("div");
+
+    ring.className = "psychic-ring";
+
+    card.appendChild(ring);
+
+    setTimeout(() => {
+      ring.remove();
+    }, 800);
+  }
+
+  /* =========================
+     BUG
+  ========================= */
+
+  if(types.includes("むし")){
+
+    const bug = document.createElement("div");
+
+    bug.className = "bug-effect";
+
+    for(let i = 0; i < 12; i++){
+
+      const dot = document.createElement("div");
+
+      dot.className = "bug-dot";
+
+      dot.style.left =
+        Math.random() * 100 + "%";
+
+      dot.style.top =
+        (50 + Math.random() * 35) + "%";
+
+      dot.style.animationDelay =
+        Math.random() * 0.18 + "s";
+
+      bug.appendChild(dot);
+    }
+
+    card.appendChild(bug);
+
+    setTimeout(() => {
+      bug.remove();
+    }, 800);
+  }
+
+  /* =========================
+     ROCK
+  ========================= */
+
+  if(types.includes("いわ")){
+
+    const rock = document.createElement("div");
+
+    rock.className = "rock-effect";
+
+    for(let i = 0; i < 8; i++){
+
+      const piece = document.createElement("div");
+
+      piece.className = "rock-piece";
+
+      piece.style.setProperty(
+        "--x",
+        (Math.random() * 180 - 90) + "px"
+      );
+
+      piece.style.setProperty(
+        "--y",
+        (Math.random() * 160 - 80) + "px"
+      );
+
+      piece.style.animationDelay =
+        Math.random() * 0.1 + "s";
+
+      rock.appendChild(piece);
+    }
+
+    card.appendChild(rock);
+
+    setTimeout(() => {
+      rock.remove();
+    }, 800);
+  }
+
+  /* =========================
      GHOST
   ========================= */
 
@@ -367,7 +578,7 @@ function playCorrectTypeEffect(types = []){
 
     setTimeout(() => {
       ghost.remove();
-    }, 1200);
+    }, 900);
   }
 
   /* =========================
@@ -384,93 +595,78 @@ function playCorrectTypeEffect(types = []){
 
     setTimeout(() => {
       aura.remove();
-    }, 1000);
-  }
-}
-/* =========================
-   ICE
-========================= */
-
-if(types.includes("こおり")){
-
-  const ice = document.createElement("div");
-
-  ice.className = "ice-effect";
-
-  card.appendChild(ice);
-
-  setTimeout(() => {
-    ice.remove();
-  }, 900);
-}
-
-/* =========================
-   DARK
-========================= */
-
-if(types.includes("あく")){
-
-  const dark = document.createElement("div");
-
-  dark.className = "dark-effect";
-
-  card.appendChild(dark);
-
-  setTimeout(() => {
-    dark.remove();
-  }, 700);
-}
-
-/* =========================
-   FAIRY
-========================= */
-
-if(types.includes("フェアリー")){
-
-  const fairy = document.createElement("div");
-
-  fairy.className = "fairy-effect";
-
-  for(let i = 0; i < 10; i++){
-
-    const star = document.createElement("div");
-
-    star.className = "fairy-star";
-
-    star.textContent = "✦";
-
-    star.style.left =
-      Math.random() * 100 + "%";
-
-    star.style.top =
-      (60 + Math.random() * 30) + "%";
-
-    star.style.animationDelay =
-      (Math.random() * 0.2) + "s";
-
-    fairy.appendChild(star);
+    }, 800);
   }
 
-  card.appendChild(fairy);
+  /* =========================
+     DARK
+  ========================= */
 
-  setTimeout(() => {
-    fairy.remove();
-  }, 1100);
-}
+  if(types.includes("あく")){
 
-/* =========================
-   PSYCHIC
-========================= */
+    const dark = document.createElement("div");
 
-if(types.includes("エスパー")){
+    dark.className = "dark-effect";
 
-  const ring = document.createElement("div");
+    card.appendChild(dark);
 
-  ring.className = "psychic-ring";
+    setTimeout(() => {
+      dark.remove();
+    }, 700);
+  }
 
-  card.appendChild(ring);
+  /* =========================
+     STEEL
+  ========================= */
 
-  setTimeout(() => {
-    ring.remove();
-  }, 900);
+  if(types.includes("はがね")){
+
+    const steel = document.createElement("div");
+
+    steel.className = "steel-effect";
+
+    card.appendChild(steel);
+
+    setTimeout(() => {
+      steel.remove();
+    }, 600);
+  }
+
+  /* =========================
+     FAIRY
+  ========================= */
+
+  if(types.includes("フェアリー")){
+
+    const fairy = document.createElement("div");
+
+    fairy.className = "fairy-effect";
+
+    for(let i = 0; i < 10; i++){
+
+      const star = document.createElement("div");
+
+      star.className = "fairy-star";
+
+      star.textContent = "✦";
+
+      star.style.left =
+        Math.random() * 100 + "%";
+
+      star.style.top =
+        (60 + Math.random() * 30) + "%";
+
+      star.style.animationDelay =
+        Math.random() * 0.2 + "s";
+
+      fairy.appendChild(star);
+    }
+
+    card.appendChild(fairy);
+
+    setTimeout(() => {
+      fairy.remove();
+    }, 900);
+  }
+
 }
