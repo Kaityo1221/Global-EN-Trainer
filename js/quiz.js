@@ -85,6 +85,11 @@ const card =
 card.classList.remove("open-down-right-out");
 
 void card.offsetWidth;
+card.classList.add("quiz-enter");
+
+setTimeout(() => {
+  card.classList.remove("quiz-enter");
+}, 300);
 }
 
 function generateOptions(){
