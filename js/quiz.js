@@ -387,3 +387,90 @@ function playCorrectTypeEffect(types = []){
     }, 1000);
   }
 }
+/* =========================
+   ICE
+========================= */
+
+if(types.includes("こおり")){
+
+  const ice = document.createElement("div");
+
+  ice.className = "ice-effect";
+
+  card.appendChild(ice);
+
+  setTimeout(() => {
+    ice.remove();
+  }, 900);
+}
+
+/* =========================
+   DARK
+========================= */
+
+if(types.includes("あく")){
+
+  const dark = document.createElement("div");
+
+  dark.className = "dark-effect";
+
+  card.appendChild(dark);
+
+  setTimeout(() => {
+    dark.remove();
+  }, 700);
+}
+
+/* =========================
+   FAIRY
+========================= */
+
+if(types.includes("フェアリー")){
+
+  const fairy = document.createElement("div");
+
+  fairy.className = "fairy-effect";
+
+  for(let i = 0; i < 10; i++){
+
+    const star = document.createElement("div");
+
+    star.className = "fairy-star";
+
+    star.textContent = "✦";
+
+    star.style.left =
+      Math.random() * 100 + "%";
+
+    star.style.top =
+      (60 + Math.random() * 30) + "%";
+
+    star.style.animationDelay =
+      (Math.random() * 0.2) + "s";
+
+    fairy.appendChild(star);
+  }
+
+  card.appendChild(fairy);
+
+  setTimeout(() => {
+    fairy.remove();
+  }, 1100);
+}
+
+/* =========================
+   PSYCHIC
+========================= */
+
+if(types.includes("エスパー")){
+
+  const ring = document.createElement("div");
+
+  ring.className = "psychic-ring";
+
+  card.appendChild(ring);
+
+  setTimeout(() => {
+    ring.remove();
+  }, 900);
+}
