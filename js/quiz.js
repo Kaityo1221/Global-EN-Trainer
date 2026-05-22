@@ -154,7 +154,11 @@ function checkAnswer(choice, clickedButton){
 
   result.textContent = "⭕ Correct!";
 
-  playCorrectTypeEffect(currentQuizPokemon.types || []);
+  try{
+    playCorrectTypeEffect(currentQuizPokemon.types || []);
+  }catch(error){
+    console.error("タイプ演出エラー:", error);
+  }
 }
   else{
     result.textContent = "❌ Wrong... 正解: " + currentAnswer;
@@ -230,7 +234,7 @@ function getQuizEffectType(){
   return map[mainType] || "normal";
 }
 
-function playCorrectTypeEffect(types){
+function playCorrectTypeEffect(types = []){
 
   const card = document.querySelector(".quiz-card");
 
