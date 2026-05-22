@@ -152,17 +152,30 @@ function checkAnswer(choice, clickedButton){
 
   document.getElementById("quizNextButton").disabled = false;
 const card =
-  document.querySelector(".quiz-card");
+  document.getElementById("quizCard");
 
-card.classList.add("magictime", "openDownRightOut");
+card.classList.remove(
+  "magictime",
+  "openDownRightOut"
+);
+
+void card.offsetWidth;
+
+card.classList.add(
+  "magictime",
+  "openDownRightOut"
+);
 
 setTimeout(() => {
-  card.classList.remove("magictime", "openDownRightOut");
+  card.classList.remove(
+    "magictime",
+    "openDownRightOut"
+  );
 
   nextQuiz();
 }, 700);
-}
 
+}
 window.nextQuiz = function(){
 
   quizCount++;
