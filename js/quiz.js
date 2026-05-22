@@ -79,7 +79,15 @@ function generateQuiz(){
     "Score " + score;
 
   generateOptions();
+const card =
+  document.getElementById("quizCard");
 
+card.classList.remove(
+  "magictime",
+  "openDownRightOut"
+);
+
+void card.offsetWidth;
 }
 
 function generateOptions(){
@@ -154,25 +162,15 @@ function checkAnswer(choice, clickedButton){
 const card =
   document.getElementById("quizCard");
 
-card.classList.remove(
-  "magictime",
-  "openDownRightOut"
-);
-
-void card.offsetWidth;
-
 card.classList.add(
   "magictime",
   "openDownRightOut"
 );
 
 setTimeout(() => {
-  card.classList.remove(
-    "magictime",
-    "openDownRightOut"
-  );
 
   nextQuiz();
+
 }, 700);
 
 }
