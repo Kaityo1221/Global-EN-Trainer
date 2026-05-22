@@ -522,36 +522,48 @@ function playCorrectTypeEffect(types = []){
      BUG
   ========================= */
 
-  if(types.includes("むし")){
+if(types.includes("むし")){
 
-    const bug = document.createElement("div");
+  const bug = document.createElement("div");
 
-    bug.className = "bug-effect";
+  bug.className = "bug-effect";
 
-    for(let i = 0; i < 12; i++){
+  for(let i = 0; i < 18; i++){
 
-      const dot = document.createElement("div");
+    const butterfly = document.createElement("div");
 
-      dot.className = "bug-dot";
+    butterfly.className = "bug-butterfly";
 
-      dot.style.left =
-        Math.random() * 100 + "%";
+    butterfly.textContent = "🦋";
 
-      dot.style.top =
-        (50 + Math.random() * 35) + "%";
+    butterfly.style.right =
+      (-20 + Math.random() * 80) + "px";
 
-      dot.style.animationDelay =
-        Math.random() * 0.18 + "s";
+    butterfly.style.bottom =
+      (-20 + Math.random() * 80) + "px";
 
-      bug.appendChild(dot);
-    }
+    butterfly.style.setProperty(
+      "--fly-x",
+      (-120 - Math.random() * 260) + "px"
+    );
 
-    card.appendChild(bug);
+    butterfly.style.setProperty(
+      "--fly-y",
+      (-120 - Math.random() * 220) + "px"
+    );
 
-    setTimeout(() => {
-      bug.remove();
-    }, 800);
+    butterfly.style.animationDelay =
+      Math.random() * 0.18 + "s";
+
+    bug.appendChild(butterfly);
   }
+
+  card.appendChild(bug);
+
+  setTimeout(() => {
+    bug.remove();
+  }, 1000);
+}
 
   /* =========================
      ROCK
