@@ -464,24 +464,71 @@
 
 .bug-effect{
   inset:0;
+
+  background:
+    radial-gradient(
+      circle at 65% 75%,
+      rgba(255,210,235,0.65) 0%,
+      rgba(255,190,225,0.35) 38%,
+      rgba(255,230,245,0.16) 68%,
+      transparent 100%
+    );
+
   overflow:hidden;
+
+  animation:bugPinkGlow 0.9s ease-out forwards;
 }
 
-.bug-dot{
+.bug-butterfly{
   position:absolute;
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  background:rgba(120,220,80,0.75);
-  animation:bugScatter 0.75s ease-out forwards;
+
+  right:-30px;
+  bottom:-30px;
+
+  font-size:18px;
+
+  animation:butterflyFly 0.95s ease-out forwards;
+
+  opacity:0;
 }
 
-@keyframes bugScatter{
-  0%{ transform:scale(0.4); opacity:0; }
-  30%{ opacity:1; }
-  100%{ transform:translateY(-80px) scale(1.1); opacity:0; }
+@keyframes bugPinkGlow{
+  0%{
+    opacity:0;
+  }
+
+  25%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+  }
 }
 
+@keyframes butterflyFly{
+  0%{
+    transform:
+      translate(0, 0)
+      rotate(12deg)
+      scale(0.6);
+
+    opacity:0;
+  }
+
+  20%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+      translate(var(--fly-x), var(--fly-y))
+      rotate(-18deg)
+      scale(1.15);
+
+    opacity:0;
+  }
+}
 /* Rock */
 
 .rock-effect{
