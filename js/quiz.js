@@ -85,6 +85,11 @@ const card =
 card.classList.remove("open-down-right-out");
 
 void card.offsetWidth;
+card.classList.add("quiz-enter");
+
+setTimeout(() => {
+  card.classList.remove("quiz-enter");
+}, 300);
 }
 
 function generateOptions(){
@@ -145,10 +150,13 @@ function checkAnswer(choice, clickedButton){
     document.getElementById("quizResult");
 
   if(choice === currentAnswer){
-    score++;
+  score++;
 
-    result.textContent = "⭕ Correct!";
-  }else{
+  result.textContent = "⭕ Correct!";
+
+  playCorrectTypeEffect();
+}
+  else{
     result.textContent = "❌ Wrong... 正解: " + currentAnswer;
   }
 
@@ -156,20 +164,10 @@ function checkAnswer(choice, clickedButton){
     "Score " + score;
 
   document.getElementById("quizNextButton").disabled = false;
-const card =
-  document.getElementById("quizCard");
-
-card.classList.remove("open-down-right-out");
-
-void card.offsetWidth;
-
-card.classList.add("open-down-right-out");
 
 setTimeout(() => {
-  card.classList.remove("open-down-right-out");
-
   nextQuiz();
-}, 700);
+}, 800);
 
 }
 window.nextQuiz = function(){
@@ -211,4 +209,62 @@ function showFinalResult(){
 
 function shuffleArray(array){
   return array.sort(() => Math.random() - 0.5);
+}
+function getQuizEffectType(){
+  if(
+    !currentQuizPokemon ||
+    !currentQuizPokemon.types ||
+    currentQuizPokemon.types.length === 0
+  ){
+    return "normal";
+  }
+
+  const mainType = currentQuizPokemon.types[0];
+
+  const map = {
+    "ほのお":"fire",
+    "くさ":"grass",
+    "はがね":"steel"
+  };
+
+  return map[mainType] || "normal";
+}
+
+function playCorrectTypeEffect(){
+  const card =
+    document.getElementById("quizCard");
+
+  if(!card){
+    return;
+  }
+
+  const effectType = getQuizEffectType();
+
+  card.classList.remove(
+    "quiz-effect-fire",
+    "quiz-effect-grass",
+    "quiz-effect-steel"
+  );
+
+  void card.offsetWidth;
+
+  if(effectType === "fire"){
+    card.classList.add("quiz-effect-fire");
+  }
+
+  if(effectType === "grass"){
+    card.classList.add("quiz-effect-grass");
+  }
+
+  if(effectType === "steel"){
+    card.classList.add("quiz-effect-steel");
+  }
+
+  setTimeout(() => {
+    card.classList.remove(
+      "quiz-effect-fire",
+      "quiz-effect-grass",
+      "quiz-effect-steel"
+    );
+  }, 600);
 }
