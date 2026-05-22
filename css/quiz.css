@@ -222,3 +222,119 @@
 
   transition:0.12s;
 }
+/* ===== Correct Type Effects ===== */
+
+.quiz-card.quiz-effect-fire::before{
+  content:"🔥";
+
+  position:absolute;
+  left:50%;
+  bottom:18px;
+
+  transform:translateX(-50%);
+
+  font-size:72px;
+
+  opacity:0;
+
+  animation:quizFireRise 0.6s ease-out forwards;
+
+  pointer-events:none;
+  z-index:5;
+}
+
+@keyframes quizFireRise{
+  0%{
+    opacity:0;
+    transform:translateX(-50%) translateY(30px) scale(0.7);
+  }
+
+  35%{
+    opacity:1;
+    transform:translateX(-50%) translateY(0) scale(1.15);
+  }
+
+  100%{
+    opacity:0;
+    transform:translateX(-50%) translateY(-45px) scale(1);
+  }
+}
+
+.quiz-card.quiz-effect-grass::before{
+  content:"🍃 🍃 🍃";
+
+  position:absolute;
+  left:50%;
+  bottom:20px;
+
+  transform:translateX(-50%);
+
+  font-size:42px;
+
+  opacity:0;
+
+  animation:quizLeafFloat 0.7s ease-out forwards;
+
+  pointer-events:none;
+  z-index:5;
+}
+
+@keyframes quizLeafFloat{
+  0%{
+    opacity:0;
+    transform:translateX(-50%) translateY(35px) rotate(0deg);
+  }
+
+  35%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:translateX(-50%) translateY(-55px) rotate(-14deg);
+  }
+}
+
+.quiz-card.quiz-effect-steel::before{
+  content:"";
+
+  position:absolute;
+  left:-20%;
+  top:50%;
+
+  width:140%;
+  height:4px;
+
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.95),
+    #94a3b8,
+    transparent
+  );
+
+  transform:rotate(-18deg) translateX(-80%);
+
+  opacity:0;
+
+  animation:quizSteelSlash 0.45s ease-out forwards;
+
+  pointer-events:none;
+  z-index:5;
+}
+
+@keyframes quizSteelSlash{
+  0%{
+    opacity:0;
+    transform:rotate(-18deg) translateX(-80%);
+  }
+
+  30%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:rotate(-18deg) translateX(80%);
+  }
+}
