@@ -156,6 +156,8 @@ function checkAnswer(choice, clickedButton){
 
   result.textContent = "⭕ Correct!";
 
+  showBigJudge(true);
+
   try{
     playCorrectTypeEffect(currentQuizPokemon.types || []);
   }catch(error){
@@ -163,8 +165,10 @@ function checkAnswer(choice, clickedButton){
   }
 }
   else{
-    result.textContent = "❌ Wrong... 正解: " + currentAnswer;
-  }
+  result.textContent = "❌ Wrong... 正解: " + currentAnswer;
+
+  showBigJudge(false);
+}
 
   document.getElementById("quizScore").textContent =
     "Score " + score;
@@ -244,6 +248,30 @@ function clearQuizEffects(){
     .forEach(effect => {
       effect.remove();
     });
+
+}
+function showBigJudge(isCorrect){
+
+  const oldJudge =
+    document.querySelector(".big-judge");
+
+  if(oldJudge){
+    oldJudge.remove();
+  }
+
+  const judge = document.createElement("div");
+
+  judge.className =
+    isCorrect ? "big-judge correct" : "big-judge wrong";
+
+  judge.textContent =
+    isCorrect ? "⭕" : "❌";
+
+  document.body.appendChild(judge);
+
+  setTimeout(() => {
+    judge.remove();
+  }, 600);
 
 }
 function playCorrectTypeEffect(types = []){
