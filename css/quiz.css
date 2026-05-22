@@ -214,3 +214,11 @@
     opacity:1;
   }
 }
+.quiz-option-button.correct{
+  transform:scale(0.96);
+
+  background:#dcfce7;
+  border-color:#22c55e;
+
+  transition:0.12s;
+}
