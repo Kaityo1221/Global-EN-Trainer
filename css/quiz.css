@@ -245,7 +245,9 @@
 .poison-effect,
 .ground-effect,
 .flying-effect,
+.flying-feather,
 .bug-effect,
+.bug-butterfly,
 .rock-effect{
   position:absolute;
   pointer-events:none;
