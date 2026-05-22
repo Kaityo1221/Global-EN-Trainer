@@ -167,3 +167,6 @@
 .quiz-next-button{
   display:none;
 }
+.quiz-card{
+  animation-duration:0.7s;
+}

@@ -79,7 +79,15 @@ function generateQuiz(){
     "Score " + score;
 
   generateOptions();
+const card =
+  document.getElementById("quizCard");
 
+card.classList.remove(
+  "magictime",
+  "openDownRightOut"
+);
+
+void card.offsetWidth;
 }
 
 function generateOptions(){
@@ -173,8 +181,10 @@ setTimeout(() => {
   );
 
   nextQuiz();
+
 }, 700);
 
+}
 window.nextQuiz = function(){
 
   quizCount++;
