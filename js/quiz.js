@@ -174,7 +174,7 @@ setTimeout(() => {
   card.classList.remove("open-down-right-out");
 
   nextQuiz();
-}, 700);
+}, 1100);
 
 }
 window.nextQuiz = function(){
