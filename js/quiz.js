@@ -475,31 +475,46 @@ function playCorrectTypeEffect(types = []){
 
   if(types.includes("ひこう")){
 
-    const flying = document.createElement("div");
+  const flying = document.createElement("div");
 
-    flying.className = "flying-effect";
+  flying.className = "flying-effect";
 
-    for(let i = 0; i < 5; i++){
+  for(let i = 0; i < 16; i++){
 
-      const line = document.createElement("div");
+    const feather = document.createElement("div");
 
-      line.className = "wind-line";
+    feather.className = "flying-feather";
 
-      line.style.top =
-        (20 + Math.random() * 60) + "%";
+    feather.textContent = "🪶";
 
-      line.style.animationDelay =
-        Math.random() * 0.18 + "s";
+    feather.style.right =
+      (-30 + Math.random() * 90) + "px";
 
-      flying.appendChild(line);
-    }
+    feather.style.bottom =
+      (-20 + Math.random() * 90) + "px";
 
-    card.appendChild(flying);
+    feather.style.setProperty(
+      "--fly-x",
+      (-140 - Math.random() * 280) + "px"
+    );
 
-    setTimeout(() => {
-      flying.remove();
-    }, 750);
+    feather.style.setProperty(
+      "--fly-y",
+      (-120 - Math.random() * 220) + "px"
+    );
+
+    feather.style.animationDelay =
+      Math.random() * 0.18 + "s";
+
+    flying.appendChild(feather);
   }
+
+  card.appendChild(flying);
+
+  setTimeout(() => {
+    flying.remove();
+  }, 1000);
+}
 
   /* =========================
      PSYCHIC
