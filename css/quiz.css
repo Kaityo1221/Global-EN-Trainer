@@ -495,3 +495,162 @@
     transform:scale(1.08);
   }
 }
+/* =========================
+   Type Effect - Ice
+========================= */
+
+.ice-effect{
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(180,240,255,0.45) 0%,
+      rgba(120,220,255,0.18) 40%,
+      transparent 75%
+    );
+
+  animation:iceGlow 0.9s ease-out forwards;
+
+  pointer-events:none;
+}
+
+@keyframes iceGlow{
+  0%{
+    opacity:0;
+    transform:scale(0.8);
+    filter:blur(0px);
+  }
+
+  40%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:scale(1.15);
+    filter:blur(6px);
+  }
+}
+
+/* =========================
+   Type Effect - Dark
+========================= */
+
+.dark-effect{
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(60,60,60,0.75) 0%,
+      rgba(20,20,20,0.92) 70%
+    );
+
+  animation:darkPulse 0.7s ease-out forwards;
+
+  pointer-events:none;
+}
+
+@keyframes darkPulse{
+  0%{
+    opacity:0;
+    transform:scale(1.2);
+  }
+
+  30%{
+    opacity:1;
+  }
+
+  100%{
+    opacity:0;
+    transform:scale(1);
+  }
+}
+
+/* =========================
+   Type Effect - Fairy
+========================= */
+
+.fairy-effect{
+  position:absolute;
+  inset:0;
+
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.fairy-star{
+  position:absolute;
+
+  color:#ffd6f5;
+
+  font-size:18px;
+
+  animation:fairyFloat 1s ease-out forwards;
+}
+
+@keyframes fairyFloat{
+  0%{
+    transform:
+      translateY(20px)
+      scale(0.6);
+
+    opacity:0;
+  }
+
+  30%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+      translateY(-80px)
+      scale(1.2);
+
+    opacity:0;
+  }
+}
+
+/* =========================
+   Type Effect - Psychic
+========================= */
+
+.psychic-ring{
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  width:40px;
+  height:40px;
+
+  border-radius:50%;
+
+  border:3px solid rgba(255,120,220,0.9);
+
+  transform:
+    translate(-50%, -50%);
+
+  animation:psychicExpand 0.9s ease-out forwards;
+
+  pointer-events:none;
+}
+
+@keyframes psychicExpand{
+  0%{
+    opacity:1;
+
+    width:40px;
+    height:40px;
+  }
+
+  100%{
+    opacity:0;
+
+    width:260px;
+    height:260px;
+  }
+}
