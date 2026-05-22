@@ -326,31 +326,37 @@ function playCorrectTypeEffect(types = []){
 
   if(types.includes("みず")){
 
-    const wrap = document.createElement("div");
+  const water = document.createElement("div");
 
-    wrap.className = "water-effect";
+  water.className = "water-effect";
 
-    for(let i = 0; i < 12; i++){
+  const wave = document.createElement("div");
 
-      const drop = document.createElement("div");
+  wave.className = "water-wave";
 
-      drop.className = "water-drop";
+  water.appendChild(wave);
 
-      drop.style.left =
-        Math.random() * 100 + "%";
+  for(let i = 0; i < 10; i++){
 
-      drop.style.animationDelay =
-        Math.random() * 0.18 + "s";
+    const bubble = document.createElement("div");
 
-      wrap.appendChild(drop);
-    }
+    bubble.className = "water-bubble";
 
-    card.appendChild(wrap);
+    bubble.style.left =
+      (10 + Math.random() * 80) + "%";
 
-    setTimeout(() => {
-      wrap.remove();
-    }, 900);
+    bubble.style.animationDelay =
+      Math.random() * 0.4 + "s";
+
+    water.appendChild(bubble);
   }
+
+  card.appendChild(water);
+
+  setTimeout(() => {
+    water.remove();
+  }, 1100);
+}
 
   /* =========================
      ELECTRIC
