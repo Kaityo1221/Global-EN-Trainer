@@ -60,6 +60,8 @@ async function loadQuizData(){
 
 function generateQuiz(){
 
+  clearQuizEffects();
+
   document.getElementById("quizResult").textContent = "";
   document.getElementById("quizNextButton").disabled = true;
 
@@ -233,7 +235,17 @@ function getQuizEffectType(){
 
   return map[mainType] || "normal";
 }
+function clearQuizEffects(){
 
+  document
+    .querySelectorAll(
+      ".fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura"
+    )
+    .forEach(effect => {
+      effect.remove();
+    });
+
+}
 function playCorrectTypeEffect(types = []){
 
   const card = document.querySelector(".quiz-card");
