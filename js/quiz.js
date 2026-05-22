@@ -162,12 +162,23 @@ function checkAnswer(choice, clickedButton){
 const card =
   document.getElementById("quizCard");
 
+card.classList.remove(
+  "magictime",
+  "openDownRightOut"
+);
+
+void card.offsetWidth;
+
 card.classList.add(
   "magictime",
   "openDownRightOut"
 );
 
 setTimeout(() => {
+  card.classList.remove(
+    "magictime",
+    "openDownRightOut"
+  );
 
   nextQuiz();
 
@@ -190,7 +201,7 @@ window.nextQuiz = function(){
 function showFinalResult(){
 
   const card =
-    document.querySelector(".quiz-card");
+  document.getElementById("quizCard");
 
   card.innerHTML = `
     <div class="quiz-finish">
