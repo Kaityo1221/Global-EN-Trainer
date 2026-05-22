@@ -3,6 +3,9 @@
 }
 
 .quiz-card{
+  position:relative;
+  overflow:hidden;
+
   margin-top:32px;
   padding:24px;
 
