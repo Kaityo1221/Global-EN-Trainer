@@ -238,9 +238,9 @@ function getQuizEffectType(){
 function clearQuizEffects(){
 
   document
-    .querySelectorAll(
-      ".fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura"
-    )
+  .querySelectorAll(
+    ".fire-effect, .grass-effect, .steel-effect, .water-effect, .electric-flash, .ghost-effect, .dragon-aura, .ice-effect, .dark-effect, .fairy-effect, .psychic-ring"
+  )
     .forEach(effect => {
       effect.remove();
     });
