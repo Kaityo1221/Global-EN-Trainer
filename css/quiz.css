@@ -171,19 +171,31 @@
   animation-duration:0.7s;
 }
 .quiz-card.open-down-right-out{
-  animation:openDownRightOutCustom 0.7s ease forwards;
+  animation:cardDropOut 0.42s cubic-bezier(.2,.8,.2,1) forwards;
 }
 
-@keyframes openDownRightOutCustom{
+@keyframes cardDropOut{
+
   0%{
-    transform-origin:right bottom;
-    transform:rotate(0deg) translate(0,0) scale(1);
+    transform:
+      translateY(0)
+      scale(1);
+
     opacity:1;
   }
 
+  20%{
+    transform:
+      translateY(-8px)
+      scale(0.98);
+  }
+
   100%{
-    transform-origin:right bottom;
-    transform:rotate(-18deg) translate(80px,80px) scale(0.85);
+    transform:
+      translateY(140px)
+      scale(0.92);
+
     opacity:0;
   }
+
 }
