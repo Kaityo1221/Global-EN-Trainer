@@ -34,12 +34,32 @@ function startTimer(){
     timerFill.style.width = percent + "%";
 
     if(currentTime <= 0){
-      clearInterval(timerId);
-      timerId = null;
 
-      timerCount.textContent = "0";
-      timerFill.style.width = "0%";
-    }
+  clearInterval(timerId);
+  timerId = null;
+
+  timerCount.textContent = "0";
+  timerFill.style.width = "0%";
+
+  showTimeUp();
+
+}
 
   }, 1000);
+}
+function showTimeUp(){
+
+  const buttons = document.querySelectorAll(".answer-button");
+
+  buttons.forEach(button => {
+    button.disabled = true;
+    button.classList.add("disabled");
+  });
+
+  const questionText = document.getElementById("questionText");
+
+  if(questionText){
+    questionText.textContent = "TIME UP!";
+  }
+
 }
