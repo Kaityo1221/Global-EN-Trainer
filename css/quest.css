@@ -34,38 +34,23 @@ body{
 /* NAME ARENA */
 .quest-namearena{
   left:4%;
-  top:23%;
-
-  width:43%;
-  height:17%;
+  top:25%;
+  width:42%;
+  height:12%;
 }
 
 /* LISTENING WALK PARK */
 .quest-listening{
   left:4%;
-  top:42%;
-
-  width:43%;
-  height:17%;
+  top:41%;
+  width:42%;
+  height:12%;
 }
 
 /* ENERGY STAGE */
 .quest-energy{
   left:4%;
-  top:61%;
-
-  width:43%;
-  height:17%;
-}
-.quest-hotspot{
-  position:absolute;
-  display:block;
-
-  background:red;
-  opacity:0.3;
-
-  border:2px solid white;
-}
-.quest-screen{
-  background-color:red;
+  top:57%;
+  width:42%;
+  height:12%;
 }
