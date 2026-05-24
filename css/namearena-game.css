@@ -11,7 +11,6 @@ body{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* 全体 */
 .arena-screen{
   min-height:100vh;
   box-sizing:border-box;
@@ -26,7 +25,6 @@ body{
     );
 }
 
-/* 木枠 */
 .wood-frame{
   padding:14px;
   border-radius:24px;
@@ -42,7 +40,6 @@ body{
     0 16px 24px rgba(0,0,0,0.35);
 }
 
-/* 問題欄 */
 .question-box{
   position:relative;
 
@@ -92,7 +89,20 @@ body{
   letter-spacing:0.08em;
 }
 
-/* タイマー */
+.sound-button{
+  margin-top:14px;
+
+  width:58px;
+  height:58px;
+
+  border-radius:50%;
+  border:4px solid #4b2a11;
+  background:#9a5b20;
+
+  color:white;
+  font-size:28px;
+}
+
 .timer-box{
   margin-top:18px;
   padding:10px;
@@ -128,7 +138,7 @@ body{
 }
 
 .timer-fill{
-  width:78%;
+  width:100%;
   height:100%;
 
   background:
@@ -159,7 +169,6 @@ body{
   font-weight:900;
 }
 
-/* 4択 */
 .answer-grid{
   margin-top:16px;
 
