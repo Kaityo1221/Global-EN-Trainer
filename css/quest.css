@@ -1,14 +1,59 @@
-.quest-page{
+html,
+body{
+  margin:0;
+  padding:0;
+
   width:100%;
+  height:100%;
+
+  overflow:hidden;
 }
 
-.quest-title{
-  font-size:28px;
-  font-weight:800;
+/* EN Quest画面 */
+.quest-screen{
+  position:relative;
+
+  width:100vw;
+  height:100vh;
+
+  background-image:url("../assets/images/enquest-main.PNG");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 
-.quest-description{
-  margin-top:12px;
-  color:#94a3b8;
-  line-height:1.7;
+/* 透明ボタン共通 */
+.quest-hotspot{
+  position:absolute;
+  display:block;
+
+  text-decoration:none;
+}
+
+/* NAME ARENA */
+.quest-namearena{
+  left:4%;
+  top:23%;
+
+  width:43%;
+  height:17%;
+}
+
+/* LISTENING WALK PARK */
+.quest-listening{
+  left:4%;
+  top:42%;
+
+  width:43%;
+  height:17%;
+}
+
+/* ENERGY STAGE */
+.quest-energy{
+  left:4%;
+  top:61%;
+
+  width:43%;
+  height:17%;
 }
