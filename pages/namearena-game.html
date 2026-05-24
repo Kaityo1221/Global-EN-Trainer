@@ -21,34 +21,30 @@
   <div class="wood-frame">
 
     <section class="question-box">
-      <div class="question-label">
-        お題
-      </div>
+      <div class="question-label">お題</div>
 
-      <div class="question-text">
+      <div class="question-text" id="questionText">
         ピカチュウ
       </div>
 
-      <button class="sound-button" type="button">
+      <button class="sound-button" type="button" id="soundButton">
         🔊
       </button>
     </section>
 
     <section class="timer-box">
-      <div class="timer-label">
-        TIME
-      </div>
+      <div class="timer-label">TIME</div>
 
       <div class="timer-bar">
-        <div class="timer-fill"></div>
+        <div class="timer-fill" id="timerFill"></div>
       </div>
 
-      <div class="timer-count">
+      <div class="timer-count" id="timerCount">
         18
       </div>
     </section>
 
-    <section class="answer-grid">
+    <section class="answer-grid" id="answerGrid">
       <button class="answer-button">Pikachu</button>
       <button class="answer-button">Pikachuu</button>
       <button class="answer-button">Pikatchu</button>
@@ -58,6 +54,8 @@
   </div>
 
 </div>
+
+<script src="../js/namearena-game.js?v=1"></script>
 
 </body>
 </html>
