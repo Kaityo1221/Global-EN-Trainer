@@ -25,16 +25,15 @@ body{
   position:absolute;
 
   left:50%;
-  bottom:4%;
+  bottom:14%;
+  z-index:10;
 
   transform:translateX(-50%);
 
   padding:12px 24px;
-
   border-radius:999px;
 
   background:rgba(60,30,10,0.78);
-
   color:#fff6d8;
 
   font-size:20px;
@@ -45,7 +44,6 @@ body{
 
   animation:nameArenaLoading 1.2s infinite;
 }
-
 @keyframes nameArenaLoading{
 
   0%{
