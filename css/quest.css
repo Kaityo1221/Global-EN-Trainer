@@ -57,3 +57,12 @@ body{
   width:43%;
   height:17%;
 }
+.quest-hotspot{
+  position:absolute;
+  display:block;
+
+  background:red;
+  opacity:0.3;
+
+  border:2px solid white;
+}
