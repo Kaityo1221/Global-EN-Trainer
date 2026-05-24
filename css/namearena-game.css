@@ -205,3 +205,7 @@ body{
     inset 0 0 0 3px rgba(255,255,255,0.45),
     0 2px 0 #2d1608;
 }
+.answer-button.disabled{
+  opacity:0.45;
+  transform:none;
+}
