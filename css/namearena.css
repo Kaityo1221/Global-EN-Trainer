@@ -14,9 +14,9 @@ body{
   height:100vh;
 
   background-image:url("../assets/images/namearena-main.PNG");
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
+  background-size:contain;
+background-position:center;
+background-color:#f7ead0;
 }
 
 .namearena-loading-text{
