@@ -1,0 +1,198 @@
+html,
+body{
+  margin:0;
+  padding:0;
+  width:100%;
+  min-height:100%;
+}
+
+body{
+  background:#2b1608;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 全体 */
+.arena-screen{
+  min-height:100vh;
+  box-sizing:border-box;
+  padding:16px 12px 18px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #35b7ff 0%,
+      #86d86b 32%,
+      #5b3216 100%
+    );
+}
+
+/* 木枠 */
+.wood-frame{
+  padding:14px;
+  border-radius:24px;
+
+  background:
+    linear-gradient(135deg, #8b4a1f, #5a2b11);
+
+  border:5px solid #2d1608;
+
+  box-shadow:
+    inset 0 0 0 3px rgba(255,220,130,0.22),
+    0 8px 0 #2d1608,
+    0 16px 24px rgba(0,0,0,0.35);
+}
+
+/* 問題欄 */
+.question-box{
+  position:relative;
+
+  margin-top:18px;
+  padding:34px 16px 28px;
+
+  border-radius:24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff7d7,
+      #ffe9aa
+    );
+
+  border:5px solid #3a1d0b;
+
+  text-align:center;
+
+  box-shadow:
+    inset 0 0 0 3px rgba(255,255,255,0.45),
+    0 7px 0 #2d1608;
+}
+
+.question-label{
+  position:absolute;
+  top:-24px;
+  left:50%;
+  transform:translateX(-50%);
+
+  padding:8px 28px;
+
+  border-radius:14px;
+
+  background:#7a4219;
+  border:4px solid #2d1608;
+
+  color:#fff;
+  font-size:22px;
+  font-weight:900;
+}
+
+.question-text{
+  color:#2b1608;
+  font-size:44px;
+  font-weight:900;
+  letter-spacing:0.08em;
+}
+
+/* タイマー */
+.timer-box{
+  margin-top:18px;
+  padding:10px;
+
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:10px;
+
+  border-radius:20px;
+
+  background:#6b3516;
+  border:5px solid #2d1608;
+
+  box-shadow:0 6px 0 #2d1608;
+}
+
+.timer-label{
+  color:#fff;
+  font-size:20px;
+  font-weight:900;
+}
+
+.timer-bar{
+  height:24px;
+
+  border-radius:999px;
+
+  background:#241106;
+  border:3px solid #241106;
+
+  overflow:hidden;
+}
+
+.timer-fill{
+  width:78%;
+  height:100%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffe84a,
+      #ff8a1c
+    );
+
+  border-radius:999px;
+}
+
+.timer-count{
+  width:56px;
+  height:56px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+
+  background:#8a4d1d;
+  border:4px solid #2d1608;
+
+  color:#fff;
+  font-size:30px;
+  font-weight:900;
+}
+
+/* 4択 */
+.answer-grid{
+  margin-top:16px;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.answer-button{
+  min-height:86px;
+
+  border-radius:22px;
+  border:5px solid #3a1d0b;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fff8dc,
+      #ffe8a8
+    );
+
+  color:#2b1608;
+  font-size:28px;
+  font-weight:900;
+
+  box-shadow:
+    inset 0 0 0 3px rgba(255,255,255,0.45),
+    0 7px 0 #2d1608;
+}
+
+.answer-button:active{
+  transform:translateY(5px);
+  box-shadow:
+    inset 0 0 0 3px rgba(255,255,255,0.45),
+    0 2px 0 #2d1608;
+}
