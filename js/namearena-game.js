@@ -178,9 +178,15 @@ function checkAnswer(selected){
     }
   });
 
-  setTimeout(() => {
-    generateQuestion();
-  }, 900);
+  const waitTime =
+  selected === currentAnswer &&
+  [5, 10, 15, 20].includes(comboCount)
+    ? 1800
+    : 900;
+
+setTimeout(() => {
+  generateQuestion();
+}, waitTime);
 
 }
 
@@ -366,9 +372,7 @@ function showComboCutin(imagePath){
   cutin.classList.remove("hidden");
 
   setTimeout(() => {
-
-    cutin.classList.add("hidden");
-
-  }, 1600);
+  cutin.classList.add("hidden");
+}, 1600);
 
 }
