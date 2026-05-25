@@ -13,7 +13,7 @@ let speechRate = 0.9;
 let timeLimit = 18;
 let currentTime = timeLimit;
 let timerId = null;
-
+let comboCount = 0;
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
 });
