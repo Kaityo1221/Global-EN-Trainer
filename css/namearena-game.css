@@ -214,3 +214,22 @@ body{
   opacity:0.45;
   transform:none;
 }
+.answer-button.correct{
+  background:linear-gradient(180deg, #86efac, #22c55e);
+  color:#ffffff;
+  transform:scale(1.03);
+}
+
+.answer-button.wrong{
+  background:linear-gradient(180deg, #fca5a5, #ef4444);
+  color:#ffffff;
+  animation:wrongShake 0.3s;
+}
+
+@keyframes wrongShake{
+  0%{ transform:translateX(0); }
+  25%{ transform:translateX(-6px); }
+  50%{ transform:translateX(6px); }
+  75%{ transform:translateX(-6px); }
+  100%{ transform:translateX(0); }
+}
