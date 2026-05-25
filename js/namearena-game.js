@@ -336,19 +336,19 @@ function setupSpeakButton(){
 function checkComboEvent(){
 
   if(comboCount === 5){
-    showComboCutin("../assets/combo5.png");
+    showComboCutin("../assets/images/combo5.PNG");
   }
 
   if(comboCount === 10){
-    showComboCutin("../assets/combo10.PNG");
+    showComboCutin("../assets/images/combo10.PNG");
   }
 
   if(comboCount === 15){
-    showComboCutin("../assets/combo15.PNG");
+    showComboCutin("../assets/images/combo15.PNG");
   }
 
   if(comboCount === 20){
-    showComboCutin("../assets/perfect.PNG");
+    showComboCutin("../assets/images/perfect.PNG");
   }
 
 }
