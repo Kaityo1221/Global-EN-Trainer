@@ -233,3 +233,44 @@ body{
   75%{ transform:translateX(-6px); }
   100%{ transform:translateX(0); }
 }
+.combo-cutin{
+  position:fixed;
+  inset:0;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:rgba(0,0,0,0.45);
+
+  z-index:9999;
+
+  opacity:1;
+
+  transition:opacity 0.3s;
+}
+
+.combo-cutin.hidden{
+  opacity:0;
+  pointer-events:none;
+}
+
+.combo-image{
+  width:min(92vw, 900px);
+
+  animation:comboPop 0.4s ease;
+}
+
+@keyframes comboPop{
+
+  0%{
+    transform:scale(0.7);
+    opacity:0;
+  }
+
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+
+}
