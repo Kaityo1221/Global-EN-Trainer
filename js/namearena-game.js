@@ -291,3 +291,35 @@ function shuffleArray(array){
   return array;
 
 }
+/* ----------------------------
+   音声読み上げ
+---------------------------- */
+
+function setupSpeakButton(){
+
+  const button =
+    document.getElementById("soundButton");
+
+  if(!button){
+    return;
+  }
+
+  button.onclick = () => {
+
+    if(!currentAnswer){
+      return;
+    }
+
+    speechSynthesis.cancel();
+
+    const speech =
+      new SpeechSynthesisUtterance(currentAnswer);
+
+    speech.lang = "en-US";
+    speech.rate = speechRate;
+
+    speechSynthesis.speak(speech);
+
+  };
+
+}
