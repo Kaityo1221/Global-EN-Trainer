@@ -91,6 +91,8 @@ function generateQuestion(){
 
   enableButtons();
 
+  setupSpeakButton();
+
   startTimer();
 
 }
