@@ -8,6 +8,7 @@ let allPokemon = [];
 
 let currentPokemon = null;
 let currentAnswer = "";
+let speechRate = 0.9;
 
 let timeLimit = 18;
 let currentTime = timeLimit;
