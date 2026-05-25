@@ -9,7 +9,7 @@ let allPokemon = [];
 let currentPokemon = null;
 let currentAnswer = "";
 let speechRate = 0.9;
-
+let playerHp = 3;
 let timeLimit = 18;
 let currentTime = timeLimit;
 let timerId = null;
@@ -92,7 +92,8 @@ function generateQuestion(){
   enableButtons();
 
   setupSpeakButton();
-
+updateHpDisplay();
+showSheepMessage("Ready!");
   startTimer();
 
 }
@@ -173,6 +174,8 @@ function checkAnswer(selected){
 
   button.classList.add("wrong");
 
+  damagePlayer();
+
 }
 
     }
@@ -185,7 +188,11 @@ function checkAnswer(selected){
     : 900;
 
 setTimeout(() => {
-  generateQuestion();
+
+  if(playerHp > 0){
+    generateQuestion();
+  }
+
 }, waitTime);
 
 }
@@ -374,5 +381,65 @@ function showComboCutin(imagePath){
   setTimeout(() => {
   cutin.classList.add("hidden");
 }, 1600);
+
+}
+function updateHpDisplay(){
+
+  const hpBox = document.getElementById("hpBox");
+
+  if(!hpBox){
+    return;
+  }
+
+  hpBox.textContent = "❤️ ".repeat(playerHp).trim();
+
+}
+
+function showSheepMessage(message){
+
+  const sheepMessage = document.getElementById("sheepMessage");
+
+  if(!sheepMessage){
+    return;
+  }
+
+  sheepMessage.textContent = message;
+
+}
+
+function damagePlayer(){
+
+  playerHp--;
+
+  if(playerHp < 0){
+    playerHp = 0;
+  }
+
+  updateHpDisplay();
+  showSheepMessage("メェ〜…");
+
+  if(playerHp <= 0){
+    showGameOver();
+  }
+
+}
+
+function showGameOver(){
+
+  stopTimer();
+
+  const questionText = document.getElementById("questionText");
+  const buttons = document.querySelectorAll(".answer-button");
+
+  if(questionText){
+    questionText.textContent = "GAME OVER";
+  }
+
+  buttons.forEach(button => {
+    button.disabled = true;
+    button.classList.add("disabled");
+  });
+
+  showSheepMessage("もう一回いく？");
 
 }
