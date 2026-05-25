@@ -261,12 +261,14 @@ function enableButtons(){
   buttons.forEach(button => {
 
     button.disabled = false;
+
     button.classList.remove("disabled");
+    button.classList.remove("correct");
+    button.classList.remove("wrong");
 
   });
 
 }
-
 /* ----------------------------
    シャッフル
 ---------------------------- */
