@@ -181,11 +181,12 @@ function checkAnswer(selected){
     }
   });
 
-  const waitTime =
+  const isComboCutin =
   selected === currentAnswer &&
-  [5, 10, 15, 20].includes(comboCount)
-    ? 1800
-    : 900;
+  [5, 10, 15, 20].includes(comboCount);
+
+const waitTime =
+  isComboCutin ? 1200 : 550;
 
 setTimeout(() => {
 
@@ -194,7 +195,6 @@ setTimeout(() => {
   }
 
 }, waitTime);
-
 }
 
 /* ----------------------------
@@ -380,7 +380,7 @@ function showComboCutin(imagePath){
 
   setTimeout(() => {
   cutin.classList.add("hidden");
-}, 1600);
+}, 1100);
 
 }
 function updateHpDisplay(){
