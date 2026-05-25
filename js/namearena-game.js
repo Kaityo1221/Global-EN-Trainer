@@ -160,10 +160,20 @@ function checkAnswer(selected){
     if(button.textContent.trim() === selected){
 
       if(selected === currentAnswer){
-        button.classList.add("correct");
-      }else{
-        button.classList.add("wrong");
-      }
+
+  comboCount++;
+
+  button.classList.add("correct");
+
+  checkComboEvent();
+
+}else{
+
+  comboCount = 0;
+
+  button.classList.add("wrong");
+
+}
 
     }
   });
@@ -321,5 +331,44 @@ function setupSpeakButton(){
     speechSynthesis.speak(speech);
 
   };
+
+}
+function checkComboEvent(){
+
+  if(comboCount === 5){
+    showComboCutin("../assets/combo5.png");
+  }
+
+  if(comboCount === 10){
+    showComboCutin("../assets/combo10.PNG");
+  }
+
+  if(comboCount === 15){
+    showComboCutin("../assets/combo15.PNG");
+  }
+
+  if(comboCount === 20){
+    showComboCutin("../assets/perfect.PNG");
+  }
+
+}
+
+function showComboCutin(imagePath){
+
+  const cutin =
+    document.getElementById("comboCutin");
+
+  const image =
+    document.getElementById("comboImage");
+
+  image.src = imagePath;
+
+  cutin.classList.remove("hidden");
+
+  setTimeout(() => {
+
+    cutin.classList.add("hidden");
+
+  }, 1600);
 
 }
