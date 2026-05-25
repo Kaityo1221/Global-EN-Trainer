@@ -143,19 +143,31 @@ function checkAnswer(selected){
 
   stopTimer();
 
-  if(selected === currentAnswer){
+  const buttons = document.querySelectorAll(".answer-button");
 
-    alert("Correct!");
+  buttons.forEach(button => {
+    button.disabled = true;
 
-  }else{
+    if(button.textContent.trim() === currentAnswer){
+      button.classList.add("correct");
+    }
+  });
 
-    alert("Wrong!");
+  buttons.forEach(button => {
+    if(button.textContent.trim() === selected){
 
-  }
+      if(selected === currentAnswer){
+        button.classList.add("correct");
+      }else{
+        button.classList.add("wrong");
+      }
+
+    }
+  });
 
   setTimeout(() => {
     generateQuestion();
-  }, 500);
+  }, 900);
 
 }
 
