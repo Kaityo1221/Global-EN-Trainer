@@ -8,6 +8,7 @@ let allPokemon = [];
 
 let currentPokemon = null;
 let currentAnswer = "";
+let speechRate = 0.9;
 
 let timeLimit = 18;
 let currentTime = timeLimit;
@@ -90,6 +91,8 @@ function generateQuestion(){
 
   enableButtons();
 
+  setupSpeakButton();
+
   startTimer();
 
 }
@@ -143,19 +146,31 @@ function checkAnswer(selected){
 
   stopTimer();
 
-  if(selected === currentAnswer){
+  const buttons = document.querySelectorAll(".answer-button");
 
-    alert("Correct!");
+  buttons.forEach(button => {
+    button.disabled = true;
 
-  }else{
+    if(button.textContent.trim() === currentAnswer){
+      button.classList.add("correct");
+    }
+  });
 
-    alert("Wrong!");
+  buttons.forEach(button => {
+    if(button.textContent.trim() === selected){
 
-  }
+      if(selected === currentAnswer){
+        button.classList.add("correct");
+      }else{
+        button.classList.add("wrong");
+      }
+
+    }
+  });
 
   setTimeout(() => {
     generateQuestion();
-  }, 500);
+  }, 900);
 
 }
 
@@ -249,12 +264,14 @@ function enableButtons(){
   buttons.forEach(button => {
 
     button.disabled = false;
+
     button.classList.remove("disabled");
+    button.classList.remove("correct");
+    button.classList.remove("wrong");
 
   });
 
 }
-
 /* ----------------------------
    シャッフル
 ---------------------------- */
@@ -272,5 +289,37 @@ function shuffleArray(array){
   }
 
   return array;
+
+}
+/* ----------------------------
+   音声読み上げ
+---------------------------- */
+
+function setupSpeakButton(){
+
+  const button =
+    document.getElementById("soundButton");
+
+  if(!button){
+    return;
+  }
+
+  button.onclick = () => {
+
+    if(!currentAnswer){
+      return;
+    }
+
+    speechSynthesis.cancel();
+
+    const speech =
+      new SpeechSynthesisUtterance(currentAnswer);
+
+    speech.lang = "en-US";
+    speech.rate = speechRate;
+
+    speechSynthesis.speak(speech);
+
+  };
 
 }
