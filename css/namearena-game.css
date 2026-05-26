@@ -334,3 +334,30 @@ body{
 .game-over{
   opacity:0.45;
 }
+.timer-fill.danger{
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff5a5a,
+      #ff0000
+    );
+
+  animation: dangerFlash 0.5s infinite;
+}
+
+@keyframes dangerFlash{
+
+  0%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:0.45;
+  }
+
+  100%{
+    opacity:1;
+  }
+
+}
