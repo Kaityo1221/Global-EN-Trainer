@@ -208,12 +208,12 @@ function startTimer(){
 
   const timerFill =
     document.getElementById("timerFill");
-
+timerFill.classList.remove("danger");
   currentTime = timeLimit;
 
   timerCount.textContent = currentTime;
   timerFill.style.width = "100%";
-timerFill.classList.remove("danger");
+
   timerId = setInterval(() => {
 
     currentTime--;
