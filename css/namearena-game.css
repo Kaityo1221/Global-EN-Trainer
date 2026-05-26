@@ -335,17 +335,15 @@ body{
   opacity:0.45;
 }
 .timer-fill.danger{
-
   background:
     linear-gradient(
       90deg,
-      #ff5a5a,
-      #ff0000
+      #ff0000,
+      #ff5a5a
     );
 
-  animation: dangerFlash 0.5s infinite;
+  animation:dangerFlash 0.5s infinite;
 }
-
 @keyframes dangerFlash{
 
   0%{
