@@ -155,18 +155,9 @@ body{
   overflow:hidden;
 }
 
-.timer-fill{
-  width:100%;
-  height:100%;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ffe84a,
-      #ff8a1c
-    );
-
-  border-radius:999px;
+.timer-fill.danger{
+  background:#ff2b2b;
+  animation:dangerFlash 0.5s infinite;
 }
 
 .timer-count{
