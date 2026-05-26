@@ -262,6 +262,10 @@ function showTimeUp(){
     button.classList.add("disabled");
   });
 
+  comboCount = 0;
+
+  damagePlayer();
+
   const questionText =
     document.getElementById("questionText");
 
@@ -270,7 +274,11 @@ function showTimeUp(){
   }
 
   setTimeout(() => {
-    generateQuestion();
+
+    if(playerHp > 0){
+      generateQuestion();
+    }
+
   }, 1200);
 
 }
