@@ -158,7 +158,21 @@ body{
 
   border-radius:999px;
 }
+.timer-fill.danger{
 
+  background:
+    linear-gradient(
+      90deg,
+      #ff1f1f 0%,
+      #ff0000 50%,
+      #ff6b6b 100%
+    ) !important;
+
+  box-shadow:
+    0 0 12px rgba(255,0,0,0.8);
+
+  animation:dangerFlash 0.5s infinite;
+}
 .timer-count{
   width:56px;
   height:56px;
