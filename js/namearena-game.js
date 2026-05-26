@@ -9,11 +9,11 @@ let allPokemon = [];
 let currentPokemon = null;
 let currentAnswer = "";
 let speechRate = 0.9;
-
+let playerHp = 3;
 let timeLimit = 18;
 let currentTime = timeLimit;
 let timerId = null;
-
+let comboCount = 0;
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
 });
@@ -92,7 +92,8 @@ function generateQuestion(){
   enableButtons();
 
   setupSpeakButton();
-
+updateHpDisplay();
+showSheepMessage("Ready!");
   startTimer();
 
 }
@@ -160,18 +161,40 @@ function checkAnswer(selected){
     if(button.textContent.trim() === selected){
 
       if(selected === currentAnswer){
-        button.classList.add("correct");
-      }else{
-        button.classList.add("wrong");
-      }
+
+  comboCount++;
+
+  button.classList.add("correct");
+
+  checkComboEvent();
+
+}else{
+
+  comboCount = 0;
+
+  button.classList.add("wrong");
+
+  damagePlayer();
+
+}
 
     }
   });
 
-  setTimeout(() => {
-    generateQuestion();
-  }, 900);
+  const isComboCutin =
+  selected === currentAnswer &&
+  [5, 10, 15, 20].includes(comboCount);
 
+const waitTime =
+  isComboCutin ? 1200 : 550;
+
+setTimeout(() => {
+
+  if(playerHp > 0){
+    generateQuestion();
+  }
+
+}, waitTime);
 }
 
 /* ----------------------------
@@ -321,5 +344,102 @@ function setupSpeakButton(){
     speechSynthesis.speak(speech);
 
   };
+
+}
+function checkComboEvent(){
+
+  if(comboCount === 5){
+    showComboCutin("../assets/images/combo5.PNG");
+  }
+
+  if(comboCount === 10){
+    showComboCutin("../assets/images/combo10.PNG");
+  }
+
+  if(comboCount === 15){
+    showComboCutin("../assets/images/combo15.PNG");
+  }
+
+  if(comboCount === 20){
+    showComboCutin("../assets/images/perfect.PNG");
+  }
+
+}
+
+function showComboCutin(imagePath){
+
+  const cutin =
+    document.getElementById("comboCutin");
+
+  const image =
+    document.getElementById("comboImage");
+
+  image.src = imagePath;
+
+  cutin.classList.remove("hidden");
+
+  setTimeout(() => {
+  cutin.classList.add("hidden");
+}, 1100);
+
+}
+function updateHpDisplay(){
+
+  const hpBox = document.getElementById("hpBox");
+
+  if(!hpBox){
+    return;
+  }
+
+  hpBox.textContent = "❤️ ".repeat(playerHp).trim();
+
+}
+
+function showSheepMessage(message){
+
+  const sheepMessage = document.getElementById("sheepMessage");
+
+  if(!sheepMessage){
+    return;
+  }
+
+  sheepMessage.textContent = message;
+
+}
+
+function damagePlayer(){
+
+  playerHp--;
+
+  if(playerHp < 0){
+    playerHp = 0;
+  }
+
+  updateHpDisplay();
+  showSheepMessage("メェ〜…");
+
+  if(playerHp <= 0){
+    showGameOver();
+  }
+
+}
+
+function showGameOver(){
+
+  stopTimer();
+
+  const questionText = document.getElementById("questionText");
+  const buttons = document.querySelectorAll(".answer-button");
+
+  if(questionText){
+    questionText.textContent = "GAME OVER";
+  }
+
+  buttons.forEach(button => {
+    button.disabled = true;
+    button.classList.add("disabled");
+  });
+
+  showSheepMessage("もう一回いく？");
 
 }

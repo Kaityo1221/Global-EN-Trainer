@@ -233,3 +233,86 @@ body{
   75%{ transform:translateX(-6px); }
   100%{ transform:translateX(0); }
 }
+.combo-cutin{
+
+  position: fixed;
+
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  background: rgba(0,0,0,0.45);
+
+}
+
+.combo-image{
+
+  width: min(92vw, 700px);
+
+  animation: comboPop 0.4s ease;
+
+}
+
+.hidden{
+  display: none;
+}
+
+@keyframes comboPop{
+
+  0%{
+    transform: scale(0.7);
+    opacity: 0;
+  }
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+.status-area{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+
+  margin-bottom:14px;
+}
+
+.hp-box{
+  padding:8px 14px;
+  border-radius:999px;
+
+  background:#fff6d8;
+  border:4px solid #3a1d0b;
+
+  font-size:22px;
+  font-weight:900;
+
+  box-shadow:0 5px 0 #2d1608;
+}
+
+.sheep-message{
+  flex:1;
+
+  padding:8px 12px;
+  border-radius:999px;
+
+  background:rgba(255,255,255,0.82);
+  border:4px solid #3a1d0b;
+
+  color:#5a2b11;
+  font-size:18px;
+  font-weight:900;
+  text-align:center;
+
+  box-shadow:0 5px 0 #2d1608;
+}
+
+.game-over{
+  opacity:0.45;
+}
