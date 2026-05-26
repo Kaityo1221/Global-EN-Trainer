@@ -213,7 +213,7 @@ function startTimer(){
 
   timerCount.textContent = currentTime;
   timerFill.style.width = "100%";
-
+timerFill.classList.remove("danger");
   timerId = setInterval(() => {
 
     currentTime--;
@@ -225,7 +225,15 @@ function startTimer(){
 
     timerFill.style.width =
       percent + "%";
+if(currentTime <= 5){
 
+  timerFill.classList.add("danger");
+
+}else{
+
+  timerFill.classList.remove("danger");
+
+}
     if(currentTime <= 0){
 
       stopTimer();
