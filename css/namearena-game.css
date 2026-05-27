@@ -169,16 +169,7 @@ body{
 
   border-radius:999px;
 }
-.timer-fill.danger{
 
-  background-color:#ff0000 !important;
-  background-image:none !important;
-
-  box-shadow:
-    0 0 12px rgba(255,0,0,0.9);
-
-  animation:dangerFlash 0.5s infinite;
-}
 .timer-count{
   width:56px;
   height:56px;
@@ -358,15 +349,15 @@ body{
 @keyframes dangerFlash{
 
   0%{
-    opacity:1;
+    filter:brightness(1.4);
   }
 
   50%{
-    opacity:0.45;
+    filter:brightness(0.8);
   }
 
   100%{
-    opacity:1;
+    filter:brightness(1.4);
   }
 
 }
