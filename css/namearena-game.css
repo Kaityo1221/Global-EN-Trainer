@@ -160,16 +160,11 @@ body{
 }
 .timer-fill.danger{
 
-  background:
-    linear-gradient(
-      90deg,
-      #ff1f1f 0%,
-      #ff0000 50%,
-      #ff6b6b 100%
-    ) !important;
+  background-color:#ff0000 !important;
+  background-image:none !important;
 
   box-shadow:
-    0 0 12px rgba(255,0,0,0.8);
+    0 0 12px rgba(255,0,0,0.9);
 
   animation:dangerFlash 0.5s infinite;
 }
