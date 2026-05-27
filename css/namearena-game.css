@@ -95,6 +95,7 @@ body{
 }
 
 .question-text{
+
   color:#2b1608;
 
   font-size:58px;
@@ -105,6 +106,7 @@ body{
   text-shadow:
     0 2px 0 rgba(255,255,255,0.5),
     0 6px 10px rgba(0,0,0,0.12);
+
 }
 
 .sound-button{
@@ -167,7 +169,16 @@ body{
 
   border-radius:999px;
 }
+.timer-fill.danger{
 
+  background-color:#ff0000 !important;
+  background-image:none !important;
+
+  box-shadow:
+    0 0 12px rgba(255,0,0,0.9);
+
+  animation:dangerFlash 0.5s infinite;
+}
 .timer-count{
   width:56px;
   height:56px;
