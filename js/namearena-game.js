@@ -394,9 +394,19 @@ function showComboCutin(imagePath){
 
   cutin.classList.remove("hidden");
 
-  setTimeout(() => {
+  let cutinTime = 1100;
+
+if(comboCount === 15){
+  cutinTime = 1800;
+}
+
+if(comboCount === 20){
+  cutinTime = 2600;
+}
+
+setTimeout(() => {
   cutin.classList.add("hidden");
-}, 1100);
+}, cutinTime);
 
 }
 function updateHpDisplay(){
