@@ -208,7 +208,7 @@ function startTimer(){
 
   const timerFill =
     document.getElementById("timerFill");
-
+timerFill.classList.remove("danger");
   currentTime = timeLimit;
 
   timerCount.textContent = currentTime;
@@ -225,7 +225,15 @@ function startTimer(){
 
     timerFill.style.width =
       percent + "%";
+if(currentTime <= 5){
 
+  timerFill.classList.add("danger");
+
+}else{
+
+  timerFill.classList.remove("danger");
+
+}
     if(currentTime <= 0){
 
       stopTimer();
@@ -262,6 +270,10 @@ function showTimeUp(){
     button.classList.add("disabled");
   });
 
+  comboCount = 0;
+
+  damagePlayer();
+
   const questionText =
     document.getElementById("questionText");
 
@@ -270,7 +282,11 @@ function showTimeUp(){
   }
 
   setTimeout(() => {
-    generateQuestion();
+
+    if(playerHp > 0){
+      generateQuestion();
+    }
+
   }, 1200);
 
 }
