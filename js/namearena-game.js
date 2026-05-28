@@ -16,6 +16,26 @@ let timerId = null;
 let comboCount = 0;
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
+  const exitButton =
+  document.getElementById("exitButton");
+
+if(exitButton){
+
+  exitButton.onclick = () => {
+
+    const ok =
+      confirm("ゲームを終了する？");
+
+    if(ok){
+
+      window.location.href =
+        "../pages/quest.html";
+
+    }
+
+  };
+
+}
 });
 
 /* ----------------------------
@@ -78,7 +98,18 @@ function generateQuestion(){
   currentPokemon = allPokemon[randomIndex];
 
   currentAnswer = currentPokemon.en;
+const questionBox =
+  document.querySelector(".question-box");
 
+if(questionBox){
+
+  questionBox.classList.remove("switching");
+
+  void questionBox.offsetWidth;
+
+  questionBox.classList.add("switching");
+
+}
   const questionText =
     document.getElementById("questionText");
 
@@ -185,8 +216,19 @@ function checkAnswer(selected){
   selected === currentAnswer &&
   [5, 10, 15, 20].includes(comboCount);
 
-const waitTime =
-  isComboCutin ? 1200 : 550;
+let waitTime = 550;
+
+if(isComboCutin){
+  waitTime = 1300;
+}
+
+if(comboCount === 15){
+  waitTime = 1900;
+}
+
+if(comboCount === 20){
+  waitTime = 2700;
+}
 
 setTimeout(() => {
 
@@ -195,8 +237,8 @@ setTimeout(() => {
   }
 
 }, waitTime);
-}
 
+}
 /* ----------------------------
    タイマー
 ---------------------------- */
@@ -207,7 +249,12 @@ function startTimer(){
     document.getElementById("timerCount");
 
   const timerFill =
-    document.getElementById("timerFill");
+  document.getElementById("timerFill");
+
+if(!timerCount || !timerFill){
+  return;
+}
+
 timerFill.classList.remove("danger");
   currentTime = timeLimit;
 
@@ -390,23 +437,33 @@ function showComboCutin(imagePath){
   const image =
     document.getElementById("comboImage");
 
+  if(!cutin || !image){
+    return;
+  }
+
   image.src = imagePath;
+
+  const shakiinSound =
+    new Audio("../assets/sounds/shakiin.mp3");
+
+  shakiinSound.currentTime = 0;
+  shakiinSound.play();
 
   cutin.classList.remove("hidden");
 
   let cutinTime = 1100;
 
-if(comboCount === 15){
-  cutinTime = 1800;
-}
+  if(comboCount === 15){
+    cutinTime = 1800;
+  }
 
-if(comboCount === 20){
-  cutinTime = 2600;
-}
+  if(comboCount === 20){
+    cutinTime = 2600;
+  }
 
-setTimeout(() => {
-  cutin.classList.add("hidden");
-}, cutinTime);
+  setTimeout(() => {
+    cutin.classList.add("hidden");
+  }, cutinTime);
 
 }
 function updateHpDisplay(){
