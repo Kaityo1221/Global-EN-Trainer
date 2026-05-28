@@ -191,12 +191,22 @@ const waitTime =
 setTimeout(() => {
 
   if(playerHp > 0){
-    generateQuestion();
+
+  if(isComboCutin){
+
+    setTimeout(() => {
+      generateQuestion();
+    }, 700);
+
+  }else{
+
+    setTimeout(() => {
+      generateQuestion();
+    }, 550);
+
   }
 
-}, waitTime);
 }
-
 /* ----------------------------
    タイマー
 ---------------------------- */
