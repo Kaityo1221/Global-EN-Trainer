@@ -78,7 +78,18 @@ function generateQuestion(){
   currentPokemon = allPokemon[randomIndex];
 
   currentAnswer = currentPokemon.en;
+const questionBox =
+  document.querySelector(".question-box");
 
+if(questionBox){
+
+  questionBox.classList.remove("switching");
+
+  void questionBox.offsetWidth;
+
+  questionBox.classList.add("switching");
+
+}
   const questionText =
     document.getElementById("questionText");
 
