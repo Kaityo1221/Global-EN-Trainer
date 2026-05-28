@@ -376,3 +376,42 @@ body{
   }
 
 }
+.question-box.switching{
+  animation:questionSwitch 0.22s ease;
+}
+
+@keyframes questionSwitch{
+
+  0%{
+    transform:
+      translateX(0)
+      scale(1);
+
+    opacity:1;
+  }
+
+  45%{
+    transform:
+      translateX(-24px)
+      scale(0.96);
+
+    opacity:0;
+  }
+
+  46%{
+    transform:
+      translateX(24px)
+      scale(0.96);
+
+    opacity:0;
+  }
+
+  100%{
+    transform:
+      translateX(0)
+      scale(1);
+
+    opacity:1;
+  }
+
+}
