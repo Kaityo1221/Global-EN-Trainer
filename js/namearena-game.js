@@ -391,7 +391,9 @@ function showComboCutin(imagePath){
     document.getElementById("comboImage");
 
   image.src = imagePath;
-
+const shakiinSound = new Audio("../assets/sounds/shakiin.mp3");
+shakiinSound.currentTime = 0;
+shakiinSound.play();
   cutin.classList.remove("hidden");
 
   let cutinTime = 1100;
