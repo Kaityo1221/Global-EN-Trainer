@@ -185,28 +185,27 @@ function checkAnswer(selected){
   selected === currentAnswer &&
   [5, 10, 15, 20].includes(comboCount);
 
-const waitTime =
-  isComboCutin ? 1200 : 550;
+let waitTime = 550;
+
+if(isComboCutin){
+  waitTime = 1300;
+}
+
+if(comboCount === 15){
+  waitTime = 1900;
+}
+
+if(comboCount === 20){
+  waitTime = 2700;
+}
 
 setTimeout(() => {
 
   if(playerHp > 0){
-
-  if(isComboCutin){
-
-    setTimeout(() => {
-      generateQuestion();
-    }, 700);
-
-  }else{
-
-    setTimeout(() => {
-      generateQuestion();
-    }, 550);
-
+    generateQuestion();
   }
 
-}
+}, waitTime);
 /* ----------------------------
    タイマー
 ---------------------------- */
