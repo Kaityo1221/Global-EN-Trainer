@@ -16,6 +16,26 @@ let timerId = null;
 let comboCount = 0;
 document.addEventListener("DOMContentLoaded", () => {
   loadPokemonData();
+  const exitButton =
+  document.getElementById("exitButton");
+
+if(exitButton){
+
+  exitButton.onclick = () => {
+
+    const ok =
+      confirm("ゲームを終了する？");
+
+    if(ok){
+
+      window.location.href =
+        "../pages/quest.html";
+
+    }
+
+  };
+
+}
 });
 
 /* ----------------------------
