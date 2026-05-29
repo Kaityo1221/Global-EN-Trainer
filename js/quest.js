@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function setupJunpokoSecretMode(){
-  const junpoko = document.getElementById("junpokoCharacter");
+  const junpoko = document.getElementById("junpokoArea");
 
   if(!junpoko){
     return;
