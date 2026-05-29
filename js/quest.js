@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const JUNPOKO_STORAGE_KEY = "junpokoModeMission";
 const JUNPOKO_UNLOCK_KEY = "junpokoModeUnlocked";
 const JUNPOKO_SECRET_ACTIVE_KEY = "junpokoModeActive";
+const JUNPOKO_INTRO_SHOWN_KEY = "junpokoIntroShown";
 
 let junpokoPressTimer = null;
 
