@@ -292,14 +292,14 @@ body{
 }
 
 .jp-head{
-  left:66% !important;
-  top:41% !important;
+  left:70% !important;
+  top:42% !important;
   width:8% !important;
   height:7% !important;
   background:rgba(255,0,0,.6) !important;
 }
 .jp-left-shoulder{
-  left:57%;
+  left:60%;
   top:49%;
 
   width:7%;
@@ -309,7 +309,7 @@ body{
 }
 
 .jp-right-shoulder{
-  left:75%;
+  left:77%;
   top:49%;
 
   width:7%;
@@ -319,8 +319,8 @@ body{
 }
 
 .jp-chest{
-  left:65%;
-  top:53%;
+  left:70%;
+  top:57%;
 
   width:7%;
   height:8%;
