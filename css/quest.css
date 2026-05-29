@@ -258,21 +258,7 @@ body{
     transform:scale(1);
   }
 }
-.quest-junpoko{
-  position:absolute;
 
-  left:54%;
-  top:30%;
-
-  width:34%;
-  height:46%;
-
-  z-index:25;
-
-  touch-action:manipulation;
-  -webkit-touch-callout:none;
-  user-select:none;
-}
 .junpoko-shake .quest-screen{
   animation:junpokoShake 0.45s ease;
 }
@@ -288,10 +274,46 @@ body{
 .junpoko-awake-overlay.is-show{
   display:flex !important;
 }
-.quest-junpoko{
-  touch-action:manipulation;
+/* JunPoko 隠しコマンド用 */
+.jp-command-zone{
+  position:absolute;
+  z-index:30;
 
   -webkit-touch-callout:none;
   -webkit-user-select:none;
   user-select:none;
+  touch-action:manipulation;
+}
+
+/* 位置確認中だけON */
+.jp-command-zone{
+  background:rgba(255,0,0,0.25);
+}
+
+.jp-head{
+  left:64%;
+  top:29%;
+  width:13%;
+  height:12%;
+}
+
+.jp-left-shoulder{
+  left:56%;
+  top:43%;
+  width:12%;
+  height:12%;
+}
+
+.jp-right-shoulder{
+  left:75%;
+  top:43%;
+  width:12%;
+  height:12%;
+}
+
+.jp-chest{
+  left:65%;
+  top:47%;
+  width:13%;
+  height:13%;
 }
