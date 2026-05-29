@@ -60,6 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setupJunpokoSecretMode();
   renderJunpokoMission();
 });
+let junpokoTapCount = 0;
+let junpokoTapResetTimer = null;
 
 function setupJunpokoSecretMode(){
   const junpoko = document.getElementById("junpokoArea");
@@ -67,15 +69,24 @@ function setupJunpokoSecretMode(){
   if(!junpoko){
     return;
   }
-junpoko.addEventListener("contextmenu", event => {
-  event.preventDefault();
-});
-  junpoko.addEventListener("pointerdown", startJunpokoLongPress);
-  junpoko.addEventListener("pointerup", cancelJunpokoLongPress);
-  junpoko.addEventListener("pointerleave", cancelJunpokoLongPress);
-  junpoko.addEventListener("pointercancel", cancelJunpokoLongPress);
-}
 
+  junpoko.addEventListener("click", event => {
+    event.preventDefault();
+
+    junpokoTapCount++;
+
+    clearTimeout(junpokoTapResetTimer);
+
+    junpokoTapResetTimer = setTimeout(() => {
+      junpokoTapCount = 0;
+    }, 1600);
+
+    if(junpokoTapCount >= 7){
+      junpokoTapCount = 0;
+      handleJunpokoLongPress();
+    }
+  });
+}
 function startJunpokoLongPress(){
   cancelJunpokoLongPress();
 
