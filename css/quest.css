@@ -258,3 +258,14 @@ body{
     transform:scale(1);
   }
 }
+.quest-junpoko{
+  position:absolute;
+
+  left:54%;
+  top:30%;
+
+  width:34%;
+  height:46%;
+
+  z-index:25;
+}
