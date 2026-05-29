@@ -251,9 +251,8 @@ function checkJunpokoMissionComplete(){
   showJunpokoFinalUnlockSequence();
 }
 
-function showJunpokoAwakeSequence(){
-  const overlay = document.getElementById("junpokoAwakeOverlay");
-  const text = document.getElementById("junpokoAwakeText");
+falert(document.getElementById("junpokoAwakeOverlay"));
+alert(document.getElementById("junpokoAwakeText"));
 
   if(!overlay || !text){
     return;
