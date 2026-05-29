@@ -309,4 +309,11 @@ function deactivateJunpokoMode(){
   document.body.classList.remove("junpoko-mode-active");
 }
 
+window.resetJunpokoMission = function(){
 
+  localStorage.removeItem("junpokoModeMission");
+  localStorage.removeItem("junpokoModeUnlocked");
+  localStorage.removeItem("junpokoModeActive");
+
+  location.reload();
+};
