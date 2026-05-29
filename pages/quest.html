@@ -77,6 +77,51 @@
 
 <script src="../script.js?v=1"></script>
 <script src="../js/quest.js?v=2"></script>
+<!-- JunPoko Mode 暗転演出 -->
+<div id="junpokoAwakeOverlay" class="junpoko-awake-overlay">
+  <div class="junpoko-awake-text" id="junpokoAwakeText">
+    六つの試練を越えよ。
+  </div>
+</div>
 
+<!-- JunPoko Mode ミッション枠 -->
+<div id="junpokoMissionBar" class="junpoko-mission-bar">
+  <div class="junpoko-mission-title">
+    🎁 ミッション
+    <span id="junpokoMissionBadge" class="junpoko-mission-badge">1</span>
+  </div>
+
+  <div class="junpoko-mission-list">
+    <div class="junpoko-mission-card" data-mission="nameClear">
+      <span>① NAME ARENAを<br>1回クリア</span>
+      <strong id="missionNameClear">0/1</strong>
+    </div>
+
+    <div class="junpoko-mission-card" data-mission="combo10">
+      <span>② 10コンボ<br>達成</span>
+      <strong id="missionCombo10">0/10</strong>
+    </div>
+
+    <div class="junpoko-mission-card" data-mission="walkClear">
+      <span>③ WALK PARKを<br>1回クリア</span>
+      <strong id="missionWalkClear">0/1</strong>
+    </div>
+
+    <div class="junpoko-mission-card" data-mission="energyClear">
+      <span>④ ENERGY STAGEを<br>1回クリア</span>
+      <strong id="missionEnergyClear">0/1</strong>
+    </div>
+
+    <div class="junpoko-mission-card" data-mission="daily3">
+      <span>⑤ トレーニングを<br>3日分達成</span>
+      <strong id="missionDaily3">0/3</strong>
+    </div>
+
+    <div class="junpoko-mission-card" data-mission="longPress">
+      <span>⑥ JunPokoを<br>3秒長押し</span>
+      <strong id="missionLongPress">0/1</strong>
+    </div>
+  </div>
+</div>
 </body>
 </html>
