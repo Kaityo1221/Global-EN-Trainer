@@ -117,17 +117,17 @@ function handleJunpokoLongPress(){
     return;
   }
 
-  const introShown = localStorage.getItem(JUNPOKO_INTRO_SHOWN_KEY) === "true";
+  const introShown =
+    localStorage.getItem(JUNPOKO_INTRO_SHOWN_KEY) === "true";
 
   addJunpokoMissionProgress("longPress", 1);
+  renderJunpokoMission();
 
-  if(introShown){
-    renderJunpokoMission();
-    return;
+  if(!introShown){
+    localStorage.setItem(JUNPOKO_INTRO_SHOWN_KEY, "true");
+    showJunpokoAwakeSequence();
   }
-
-  localStorage.setItem(JUNPOKO_INTRO_SHOWN_KEY, "true");
-  showJunpokoAwakeSequence();
+}
 }
 function getJunpokoMission(){
   const saved = localStorage.getItem(JUNPOKO_STORAGE_KEY);
