@@ -273,10 +273,12 @@ function showJunpokoAwakeSequence(){
   }, 3900);
 }
 
-function showJunpokoFinalUnlockSequence(){
+function showJunpokoAwakeSequence(){
+
+  alert("awake");
+
   const overlay = document.getElementById("junpokoAwakeOverlay");
   const text = document.getElementById("junpokoAwakeText");
-
   if(!overlay || !text){
     return;
   }
