@@ -291,29 +291,33 @@ body{
 }
 
 .jp-head{
-  left:64%;
-  top:29%;
-  width:13%;
-  height:12%;
+  left:66%;
+  top:44%;
+
+  width:8%;
+  height:7%;
 }
 
 .jp-left-shoulder{
-  left:56%;
-  top:43%;
-  width:12%;
-  height:12%;
+  left:58%;
+  top:48%;
+
+  width:8%;
+  height:8%;
 }
 
 .jp-right-shoulder{
-  left:75%;
-  top:43%;
-  width:12%;
-  height:12%;
+  left:74%;
+  top:48%;
+
+  width:8%;
+  height:8%;
 }
 
 .jp-chest{
-  left:65%;
-  top:47%;
-  width:13%;
-  height:13%;
+  left:66%;
+  top:53%;
+
+  width:9%;
+  height:10%;
 }
