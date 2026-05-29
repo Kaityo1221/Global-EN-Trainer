@@ -110,10 +110,6 @@ function handleJunpokoLongPress(){
     document.body.classList.remove("junpoko-shake");
   }, 450);
 
-  if(navigator.vibrate){
-    navigator.vibrate([120, 80, 120]);
-  }
-
   const unlocked = localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
 
   if(unlocked){
@@ -121,10 +117,18 @@ function handleJunpokoLongPress(){
     return;
   }
 
+  const introShown = localStorage.getItem(JUNPOKO_INTRO_SHOWN_KEY) === "true";
+
   addJunpokoMissionProgress("longPress", 1);
+
+  if(introShown){
+    renderJunpokoMission();
+    return;
+  }
+
+  localStorage.setItem(JUNPOKO_INTRO_SHOWN_KEY, "true");
   showJunpokoAwakeSequence();
 }
-
 function getJunpokoMission(){
   const saved = localStorage.getItem(JUNPOKO_STORAGE_KEY);
 
@@ -317,6 +321,6 @@ window.resetJunpokoMission = function(){
   localStorage.removeItem("junpokoModeMission");
   localStorage.removeItem("junpokoModeUnlocked");
   localStorage.removeItem("junpokoModeActive");
-
+localStorage.removeItem("junpokoIntroShown");
   location.reload();
 };
