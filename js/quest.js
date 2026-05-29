@@ -128,7 +128,6 @@ function handleJunpokoLongPress(){
     showJunpokoAwakeSequence();
   }
 }
-}
 function getJunpokoMission(){
   const saved = localStorage.getItem(JUNPOKO_STORAGE_KEY);
 
