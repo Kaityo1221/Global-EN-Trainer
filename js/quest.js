@@ -67,7 +67,9 @@ function setupJunpokoSecretMode(){
   if(!junpoko){
     return;
   }
-
+junpoko.addEventListener("contextmenu", event => {
+  event.preventDefault();
+});
   junpoko.addEventListener("pointerdown", startJunpokoLongPress);
   junpoko.addEventListener("pointerup", cancelJunpokoLongPress);
   junpoko.addEventListener("pointerleave", cancelJunpokoLongPress);
