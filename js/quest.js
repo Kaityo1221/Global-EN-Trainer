@@ -103,14 +103,17 @@ function cancelJunpokoLongPress(){
 }
 
 function handleJunpokoLongPress(){
+
+  document.body.classList.add("junpoko-shake");
+
+  setTimeout(() => {
+    document.body.classList.remove("junpoko-shake");
+  }, 450);
+
   if(navigator.vibrate){
     navigator.vibrate([120, 80, 120]);
   }
-document.body.classList.add("junpoko-shake");
 
-setTimeout(() => {
-  document.body.classList.remove("junpoko-shake");
-}, 450);
   const unlocked = localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
 
   if(unlocked){
