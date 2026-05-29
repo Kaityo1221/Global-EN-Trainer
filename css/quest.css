@@ -287,7 +287,8 @@ body{
 
 /* 位置確認中だけON */
 .jp-command-zone{
-  background:rgba(255,0,0,0.25);
+  position:absolute;
+  z-index:30;
 }
 
 .jp-head{
@@ -299,25 +300,31 @@ body{
 }
 
 .jp-left-shoulder{
-  left:58%;
-  top:48%;
+  left:57%;
+  top:49%;
 
-  width:8%;
-  height:8%;
+  width:7%;
+  height:7%;
+
+  background:rgba(0,255,0,.4);
 }
 
 .jp-right-shoulder{
-  left:74%;
-  top:48%;
+  left:75%;
+  top:49%;
 
-  width:8%;
-  height:8%;
+  width:7%;
+  height:7%;
+
+  background:rgba(0,0,255,.4);
 }
 
 .jp-chest{
-  left:66%;
+  left:65%;
   top:53%;
 
-  width:9%;
-  height:10%;
+  width:7%;
+  height:8%;
+
+  background:rgba(255,255,0,.4);
 }
