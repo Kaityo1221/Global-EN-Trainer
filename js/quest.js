@@ -324,3 +324,4 @@ window.resetJunpokoMission = function(){
 localStorage.removeItem("junpokoIntroShown");
   location.reload();
 };
+resetJunpokoMission();
