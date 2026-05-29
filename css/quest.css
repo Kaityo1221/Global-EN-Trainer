@@ -285,3 +285,6 @@ body{
   80%{ transform:translateX(3px); }
   100%{ transform:translateX(0); }
 }
+.junpoko-awake-overlay.is-show{
+  display:flex !important;
+}
