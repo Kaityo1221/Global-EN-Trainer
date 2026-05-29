@@ -269,9 +269,9 @@ body{
 
   z-index:25;
 
+  touch-action:manipulation;
   -webkit-touch-callout:none;
   user-select:none;
-  touch-action:none;
 }
 .junpoko-shake .quest-screen{
   animation:junpokoShake 0.45s ease;
