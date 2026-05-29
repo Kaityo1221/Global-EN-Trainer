@@ -292,11 +292,11 @@ body{
 }
 
 .jp-head{
-  left:66%;
-  top:41%;
-
-  width:6%;
-  height:5%;
+  left:66% !important;
+  top:41% !important;
+  width:8% !important;
+  height:7% !important;
+  background:rgba(255,0,0,.6) !important;
 }
 .jp-left-shoulder{
   left:57%;
