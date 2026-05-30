@@ -65,28 +65,49 @@ let junpokoTapCount = 0;
 let junpokoTapResetTimer = null;
 
 function setupJunpokoSecretMode(){
-  const junpoko = document.getElementById("junpokoArea");
+const junpokoSecretCode = [
+  "head",
+  "head",
+  "left",
+  "right",
+  "groin"
+];
 
-  if(!junpoko){
+let junpokoSecretInput = [];
+
+function setupJunpokoSecretMode(){
+
+  const zones = document.querySelectorAll(".jp-command-zone");
+
+  zones.forEach(zone => {
+    zone.addEventListener("click", event => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const command = zone.dataset.jpCommand;
+      inputJunpokoCommand(command);
+    });
+  });
+}
+
+function inputJunpokoCommand(command){
+
+  junpokoSecretInput.push(command);
+
+  const current = junpokoSecretInput.join(",");
+  const target = junpokoSecretCode
+    .slice(0, junpokoSecretInput.length)
+    .join(",");
+
+  if(current !== target){
+    junpokoSecretInput = [];
     return;
   }
 
-  junpoko.addEventListener("click", event => {
-    event.preventDefault();
-
-    junpokoTapCount++;
-
-    clearTimeout(junpokoTapResetTimer);
-
-    junpokoTapResetTimer = setTimeout(() => {
-      junpokoTapCount = 0;
-    }, 1600);
-
-    if(junpokoTapCount >= 7){
-      junpokoTapCount = 0;
-      handleJunpokoLongPress();
-    }
-  });
+  if(junpokoSecretInput.length === junpokoSecretCode.length){
+    junpokoSecretInput = [];
+    handleJunpokoLongPress();
+  }
 }
 function startJunpokoLongPress(){
   cancelJunpokoLongPress();
