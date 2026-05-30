@@ -1,5 +1,5 @@
 "use strict";
-
+alert("quest.js 読み込みOK");
 /*
   GET - Global EN Trainer
   Quest Script
