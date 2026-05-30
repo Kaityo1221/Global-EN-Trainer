@@ -1,5 +1,5 @@
 "use strict";
-alert("quest.js 読み込みOK");
+
 /*
   GET - Global EN Trainer
   Quest Script
@@ -7,15 +7,16 @@ alert("quest.js 読み込みOK");
 */
 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Quest system ready");
+  setupQuestBgm();
+  setupJunpokoSecretMode();
+  renderJunpokoMission();
 });
-document.addEventListener("DOMContentLoaded", () => {
 
-  const bgm =
-    document.getElementById("enquestBgm");
+/* BGM */
 
-  const button =
-    document.getElementById("bgmStartButton");
+function setupQuestBgm(){
+  const bgm = document.getElementById("enquestBgm");
+  const button = document.getElementById("bgmStartButton");
 
   if(!bgm || !button){
     return;
@@ -24,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   bgm.volume = 0.35;
 
   button.onclick = async () => {
-
     try{
       await bgm.play();
       button.style.display = "none";
@@ -32,10 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(error);
       alert("音声を再生できませんでした");
     }
-
   };
-
-});
+}
 
 /*
   JunPoko Mode Secret Mission
@@ -46,7 +44,15 @@ const JUNPOKO_UNLOCK_KEY = "junpokoModeUnlocked";
 const JUNPOKO_SECRET_ACTIVE_KEY = "junpokoModeActive";
 const JUNPOKO_INTRO_SHOWN_KEY = "junpokoIntroShown";
 
-let junpokoPressTimer = null;
+const junpokoSecretCode = [
+  "head",
+  "head",
+  "left",
+  "right",
+  "groin"
+];
+
+let junpokoSecretInput = [];
 
 const defaultJunpokoMission = {
   nameClear: 0,
@@ -57,26 +63,8 @@ const defaultJunpokoMission = {
   longPress: 0
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-  setupJunpokoSecretMode();
-  renderJunpokoMission();
-});
-let junpokoTapCount = 0;
-let junpokoTapResetTimer = null;
-const junpokoSecretCode = [
-  "head",
-  "head",
-  "left",
-  "right",
-  "groin"
-];
-
-let junpokoSecretInput = [];
 function setupJunpokoSecretMode(){
-
   const zones = document.querySelectorAll(".jp-command-zone");
-
-  alert("zone数 = " + zones.length);
 
   zones.forEach(zone => {
     zone.addEventListener("click", event => {
@@ -85,13 +73,16 @@ function setupJunpokoSecretMode(){
 
       const command = zone.dataset.jpCommand;
 
-      alert(command);
-
       inputJunpokoCommand(command);
     });
   });
 }
+
 function inputJunpokoCommand(command){
+  if(!command){
+    junpokoSecretInput = [];
+    return;
+  }
 
   junpokoSecretInput.push(command);
 
@@ -107,33 +98,19 @@ function inputJunpokoCommand(command){
 
   if(junpokoSecretInput.length === junpokoSecretCode.length){
     junpokoSecretInput = [];
-    handleJunpokoLongPress();
-  }
-}
-function startJunpokoLongPress(){
-  cancelJunpokoLongPress();
-
-  junpokoPressTimer = setTimeout(() => {
-    handleJunpokoLongPress();
-  }, 3000);
-}
-
-function cancelJunpokoLongPress(){
-  if(junpokoPressTimer){
-    clearTimeout(junpokoPressTimer);
-    junpokoPressTimer = null;
+    handleJunpokoSecretCommand();
   }
 }
 
-function handleJunpokoLongPress(){
-
+function handleJunpokoSecretCommand(){
   document.body.classList.add("junpoko-shake");
 
   setTimeout(() => {
     document.body.classList.remove("junpoko-shake");
   }, 450);
 
-  const unlocked = localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
+  const unlocked =
+    localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
 
   if(unlocked){
     toggleJunpokoMode();
@@ -151,6 +128,7 @@ function handleJunpokoLongPress(){
     showJunpokoAwakeSequence();
   }
 }
+
 function getJunpokoMission(){
   const saved = localStorage.getItem(JUNPOKO_STORAGE_KEY);
 
@@ -184,7 +162,8 @@ function addJunpokoMissionProgress(key, amount){
     longPress: 1
   };
 
-  mission[key] = Math.min((mission[key] || 0) + amount, limits[key]);
+  mission[key] =
+    Math.min((mission[key] || 0) + amount, limits[key]);
 
   saveJunpokoMission(mission);
   renderJunpokoMission();
@@ -199,7 +178,8 @@ function renderJunpokoMission(){
   }
 
   const mission = getJunpokoMission();
-  const unlocked = localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
+  const unlocked =
+    localStorage.getItem(JUNPOKO_UNLOCK_KEY) === "true";
 
   const hasStarted =
     mission.nameClear > 0 ||
@@ -212,6 +192,8 @@ function renderJunpokoMission(){
 
   if(hasStarted){
     bar.classList.add("is-show");
+  }else{
+    bar.classList.remove("is-show");
   }
 
   setMissionText("missionNameClear", mission.nameClear, 1);
@@ -240,7 +222,8 @@ function setMissionText(id, value, max){
 }
 
 function updateMissionCardState(key, complete){
-  const card = document.querySelector('.junpoko-mission-card[data-mission="' + key + '"]');
+  const card =
+    document.querySelector('.junpoko-mission-card[data-mission="' + key + '"]');
 
   if(!card){
     return;
@@ -273,27 +256,6 @@ function checkJunpokoMissionComplete(){
   showJunpokoFinalUnlockSequence();
 }
 
-falert(document.getElementById("junpokoAwakeOverlay"));
-alert(document.getElementById("junpokoAwakeText"));
-
-  if(!overlay || !text){
-    return;
-  }
-
-  overlay.classList.add("is-show");
-
-  text.textContent = "六つの試練を越えよ。";
-
-  setTimeout(() => {
-    text.textContent = "JunPoko Mode は、まだ封印されている。";
-  }, 1800);
-
-  setTimeout(() => {
-    overlay.classList.remove("is-show");
-    renderJunpokoMission();
-  }, 3900);
-}
-
 function showJunpokoAwakeSequence(){
   const overlay = document.getElementById("junpokoAwakeOverlay");
   const text = document.getElementById("junpokoAwakeText");
@@ -315,8 +277,33 @@ function showJunpokoAwakeSequence(){
     renderJunpokoMission();
   }, 3900);
 }
+
+function showJunpokoFinalUnlockSequence(){
+  const overlay = document.getElementById("junpokoAwakeOverlay");
+  const text = document.getElementById("junpokoAwakeText");
+
+  if(!overlay || !text){
+    return;
+  }
+
+  overlay.classList.add("is-show");
+
+  text.textContent = "封印は解かれた。";
+
+  setTimeout(() => {
+    text.textContent = "JunPoko Mode 覚醒";
+  }, 1800);
+
+  setTimeout(() => {
+    overlay.classList.remove("is-show");
+    activateJunpokoMode();
+    renderJunpokoMission();
+  }, 3800);
+}
+
 function toggleJunpokoMode(){
-  const active = localStorage.getItem(JUNPOKO_SECRET_ACTIVE_KEY) === "true";
+  const active =
+    localStorage.getItem(JUNPOKO_SECRET_ACTIVE_KEY) === "true";
 
   if(active){
     deactivateJunpokoMode();
@@ -336,10 +323,10 @@ function deactivateJunpokoMode(){
 }
 
 window.resetJunpokoMission = function(){
+  localStorage.removeItem(JUNPOKO_STORAGE_KEY);
+  localStorage.removeItem(JUNPOKO_UNLOCK_KEY);
+  localStorage.removeItem(JUNPOKO_SECRET_ACTIVE_KEY);
+  localStorage.removeItem(JUNPOKO_INTRO_SHOWN_KEY);
 
-  localStorage.removeItem("junpokoModeMission");
-  localStorage.removeItem("junpokoModeUnlocked");
-  localStorage.removeItem("junpokoModeActive");
-localStorage.removeItem("junpokoIntroShown");
   location.reload();
 };
