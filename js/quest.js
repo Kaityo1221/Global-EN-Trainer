@@ -71,9 +71,7 @@ function setupJunpokoSecretMode(){
   alert("zone数 = " + zones.length);
 
   zones.forEach(zone => {
-
     zone.addEventListener("click", event => {
-
       event.preventDefault();
       event.stopPropagation();
 
@@ -83,7 +81,6 @@ function setupJunpokoSecretMode(){
 
       inputJunpokoCommand(command);
     });
-
   });
 }
 function inputJunpokoCommand(command){
