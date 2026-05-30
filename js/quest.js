@@ -287,30 +287,26 @@ alert(document.getElementById("junpokoAwakeText"));
 }
 
 function showJunpokoAwakeSequence(){
-
-  alert("awake");
-
   const overlay = document.getElementById("junpokoAwakeOverlay");
   const text = document.getElementById("junpokoAwakeText");
+
   if(!overlay || !text){
     return;
   }
 
   overlay.classList.add("is-show");
 
-  text.textContent = "封印は解かれた。";
+  text.textContent = "六つの試練を越えよ。";
 
   setTimeout(() => {
-    text.textContent = "JunPoko Mode 覚醒";
+    text.textContent = "JunPoko Mode は、まだ封印されている。";
   }, 1800);
 
   setTimeout(() => {
     overlay.classList.remove("is-show");
-    activateJunpokoMode();
     renderJunpokoMission();
-  }, 3800);
+  }, 3900);
 }
-
 function toggleJunpokoMode(){
   const active = localStorage.getItem(JUNPOKO_SECRET_ACTIVE_KEY) === "true";
 
