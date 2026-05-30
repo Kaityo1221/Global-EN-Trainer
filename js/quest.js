@@ -63,7 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 let junpokoTapCount = 0;
 let junpokoTapResetTimer = null;
+const junpokoSecretCode = [
+  "head",
+  "head",
+  "left",
+  "right",
+  "groin"
+];
 
+let junpokoSecretInput = [];
 function setupJunpokoSecretMode(){
 
   const zones = document.querySelectorAll(".jp-command-zone");
