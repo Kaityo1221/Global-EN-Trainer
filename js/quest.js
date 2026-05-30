@@ -65,32 +65,27 @@ let junpokoTapCount = 0;
 let junpokoTapResetTimer = null;
 
 function setupJunpokoSecretMode(){
-const junpokoSecretCode = [
-  "head",
-  "head",
-  "left",
-  "right",
-  "groin"
-];
-
-let junpokoSecretInput = [];
-
-function setupJunpokoSecretMode(){
 
   const zones = document.querySelectorAll(".jp-command-zone");
 
+  alert("zone数 = " + zones.length);
+
   zones.forEach(zone => {
+
     zone.addEventListener("click", event => {
+
       event.preventDefault();
       event.stopPropagation();
 
       const command = zone.dataset.jpCommand;
-     alert(command);
-       inputJunpokoCommand(command);
+
+      alert(command);
+
+      inputJunpokoCommand(command);
     });
+
   });
 }
-
 function inputJunpokoCommand(command){
 
   junpokoSecretInput.push(command);
