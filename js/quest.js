@@ -85,7 +85,8 @@ function setupJunpokoSecretMode(){
       event.stopPropagation();
 
       const command = zone.dataset.jpCommand;
-      inputJunpokoCommand(command);
+     alert(command);
+       inputJunpokoCommand(command);
     });
   });
 }
