@@ -330,3 +330,4 @@ window.resetJunpokoMission = function(){
 
   location.reload();
 };
+resetJunpokoMission();
