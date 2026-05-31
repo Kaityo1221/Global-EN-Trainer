@@ -266,14 +266,15 @@ function showJunpokoAwakeSequence(){
 
   overlay.classList.add("is-show");
 
-  text.textContent = "六つの試練を越えよ。";
+  text.textContent = "封印は解かれた。";
 
 setTimeout(() => {
-  text.textContent = "JunPoko Mode は、まだ封印されている。";
+  text.textContent = "JunPoko Mode 覚醒";
 }, 4500);
 
 setTimeout(() => {
   overlay.classList.remove("is-show");
+  activateJunpokoMode();
   renderJunpokoMission();
 }, 8500);
 }
