@@ -276,7 +276,7 @@ setTimeout(() => {
   overlay.classList.remove("is-show");
   renderJunpokoMission();
 }, 8500);
-
+}
 function showJunpokoFinalUnlockSequence(){
   const overlay = document.getElementById("junpokoAwakeOverlay");
   const text = document.getElementById("junpokoAwakeText");
