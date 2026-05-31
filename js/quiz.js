@@ -742,3 +742,4 @@ if(types.includes("むし")){
   }
 
 }
+resetJunpokoMission();
