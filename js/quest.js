@@ -268,14 +268,22 @@ function showJunpokoAwakeSequence(){
 
   text.textContent = "六つの試練を越えよ。";
 
-  setTimeout(() => {
-    text.textContent = "JunPoko Mode は、まだ封印されている。";
-  }, 1800);
+setTimeout(() => {
+  text.textContent = "・・・・・・";
+}, 3000);
 
-  setTimeout(() => {
-    overlay.classList.remove("is-show");
-    renderJunpokoMission();
-  }, 3900);
+setTimeout(() => {
+  text.textContent = "JunPoko Mode は";
+}, 5000);
+
+setTimeout(() => {
+  text.textContent = "まだ封印されている。";
+}, 7000);
+
+setTimeout(() => {
+  overlay.classList.remove("is-show");
+  renderJunpokoMission();
+}, 9500);
 }
 
 function showJunpokoFinalUnlockSequence(){
