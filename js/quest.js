@@ -9,6 +9,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupQuestBgm();
   setupJunpokoSecretMode();
+
+  localStorage.setItem(JUNPOKO_SECRET_ACTIVE_KEY, "true");
+
   restoreJunpokoMode();
   renderJunpokoMission();
 });
