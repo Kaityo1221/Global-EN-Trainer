@@ -9,6 +9,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupQuestBgm();
   setupJunpokoSecretMode();
+
+
+  restoreJunpokoMode();
   renderJunpokoMission();
 });
 
@@ -318,15 +321,19 @@ function activateJunpokoMode(){
 }
 
 function deactivateJunpokoMode(){
-  localStorage.setItem(JUNPOKO_SECRET_ACTIVE_KEY, "false");
+
   document.body.classList.remove("junpoko-mode-active");
 }
 
-window.resetJunpokoMission = function(){
-  localStorage.removeItem(JUNPOKO_STORAGE_KEY);
-  localStorage.removeItem(JUNPOKO_UNLOCK_KEY);
-  localStorage.removeItem(JUNPOKO_SECRET_ACTIVE_KEY);
-  localStorage.removeItem(JUNPOKO_INTRO_SHOWN_KEY);
+function restoreJunpokoMode(){
+  const active =
+    localStorage.getItem(JUNPOKO_SECRET_ACTIVE_KEY) === "true";
 
-  location.reload();
-};
+  if(active){
+    document.body.classList.add("junpoko-mode-active");
+  }else{
+    document.body.classList.remove("junpoko-mode-active");
+  }
+}
+
+window.resetJunpokoMission = function(){
