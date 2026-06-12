@@ -296,7 +296,7 @@ body{
   top:42% !important;
   width:8% !important;
   height:7% !important;
-  background:rgba(255,0,0,.6) !important;
+
 }
 .jp-left-shoulder{
   left:60%;
@@ -305,7 +305,6 @@ body{
   width:7%;
   height:7%;
 
-  background:rgba(0,255,0,.4);
 }
 
 .jp-right-shoulder{
@@ -315,7 +314,6 @@ body{
   width:7%;
   height:7%;
 
-  background:rgba(0,0,255,.4);
 }
 
 .jp-groin{
@@ -324,8 +322,6 @@ body{
 
   width:7%;
   height:8%;
-
-  background:rgba(255,255,0,.4);
 }
 /* EN Quest 左上の木製戻るボタン */
 .quest-back-hotspot{
