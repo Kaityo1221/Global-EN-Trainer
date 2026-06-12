@@ -9,6 +9,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   setupQuestBgm();
   setupJunpokoSecretMode();
+  restoreJunpokoMode();
   renderJunpokoMission();
 });
 
