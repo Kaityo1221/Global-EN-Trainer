@@ -321,7 +321,7 @@ function activateJunpokoMode(){
 }
 
 function deactivateJunpokoMode(){
-  localStorage.setItem(JUNPOKO_SECRET_ACTIVE_KEY, "false");
+
   document.body.classList.remove("junpoko-mode-active");
 }
 
