@@ -142,7 +142,7 @@ const legendaryPokemonNos = [
 /*
   5%でレア演出
 */
-const isRare = true;
+const isRare = seed % 20 === 0;
 
 if(isRare){
 
