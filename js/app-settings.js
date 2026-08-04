@@ -76,10 +76,22 @@ function resetLearningData(){
   });
 }
 
+function loadPageEnhancements(){
+  if(document.getElementById("pokemonList") && !document.querySelector('script[data-get-enhancement="namebank"]')){
+    const script = document.createElement("script");
+    script.src = "../js/namebank-enhancements.js?v=1";
+    script.dataset.getEnhancement = "namebank";
+    document.body.appendChild(script);
+  }
+}
+
 window.getAppSettings = getAppSettings;
 window.saveAppSettings = saveAppSettings;
 window.applyAppSettings = applyAppSettings;
 window.resetAppSettings = resetAppSettings;
 window.resetLearningData = resetLearningData;
 
-document.addEventListener("DOMContentLoaded", applyAppSettings);
+document.addEventListener("DOMContentLoaded", () => {
+  applyAppSettings();
+  loadPageEnhancements();
+});
