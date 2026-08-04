@@ -1,144 +1,59 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
- <meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="bingbot" content="noindex, nofollow">
-
   <title>Quest - GET</title>
-
-  <link rel="stylesheet" href="../style.css?v=2">
-  <link rel="stylesheet" href="../css/quest.css?v=3">
+  <link rel="stylesheet" href="../style.css?v=9">
+  <link rel="stylesheet" href="../css/quest.css?v=4">
 </head>
-
 <body>
-
-
-<div id="sideMenu" class="side-menu">
-
-  <button
-    class="menu-close-button"
-    onclick="closeMenu()"
-  >
-    ×
-  </button>
-
+<nav id="sideMenu" class="side-menu">
+  <button class="menu-close-button" onclick="closeMenu()">×</button>
   <a href="../index.html">Home</a>
+  <a href="./namebank.html">Name Bank</a>
+  <a href="./dailyquiz.html">Daily Quiz</a>
+  <a href="./quest.html">EN Quest</a>
+  <a href="./settings.html">Settings</a>
+</nav>
 
-  <a href="./namebank.html">
-    Name Bank
-  </a>
-
-  <a href="./dailyquiz.html">
-    Daily Quiz
-  </a>
-
-  <a href="./quest.html">
-    EN Quest
-  </a>
-
-  <a href="./settings.html">
-    Settings
-  </a>
-
-</div>
-
-<!-- EN Quest画面 -->
 <div class="quest-screen">
+  <a href="../index.html" class="quest-back-hotspot" aria-label="ホームへ戻る"></a>
+  <button id="bgmStartButton" class="bgm-start-button" aria-label="BGMを再生">♪</button>
+  <audio id="enquestBgm" src="../assets/sounds/enquest-bgm.mp3" loop preload="auto"></audio>
 
-  <!-- 左上の木製戻るボタン -->
-  <a
-    href="../index.html"
-    class="quest-back-hotspot"
-    aria-label="ホームへ戻る">
-  </a>
+  <a href="namearena.html" class="quest-hotspot quest-namearena" aria-label="NAME ARENA"></a>
+  <a href="#" class="quest-hotspot quest-listening" aria-label="LISTENING 未実装"></a>
+  <a href="#" class="quest-hotspot quest-energy" aria-label="ENERGY 未実装"></a>
 
-<button id="bgmStartButton" class="bgm-start-button">
-  ♪
-</button>
-
-<audio
-  id="enquestBgm"
-  src="../assets/sounds/enquest-bgm.mp3"
-  loop
-  preload="auto"
-></audio>
-  <!-- NAME ARENA -->
-  <a href="namearena.html"
-   class="quest-hotspot quest-namearena">
-</a>
-
-  <!-- LISTENING -->
-  <a href="#"
-     class="quest-hotspot quest-listening">
-  </a>
-
-  <!-- ENERGY -->
-  <a href="#"
-     class="quest-hotspot quest-energy">
-  </a>
-<!-- JunPoko隠しコマンド用 -->
-
-<div class="jp-command-zone jp-head" data-jp-command="head"></div>
-<div class="jp-command-zone jp-left-shoulder" data-jp-command="left"></div>
-<div class="jp-command-zone jp-right-shoulder" data-jp-command="right"></div>
-<div class="jp-command-zone jp-groin" data-jp-command="groin"></div>
+  <div class="jp-command-zone jp-head" data-jp-command="head"></div>
+  <div class="jp-command-zone jp-left-shoulder" data-jp-command="left"></div>
+  <div class="jp-command-zone jp-right-shoulder" data-jp-command="right"></div>
+  <div class="jp-command-zone jp-gr&#111;in" data-jp-command="gr&#111;in"></div>
 </div>
 
-
-<!-- JunPoko Mode 暗転演出 -->
 <div id="junpokoAwakeOverlay" class="junpoko-awake-overlay">
-  <div class="junpoko-awake-text" id="junpokoAwakeText">
-    六つの試練を越えよ。
-  </div>
+  <div class="junpoko-awake-text" id="junpokoAwakeText">六つの試練を越えよ。</div>
 </div>
 
-<!-- JunPoko Mode ミッション枠 -->
 <div id="junpokoMissionBar" class="junpoko-mission-bar">
-  <div class="junpoko-mission-title">
-    🎁 ミッション
-    <span id="junpokoMissionBadge" class="junpoko-mission-badge">1</span>
-  </div>
-
+  <div class="junpoko-mission-title">🎁 ミッション <span id="junpokoMissionBadge" class="junpoko-mission-badge">1</span></div>
   <div class="junpoko-mission-list">
-    <div class="junpoko-mission-card" data-mission="nameClear">
-      <span>① NAME ARENAを<br>1回クリア</span>
-      <strong id="missionNameClear">0/1</strong>
-    </div>
-
-    <div class="junpoko-mission-card" data-mission="combo10">
-      <span>② 10コンボ達成</span>
-      <strong id="missionCombo10">0/10</strong>
-    </div>
-
-    <div class="junpoko-mission-card" data-mission="walkClear">
-      <span>③ WALK PARKを<br>1回クリア</span>
-      <strong id="missionWalkClear">0/1</strong>
-    </div>
-
-    <div class="junpoko-mission-card" data-mission="energyClear">
-      <span>④ ENERGY STAGEを<br>1回クリア</span>
-      <strong id="missionEnergyClear">0/1</strong>
-    </div>
-
-    <div class="junpoko-mission-card" data-mission="daily3">
-      <span>⑤ トレーニングを<br>3日分達成</span>
-      <strong id="missionDaily3">0/3</strong>
-    </div>
-
-    <div class="junpoko-mission-card" data-mission="longPress">
-      <span>⑥ JunPokoを<br>秘密コマンド</span>
-      <strong id="missionLongPress">0/1</strong>
-    </div>
+    <div class="junpoko-mission-card" data-mission="nameClear"><span>① NAME ARENAを<br>1回クリア</span><strong id="missionNameClear">0/1</strong></div>
+    <div class="junpoko-mission-card" data-mission="combo10"><span>② 10コンボ達成</span><strong id="missionCombo10">0/10</strong></div>
+    <div class="junpoko-mission-card" data-mission="walkClear"><span>③ WALK PARKを<br>1回クリア</span><strong id="missionWalkClear">0/1</strong></div>
+    <div class="junpoko-mission-card" data-mission="energyClear"><span>④ ENERGY STAGEを<br>1回クリア</span><strong id="missionEnergyClear">0/1</strong></div>
+    <div class="junpoko-mission-card" data-mission="daily3"><span>⑤ トレーニングを<br>3日分達成</span><strong id="missionDaily3">0/3</strong></div>
+    <div class="junpoko-mission-card" data-mission="longPress"><span>⑥ JunPokoを<br>秘密コマンド</span><strong id="missionLongPress">0/1</strong></div>
   </div>
 </div>
-<script src="../script.js?v=2"></script>
-<script src="../js/quest.js?v=34"></script>
+
+<script src="../script.js?v=6"></script>
+<script src="../js/app-settings.js?v=1"></script>
+<script src="../js/quest.js?v=35"></script>
+<script src="../js/quest-fixes.js?v=1"></script>
 </body>
 </html>

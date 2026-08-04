@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="bingbot" content="noindex, nofollow">
-
   <title>Pokémon Name Bank - GET</title>
-
-  <link rel="stylesheet" href="../style.css?v=7">
-  <link rel="stylesheet" href="../css/bank.css?v=5">
+  <link rel="stylesheet" href="../style.css?v=9">
+  <link rel="stylesheet" href="../css/bank.css?v=6">
+  <link rel="stylesheet" href="../css/bank-v2.css?v=1">
 </head>
-
 <body>
+<button class="menu-button" onclick="openMenu()">☰</button>
 
-<button class="menu-button" onclick="openMenu()">
-  ☰
-</button>
 <div class="container">
-
   <h1>Name Bank</h1>
-
-  <p>
-    Pokémon EN Name Database
-  </p>
+  <p>Pokémon EN Name Database</p>
 
   <div class="search-area">
-
-    <input
-      type="text"
-      id="pokemonSearch"
-      class="pokemon-search"
-      placeholder="Search Pokémon name..."
-    >
-
-    <button id="searchButton" class="search-button">
-      Search
-    </button>
-
+    <input type="search" id="pokemonSearch" class="pokemon-search" placeholder="Search Pokémon name..." aria-label="ポケモン検索">
+    <button id="searchButton" class="search-button">Search</button>
   </div>
-  <div class="filter-area">
+
+  <div class="filter-area" aria-label="世代フィルター">
     <button class="filter-button active" data-gen="all">All</button>
     <button class="filter-button" data-gen="1">Gen 1</button>
     <button class="filter-button" data-gen="2">Gen 2</button>
@@ -53,42 +34,51 @@
     <button class="filter-button" data-gen="7">Gen 7</button>
     <button class="filter-button" data-gen="8">Gen 8</button>
     <button class="filter-button" data-gen="9">Gen 9</button>
-
   </div>
 
-  <div id="pokemonList" class="pokemon-list">
-    Loading...
+  <div class="type-filter-row">
+    <label for="typeFilter">タイプ</label>
+    <select id="typeFilter">
+      <option value="all">すべて</option>
+      <option value="ノーマル">ノーマル</option>
+      <option value="ほのお">ほのお</option>
+      <option value="みず">みず</option>
+      <option value="でんき">でんき</option>
+      <option value="くさ">くさ</option>
+      <option value="こおり">こおり</option>
+      <option value="かくとう">かくとう</option>
+      <option value="どく">どく</option>
+      <option value="じめん">じめん</option>
+      <option value="ひこう">ひこう</option>
+      <option value="エスパー">エスパー</option>
+      <option value="むし">むし</option>
+      <option value="いわ">いわ</option>
+      <option value="ゴースト">ゴースト</option>
+      <option value="ドラゴン">ドラゴン</option>
+      <option value="あく">あく</option>
+      <option value="はがね">はがね</option>
+      <option value="フェアリー">フェアリー</option>
+    </select>
+    <span id="resultCount" class="result-count"></span>
   </div>
 
+  <div id="pokemonList" class="pokemon-list">Loading...</div>
 </div>
 
-<script src="../script.js"></script>
-<script src="../js/pokemon.js?v=15"></script>
-<button
-  id="scrollTopBtn"
-  class="side-top-button"
-  onclick="scrollToTop()"
->
-  上へ
-</button>
+<button id="scrollTopBtn" class="side-top-button" onclick="scrollToTop()">上へ</button>
+<button id="sideRateButton" class="side-rate-button" onclick="changeSpeechRate()">速さ：通常</button>
 
-<button
-  id="sideRateButton"
-  class="side-rate-button"
-  onclick="changeSpeechRate()"
->
-  速さ：通常
-</button>
-
-<div id="sideMenu" class="side-menu">
+<nav id="sideMenu" class="side-menu">
   <button class="menu-close-button" onclick="closeMenu()">×</button>
-
   <a href="../index.html">Home</a>
   <a href="./namebank.html">Name Bank</a>
   <a href="./dailyquiz.html">Daily Quiz</a>
   <a href="./quest.html">EN Quest</a>
   <a href="./settings.html">Settings</a>
-</div>
+</nav>
 
+<script src="../script.js?v=6"></script>
+<script src="../js/app-settings.js?v=1"></script>
+<script src="../js/pokemon.js?v=16"></script>
 </body>
 </html>

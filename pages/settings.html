@@ -1,70 +1,86 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="robots" content="noindex, nofollow">
-<meta name="googlebot" content="noindex, nofollow">
-<meta name="bingbot" content="noindex, nofollow">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="bingbot" content="noindex, nofollow">
 
-<title>GET - Global EN Trainer</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <title>Settings - GET</title>
 
-<title>Settings - GET</title>
-
-<link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css?v=9">
+  <link rel="stylesheet" href="../css/settings.css?v=1">
 </head>
 
 <body>
-<button class="menu-button" onclick="openMenu()">
-  ☰
-</button>
+<button class="menu-button" onclick="openMenu()">☰</button>
 
-<div id="sideMenu" class="side-menu">
-
-  <button
-    class="menu-close-button"
-    onclick="closeMenu()"
-  >
-    ×
-  </button>
-
+<nav id="sideMenu" class="side-menu">
+  <button class="menu-close-button" onclick="closeMenu()">×</button>
   <a href="../index.html">Home</a>
+  <a href="./namebank.html">Name Bank</a>
+  <a href="./dailyquiz.html">Daily Quiz</a>
+  <a href="./quest.html">EN Quest</a>
+  <a href="./settings.html">Settings</a>
+</nav>
 
-  <a href="./namebank.html">
-    Name Bank
-  </a>
-
-  <a href="./dailyquiz.html">
-    Daily Quiz
-  </a>
-
-  <a href="./quest.html">
-    EN Quest
-  </a>
-
-  <a href="./settings.html">
-    Settings
-  </a>
-
-</div>
-<div class="container">
-
+<main class="container settings-container">
   <h1>Settings</h1>
+  <p>App Settings</p>
 
-  <p>
-    App Settings
-  </p>
+  <div class="settings-grid">
+    <section class="setting-card">
+      <h2>読み上げ速度</h2>
+      <p>Name BankやNAME ARENAの英語音声速度です。</p>
+      <div class="setting-row">
+        <label for="speechRate">Speech rate</label>
+        <select id="speechRate">
+          <option value="0.7">ゆっくり</option>
+          <option value="0.9">通常</option>
+          <option value="1.15">速め</option>
+        </select>
+      </div>
+    </section>
 
-</div>
+    <section class="setting-card">
+      <h2>BGM</h2>
+      <p>EN QuestなどのBGM再生を設定します。</p>
+      <div class="setting-row">
+        <label for="bgmEnabled">BGMを再生</label>
+        <input id="bgmEnabled" class="setting-switch" type="checkbox">
+      </div>
+      <div class="setting-row">
+        <label for="bgmVolume">音量 <span id="bgmVolumeLabel"></span></label>
+        <input id="bgmVolume" type="range" min="0" max="1" step="0.05">
+      </div>
+    </section>
 
-<script src="../script.js"></script>
-<script src="../js/storage.js"></script>
+    <section class="setting-card">
+      <h2>表示</h2>
+      <p>画面演出が強く感じる場合に動きを減らします。</p>
+      <div class="setting-row">
+        <label for="reducedMotion">動きを減らす</label>
+        <input id="reducedMotion" class="setting-switch" type="checkbox">
+      </div>
+    </section>
 
+    <section class="setting-card">
+      <h2>データ管理</h2>
+      <p>端末内に保存された設定や学習進行をリセットします。</p>
+      <div class="setting-row">
+        <button id="resetSettingsButton" class="settings-button" type="button">設定だけリセット</button>
+        <button id="resetLearningButton" class="settings-button danger" type="button">学習データをリセット</button>
+      </div>
+    </section>
+  </div>
+
+  <div id="settingsStatus" class="settings-status" role="status"></div>
+</main>
+
+<script src="../script.js?v=6"></script>
+<script src="../js/app-settings.js?v=1"></script>
+<script src="../js/storage.js?v=2"></script>
 </body>
 </html>
