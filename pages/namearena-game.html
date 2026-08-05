@@ -1,90 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="bingbot" content="noindex, nofollow">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ea580c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GET">
   <title>NAME ARENA GAME - GET</title>
-
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/images/sheep.PNG">
+  <link rel="stylesheet" href="../css/foundation.css?v=1" data-get-foundation>
   <link rel="stylesheet" href="../css/namearena-game.css?v=17">
 </head>
-
 <body>
+  <main class="arena-screen">
+    <div class="wood-frame">
+      <div class="status-area">
+        <div class="hp-box" id="hpBox">❤️ ❤️ ❤️</div>
+        <div class="sheep-message" id="sheepMessage">Ready!</div>
+        <button id="exitButton" class="exit-button" type="button" aria-label="ゲームを終了">×</button>
+      </div>
 
-<div class="arena-screen">
+      <section class="question-box">
+        <div class="question-label">お題</div>
+        <div class="question-text" id="questionText">Loading...</div>
+        <button class="sound-button" type="button" id="soundButton" aria-label="英語名を読み上げる">🔊</button>
+      </section>
 
-  <div class="wood-frame">
+      <section class="timer-box">
+        <div class="timer-label">TIME</div>
+        <div class="timer-bar"><div class="timer-fill" id="timerFill"></div></div>
+        <div class="timer-count" id="timerCount">18</div>
+      </section>
 
-    <div class="status-area">
-  <div class="hp-box" id="hpBox">
-    ❤️ ❤️ ❤️
+      <section class="answer-grid" aria-label="回答候補">
+        <button class="answer-button" type="button"></button>
+        <button class="answer-button" type="button"></button>
+        <button class="answer-button" type="button"></button>
+        <button class="answer-button" type="button"></button>
+      </section>
+    </div>
+  </main>
+
+  <div id="comboCutin" class="combo-cutin hidden" aria-live="polite">
+    <img id="comboImage" class="combo-image" src="" alt="">
   </div>
 
-  <div class="sheep-message" id="sheepMessage">
-    Ready!
-  </div>
-
-  <button id="exitButton" class="exit-button" type="button">
-    ×
-  </button>
-</div>
-
-    <section class="question-box">
-      <div class="question-label">
-        お題
-      </div>
-
-      <div class="question-text" id="questionText">
-        ピカチュウ
-      </div>
-
-      <button class="sound-button" type="button" id="soundButton">
-        🔊
-      </button>
-    </section>
-
-    <section class="timer-box">
-      <div class="timer-label">
-        TIME
-      </div>
-
-      <div class="timer-bar">
-        <div class="timer-fill" id="timerFill"></div>
-      </div>
-
-      <div class="timer-count" id="timerCount">
-        18
-      </div>
-    </section>
-
-    <section class="answer-grid">
-      <button class="answer-button"></button>
-      <button class="answer-button"></button>
-      <button class="answer-button"></button>
-      <button class="answer-button"></button>
-    </section>
-
-  </div>
-
-</div>
-
-<div id="comboCutin" class="combo-cutin hidden">
-
-  <img
-    id="comboImage"
-    class="combo-image"
-    src=""
-    alt=""
-  >
-
-</div>
-
-<script src="../js/namearena-game.js?v=26"></script>
-
+  <script src="../js/app-settings.js?v=2"></script>
+  <script src="../js/pokemon-data.js?v=1"></script>
+  <script src="../script.js?v=7"></script>
+  <script src="../js/namearena-game.js?v=26"></script>
+  <script src="../js/namearena-data-bridge.js?v=1"></script>
 </body>
 </html>
