@@ -24,6 +24,11 @@ function isImmersivePage(){
 
 function ensureHeadMetadata(){
   const root = getRootPrefix();
+  const viewport = document.querySelector('meta[name="viewport"]');
+
+  if(viewport){
+    viewport.content = "width=device-width,initial-scale=1,viewport-fit=cover";
+  }
 
   if(!document.querySelector('link[data-get-foundation]')){
     const foundation = document.createElement("link");
