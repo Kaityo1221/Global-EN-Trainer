@@ -35,8 +35,13 @@ body.get-app{
 }
 
 body.get-app.get-immersive{
-  padding-top:0;
-  padding-bottom:0;
+  width:100%;
+  max-width:none;
+  min-height:100dvh;
+  margin:0;
+  padding:0!important;
+  display:block;
+  overflow:hidden;
 }
 
 button,
@@ -214,6 +219,18 @@ select{
 .get-app .menu-button,
 .get-app .side-menu{
   display:none!important;
+}
+
+.get-app .version-badge{
+  top:calc(var(--get-topbar-height) + var(--get-safe-top) + 8px);
+  left:max(12px,env(safe-area-inset-left));
+  z-index:11000;
+}
+
+.get-app .update-log{
+  top:calc(var(--get-topbar-height) + var(--get-safe-top) + 48px);
+  right:max(12px,env(safe-area-inset-right));
+  z-index:11500;
 }
 
 .get-app .container,
