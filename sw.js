@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "get-v1-phase1-20260805";
+const CACHE_VERSION = "get-v1-phase1-20260805b";
 const CORE_CACHE = CACHE_VERSION + "-core";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 
@@ -8,6 +8,7 @@ const CORE_ASSETS = [
   "./",
   "./index.html",
   "./offline.html",
+  "./manifest.webmanifest",
   "./style.css",
   "./css/foundation.css",
   "./css/bank.css",
@@ -22,10 +23,12 @@ const CORE_ASSETS = [
   "./js/pokemon-data.js",
   "./js/pokemon.js",
   "./js/quiz.js",
+  "./js/quiz-data-bridge.js",
   "./js/quest.js",
   "./js/quest-fixes.js",
   "./js/storage.js",
   "./js/namearena-game.js",
+  "./js/namearena-data-bridge.js",
   "./pages/namebank.html",
   "./pages/dailyquiz.html",
   "./pages/quest.html",
@@ -45,7 +48,7 @@ const CORE_ASSETS = [
   "./data/gen9.json"
 ];
 
-self.addEventListener("install", event => {
+self.addEventListener("install",event => {
   event.waitUntil(
     caches.open(CORE_CACHE)
       .then(cache => cache.addAll(CORE_ASSETS))
@@ -53,7 +56,7 @@ self.addEventListener("install", event => {
   );
 });
 
-self.addEventListener("activate", event => {
+self.addEventListener("activate",event => {
   event.waitUntil(
     caches.keys()
       .then(keys => Promise.all(
@@ -65,7 +68,7 @@ self.addEventListener("activate", event => {
   );
 });
 
-self.addEventListener("fetch", event => {
+self.addEventListener("fetch",event => {
   const request = event.request;
   const url = new URL(request.url);
 
@@ -81,13 +84,11 @@ self.addEventListener("fetch", event => {
           caches.open(RUNTIME_CACHE).then(cache => cache.put(request,copy));
           return response;
         })
-        .catch(async () => {
-          return (
-            await caches.match(request) ||
-            await caches.match("./index.html") ||
-            await caches.match("./offline.html")
-          );
-        })
+        .catch(async () => (
+          await caches.match(request) ||
+          await caches.match("./index.html") ||
+          await caches.match("./offline.html")
+        ))
     );
     return;
   }
