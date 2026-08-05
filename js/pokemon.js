@@ -1,152 +1,54 @@
 "use strict";
 
-/*
-  GET - Global EN Trainer
-  Pokémon Name Bank Script
-*/
-
 let allPokemonData = [];
-
+let activeGeneration = "all";
+let activeType = "all";
 let speechRate = 0.9;
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadPokemonData();
-});
-
-async function loadPokemonData(){
-  const list = document.getElementById("pokemonList");
-  const search = document.getElementById("pokemonSearch");
-  const searchButton = document.getElementById("searchButton");
-
-  if(!list){
-    return;
-  }
-
-  list.innerHTML = "読み込み中...";
-
-  try{
-    const genFiles = [
-  "../data/gen1.json",
-  "../data/gen2.json",
-  "../data/gen3.json",
-  "../data/gen4.json",
-  "../data/gen5.json",
-  "../data/gen6.json",
-  "../data/gen7.json",
-  "../data/gen8.json",
-  "../data/gen9.json"
-];
-
-const results = await Promise.all(
-  genFiles.map(async file => {
-    const response = await fetch(file);
-
-    if(!response.ok){
-      throw new Error(file + " の読み込み失敗: " + response.status);
-    }
-
-    return await response.json();
-  })
-);
-allPokemonData = results.flat();
-const params = new URLSearchParams(window.location.search);
-const searchKeyword = params.get("search");
-
-if(searchKeyword && search){
-  search.value = searchKeyword;
-
-  renderPokemonList(
-    filterPokemonByKeyword(searchKeyword)
-  );
-}else{
-  renderPokemonList(allPokemonData);
-}
-    setupGenFilters();
-    if(search && searchButton){
-      searchButton.addEventListener("click", () => {
-        runSearch();
-      });
-
-      search.addEventListener("keydown", (event) => {
-        if(event.key === "Enter"){
-          runSearch();
-        }
-      });
-    }
-
-  }catch(error){
-    console.error(error);
-
-    list.innerHTML = `
-      <div class="pokemon-card">
-        <div class="pokemon-en">読み込みエラー</div>
-        <div class="pokemon-jp">${error.message}</div>
-      </div>
-    `;
-  }
-}
-function filterPokemonByKeyword(keyword){
-  const normalizedKeyword = keyword.trim().toLowerCase();
-
-  if(normalizedKeyword === ""){
-    return allPokemonData;
-  }
-
-  return allPokemonData.filter(pokemon => {
-    return (
-      pokemon.no.includes(normalizedKeyword) ||
-      pokemon.en.toLowerCase().includes(normalizedKeyword) ||
-      (pokemon.jp && pokemon.jp.includes(keyword))
-    );
-  });
-}
-function runSearch(){
-  const search = document.getElementById("pokemonSearch");
-
-  if(!search){
-    return;
-  }
-
-  const keyword = search.value.trim();
-
-  renderPokemonList(
-    filterPokemonByKeyword(keyword)
-  );
-}
-
+const TYPE_CLASS_MAP = {
+  "ノーマル":"normal","ほのお":"fire","みず":"water","でんき":"electric",
+  "くさ":"grass","こおり":"ice","かくとう":"fighting","どく":"poison",
+  "じめん":"ground","ひこう":"flying","エスパー":"psychic","むし":"bug",
+  "いわ":"rock","ゴースト":"ghost","ドラゴン":"dragon","あく":"dark",
+  "はがね":"steel","フェアリー":"fairy"
+};
 
 function getTypeClass(type){
-  const typeMap = {
-    "ノーマル": "normal",
-    "ほのお": "fire",
-    "みず": "water",
-    "でんき": "electric",
-    "くさ": "grass",
-    "こおり": "ice",
-    "かくとう": "fighting",
-    "どく": "poison",
-    "じめん": "ground",
-    "ひこう": "flying",
-    "エスパー": "psychic",
-    "むし": "bug",
-    "いわ": "rock",
-    "ゴースト": "ghost",
-    "ドラゴン": "dragon",
-    "あく": "dark",
-    "はがね": "steel",
-    "フェアリー": "fairy"
-  };
-
-  return typeMap[type] || "unknown";
+  return TYPE_CLASS_MAP[type] || "normal";
 }
+
+function getSearchKeyword(){
+  const search = document.getElementById("pokemonSearch");
+  return search ? search.value.trim() : "";
+}
+
+function filterPokemon(){
+  const keyword = getSearchKeyword();
+  const normalized = keyword.toLowerCase();
+
+  return allPokemonData.filter(pokemon => {
+    const matchesKeyword = !keyword || (
+      String(pokemon.no).includes(normalized) ||
+      String(pokemon.en || "").toLowerCase().includes(normalized) ||
+      String(pokemon.jp || "").includes(keyword)
+    );
+
+    const matchesGeneration = activeGeneration === "all" ||
+      String(pokemon.gen) === activeGeneration;
+
+    const matchesType = activeType === "all" ||
+      (Array.isArray(pokemon.types) && pokemon.types.includes(activeType));
+
+    return matchesKeyword && matchesGeneration && matchesType;
+  });
+}
+
 function renderPokemonList(data){
   const list = document.getElementById("pokemonList");
+  const count = document.getElementById("resultCount");
 
-  if(!list){
-    return;
-  }
-
-  list.innerHTML = "";
+  if(!list) return;
+  if(count) count.textContent = data.length + "匹";
 
   if(data.length === 0){
     list.innerHTML = `
@@ -158,122 +60,142 @@ function renderPokemonList(data){
     return;
   }
 
-  data.forEach(pokemon => {
-    const card = document.createElement("div");
-    card.className = "pokemon-card";
+  list.innerHTML = data.map(pokemon => {
+    const types = Array.isArray(pokemon.types) ? pokemon.types : [];
+    const mainType = types[0] || "ノーマル";
+    const safeEnglishName = String(pokemon.en || "").replace(/'/g,"&#39;");
 
-    card.innerHTML = `
-  <div class="pokemon-no">No.${pokemon.no}</div>
-  <div class="pokemon-name-row">
-  <div class="pokemon-en">${pokemon.en}</div>
+    return `
+      <article class="pokemon-card card-type-${getTypeClass(mainType)}">
+        <div class="pokemon-no">No.${String(pokemon.no).padStart(3,"0")}</div>
+        <div class="pokemon-name-row">
+          <div class="pokemon-en">${pokemon.en}</div>
+          <button class="speak-button" type="button" data-speak="${safeEnglishName}" aria-label="${pokemon.en}を読み上げる">
+            <img src="../assets/images/speaker.png" alt="" class="speaker-icon">
+          </button>
+        </div>
+        <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
+        <div class="pokemon-types">
+          ${types.map(type => `<span class="type-badge type-${getTypeClass(type)}">${type}</span>`).join("")}
+        </div>
+      </article>
+    `;
+  }).join("");
 
- <button
-  class="speak-button"
-  onclick="speakPokemon('${pokemon.en}')"
->
-  <img
-    src="../assets/images/speaker.png"
-    alt="speak"
-    class="speaker-icon"
-  >
-</button>
-</div>
-  <div class="pokemon-jp">${pokemon.jp || "Japanese name pending"}</div>
-    <div class="pokemon-types">
-    ${(pokemon.types || []).map(type => `
-      <span class="type-badge type-${getTypeClass(type)}">
-        ${type}
-      </span>
-    `).join("")}
-  </div>
-`;
-    list.appendChild(card);
+  list.querySelectorAll("[data-speak]").forEach(button => {
+    button.addEventListener("click", () => speakPokemon(button.dataset.speak));
   });
 }
-function setupGenFilters(){
-  const buttons = document.querySelectorAll(".filter-button");
 
-  buttons.forEach(button => {
+function renderFilteredPokemon(){
+  renderPokemonList(filterPokemon());
+}
+
+function setupFilters(){
+  document.querySelectorAll(".filter-button").forEach(button => {
     button.addEventListener("click", () => {
-      buttons.forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".filter-button")
+        .forEach(item => item.classList.remove("active"));
+
       button.classList.add("active");
-
-      const gen = button.dataset.gen;
-
-      if(gen === "all"){
-        renderPokemonList(allPokemonData);
-        return;
-      }
-
-      const filtered = allPokemonData.filter(pokemon => {
-        return String(pokemon.gen) === gen;
-      });
-
-      renderPokemonList(filtered);
+      activeGeneration = button.dataset.gen || "all";
+      renderFilteredPokemon();
     });
   });
+
+  const typeFilter = document.getElementById("typeFilter");
+  if(typeFilter){
+    typeFilter.addEventListener("change", () => {
+      activeType = typeFilter.value;
+      renderFilteredPokemon();
+    });
+  }
+
+  const search = document.getElementById("pokemonSearch");
+  const searchButton = document.getElementById("searchButton");
+
+  if(searchButton) searchButton.addEventListener("click",renderFilteredPokemon);
+  if(search){
+    search.addEventListener("input",renderFilteredPokemon);
+    search.addEventListener("keydown",event => {
+      if(event.key === "Enter") renderFilteredPokemon();
+    });
+  }
 }
+
+async function initializeNameBank(){
+  const list = document.getElementById("pokemonList");
+  if(!list) return;
+
+  list.textContent = "読み込み中...";
+
+  try{
+    if(!window.GETPokemonData){
+      throw new Error("共通ポケモンデータを読み込めませんでした");
+    }
+
+    allPokemonData = await window.GETPokemonData.loadAll();
+
+    const settings = typeof getAppSettings === "function"
+      ? getAppSettings()
+      : null;
+
+    if(settings) speechRate = Number(settings.speechRate);
+
+    const params = new URLSearchParams(window.location.search);
+    const searchKeyword = params.get("search");
+    const search = document.getElementById("pokemonSearch");
+
+    if(searchKeyword && search) search.value = searchKeyword;
+
+    setupFilters();
+    renderFilteredPokemon();
+  }catch(error){
+    console.error(error);
+    list.innerHTML = `
+      <div class="pokemon-card">
+        <div class="pokemon-en">読み込みエラー</div>
+        <div class="pokemon-jp">${error.message}</div>
+      </div>
+    `;
+  }
+}
+
 window.speakPokemon = function(name){
+  if(!("speechSynthesis" in window)) return;
 
   const speech = new SpeechSynthesisUtterance(name);
-
   speech.lang = "en-US";
   speech.rate = speechRate;
   speech.pitch = 1;
   speech.volume = 1;
 
-  speechSynthesis.cancel();
-  speechSynthesis.speak(speech);
-}
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(speech);
+};
+
 window.changeSpeechRate = function(){
+  const rates = [0.7,0.9,1.15];
+  const labels = ["ゆっくり","通常","速め"];
+  const currentIndex = rates.indexOf(speechRate);
+  const nextIndex = (currentIndex + 1) % rates.length;
+
+  speechRate = rates[nextIndex];
 
   const button = document.getElementById("sideRateButton");
+  if(button) button.textContent = "速さ：" + labels[nextIndex];
 
-  if(speechRate === 0.7){
-    speechRate = 0.9;
-
-    if(button){
-      button.innerHTML = "速さ：通常";
-    }
-
-    return;
+  if(typeof getAppSettings === "function" && typeof saveAppSettings === "function"){
+    saveAppSettings({...getAppSettings(),speechRate});
   }
+};
 
-  if(speechRate === 0.9){
-    speechRate = 1.15;
-
-    if(button){
-      button.innerHTML = "速さ：速め";
-    }
-
-    return;
-  }
-
-  speechRate = 0.7;
-
-  if(button){
-    button.innerHTML = "速さ：ゆっくり";
-  }
-}
 window.scrollToTop = function(){
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
-window.openMenu = function(){
-  const menu = document.getElementById("sideMenu");
+  window.scrollTo({top:0,behavior:"smooth"});
+};
 
-  if(menu){
-    menu.classList.add("open");
-  }
-}
+window.addEventListener("getsettingschange",event => {
+  speechRate = Number(event.detail.speechRate);
+});
 
-window.closeMenu = function(){
-  const menu = document.getElementById("sideMenu");
-
-  if(menu){
-    menu.classList.remove("open");
-  }
-}
-
+document.addEventListener("DOMContentLoaded",initializeNameBank);

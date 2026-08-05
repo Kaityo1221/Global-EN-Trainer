@@ -1,0 +1,21 @@
+{
+  "name":"GET - Global EN Trainer",
+  "short_name":"GET",
+  "description":"ポケモンの英語名とCommunity Ambassador向け英語を学ぶトレーニングアプリ",
+  "lang":"ja",
+  "start_url":"./index.html",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait-primary",
+  "background_color":"#fff8ef",
+  "theme_color":"#ea580c",
+  "categories":["education","games"],
+  "icons":[
+    {
+      "src":"./assets/images/sheep.PNG",
+      "sizes":"any",
+      "type":"image/png",
+      "purpose":"any maskable"
+    }
+  ]
+}

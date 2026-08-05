@@ -2,85 +2,74 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="bingbot" content="noindex, nofollow">
-
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ea580c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GET">
   <title>Settings - GET</title>
-
-  <link rel="stylesheet" href="../style.css?v=9">
-  <link rel="stylesheet" href="../css/settings.css?v=1">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/images/sheep.PNG">
+  <link rel="stylesheet" href="../style.css?v=10">
+  <link rel="stylesheet" href="../css/foundation.css?v=1" data-get-foundation>
+  <link rel="stylesheet" href="../css/settings.css?v=2">
 </head>
-
 <body>
-<button class="menu-button" onclick="openMenu()">☰</button>
+  <main class="container settings-container">
+    <h1>Settings</h1>
+    <p>App Settings</p>
 
-<nav id="sideMenu" class="side-menu">
-  <button class="menu-close-button" onclick="closeMenu()">×</button>
-  <a href="../index.html">Home</a>
-  <a href="./namebank.html">Name Bank</a>
-  <a href="./dailyquiz.html">Daily Quiz</a>
-  <a href="./quest.html">EN Quest</a>
-  <a href="./settings.html">Settings</a>
-</nav>
+    <div class="settings-grid">
+      <section class="setting-card">
+        <h2>読み上げ速度</h2>
+        <p>Name BankやNAME ARENAの英語音声速度です。</p>
+        <div class="setting-row">
+          <label for="speechRate">Speech rate</label>
+          <select id="speechRate">
+            <option value="0.7">ゆっくり</option>
+            <option value="0.9">通常</option>
+            <option value="1.15">速め</option>
+          </select>
+        </div>
+      </section>
 
-<main class="container settings-container">
-  <h1>Settings</h1>
-  <p>App Settings</p>
+      <section class="setting-card">
+        <h2>BGM</h2>
+        <p>EN QuestなどのBGM再生を設定します。</p>
+        <div class="setting-row">
+          <label for="bgmEnabled">BGMを再生</label>
+          <input id="bgmEnabled" class="setting-switch" type="checkbox">
+        </div>
+        <div class="setting-row">
+          <label for="bgmVolume">音量 <span id="bgmVolumeLabel"></span></label>
+          <input id="bgmVolume" type="range" min="0" max="1" step="0.05">
+        </div>
+      </section>
 
-  <div class="settings-grid">
-    <section class="setting-card">
-      <h2>読み上げ速度</h2>
-      <p>Name BankやNAME ARENAの英語音声速度です。</p>
-      <div class="setting-row">
-        <label for="speechRate">Speech rate</label>
-        <select id="speechRate">
-          <option value="0.7">ゆっくり</option>
-          <option value="0.9">通常</option>
-          <option value="1.15">速め</option>
-        </select>
-      </div>
-    </section>
+      <section class="setting-card">
+        <h2>表示</h2>
+        <p>画面演出が強く感じる場合に動きを減らします。</p>
+        <div class="setting-row">
+          <label for="reducedMotion">動きを減らす</label>
+          <input id="reducedMotion" class="setting-switch" type="checkbox">
+        </div>
+      </section>
 
-    <section class="setting-card">
-      <h2>BGM</h2>
-      <p>EN QuestなどのBGM再生を設定します。</p>
-      <div class="setting-row">
-        <label for="bgmEnabled">BGMを再生</label>
-        <input id="bgmEnabled" class="setting-switch" type="checkbox">
-      </div>
-      <div class="setting-row">
-        <label for="bgmVolume">音量 <span id="bgmVolumeLabel"></span></label>
-        <input id="bgmVolume" type="range" min="0" max="1" step="0.05">
-      </div>
-    </section>
+      <section class="setting-card">
+        <h2>データ管理</h2>
+        <p>端末内に保存された設定や学習進行をリセットします。</p>
+        <div class="setting-row">
+          <button id="resetSettingsButton" class="settings-button" type="button">設定だけリセット</button>
+          <button id="resetLearningButton" class="settings-button danger" type="button">学習データをリセット</button>
+        </div>
+      </section>
+    </div>
 
-    <section class="setting-card">
-      <h2>表示</h2>
-      <p>画面演出が強く感じる場合に動きを減らします。</p>
-      <div class="setting-row">
-        <label for="reducedMotion">動きを減らす</label>
-        <input id="reducedMotion" class="setting-switch" type="checkbox">
-      </div>
-    </section>
+    <div id="settingsStatus" class="settings-status" role="status" aria-live="polite"></div>
+  </main>
 
-    <section class="setting-card">
-      <h2>データ管理</h2>
-      <p>端末内に保存された設定や学習進行をリセットします。</p>
-      <div class="setting-row">
-        <button id="resetSettingsButton" class="settings-button" type="button">設定だけリセット</button>
-        <button id="resetLearningButton" class="settings-button danger" type="button">学習データをリセット</button>
-      </div>
-    </section>
-  </div>
-
-  <div id="settingsStatus" class="settings-status" role="status"></div>
-</main>
-
-<script src="../script.js?v=6"></script>
-<script src="../js/app-settings.js?v=1"></script>
-<script src="../js/storage.js?v=2"></script>
+  <script src="../js/app-settings.js?v=2"></script>
+  <script src="../script.js?v=7"></script>
+  <script src="../js/storage.js?v=2"></script>
 </body>
 </html>
