@@ -2,105 +2,93 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="bingbot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ea580c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="GET">
   <title>GET - Global EN Trainer</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/images/sheep.PNG">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
+  <link rel="stylesheet" href="css/foundation.css?v=1" data-get-foundation>
 </head>
 <body>
-<button class="menu-button" onclick="openMenu()">☰</button>
+  <div class="version-badge" onclick="toggleUpdateLog()">v0.3.0</div>
 
-<nav class="side-menu" id="sideMenu">
-  <button class="menu-close-button" onclick="closeMenu()">×</button>
-  <a href="index.html">Top</a>
-  <a href="pages/namebank.html">Name Bank</a>
-  <a href="pages/dailyquiz.html">Daily Quiz</a>
-  <a href="pages/quest.html">EN Quest</a>
-  <a href="pages/settings.html">Settings</a>
-</nav>
-
-<div class="version-badge" onclick="toggleUpdateLog()">v0.2.0</div>
-
-<div class="update-log" id="updateLog">
-  <h3>更新履歴 v0.2.0</h3>
-  <p>
-    ・第1〜第9世代のName Bankに対応<br>
-    ・Today's Pokémonを追加<br>
-    ・タイプ別クイズ演出を追加<br>
-    ・NAME ARENAとコンボ演出を実装<br>
-    ・JunPoko秘密ミッションを実装<br>
-    ・Settings画面と端末保存を実装<br>
-    ・操作安定性とアクセシビリティを改善<br>
-  </p>
-</div>
-
-<div class="home-container">
-  <section class="hero-card">
-    <div class="hero-badge">Pokémon English Practice</div>
-    <div class="hero-sheep-wrap">
-      <div class="sheep-glow"></div>
-      <img src="assets/images/sheep.PNG" class="hero-sheep" alt="GET Sheep">
-    </div>
-    <h1>GET</h1>
-    <p class="hero-subtitle">Global EN Trainer</p>
-    <p class="hero-text">ポケモンの英語名を、ゆるく・楽しく・実用的に覚えるためのトレーニングアプリ。</p>
-    <a class="start-button" href="pages/dailyquiz.html">DAILY QUIZ</a>
-
-    <div class="today-card type-electric" id="todayCard" onclick="goTodayPokemonDetail()">
-      <div class="today-bg-symbol" id="todaySymbol">⚡</div>
-      <div class="today-top">
-        <span class="today-label">✨ Today's Pokémon</span>
-        <span class="today-type" id="todayType">ELECTRIC</span>
-      </div>
-      <div class="today-name" id="todayName">Pikachu</div>
-      <div class="today-jp" id="todayJP">ピカチュウ</div>
-      <div class="today-bottom">
-        <span class="today-no" id="todayNo">No.025</span>
-        <button class="today-button" type="button" onclick="event.stopPropagation(); goTodayPokemonDetail()">LEARN <span>›</span></button>
-      </div>
-    </div>
-  </section>
-
-  <section class="menu-grid">
-    <a class="menu-card" href="pages/namebank.html">
-      <div class="menu-icon"><i class="fa-solid fa-book-open"></i></div>
-      <div><h2>Name Bank</h2><p>ポケモンの英語名を検索・確認する図鑑</p></div>
-    </a>
-    <a class="menu-card" href="pages/dailyquiz.html">
-      <div class="menu-icon"><i class="fa-solid fa-circle-question"></i></div>
-      <div><h2>Daily Quiz</h2><p>毎日少しずつ英語名を覚えるクイズ</p></div>
-    </a>
-    <a class="menu-card" href="pages/quest.html">
-      <div class="menu-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-      <div><h2>EN Quest</h2><p>ミッション形式で楽しく英語に慣れる</p></div>
-    </a>
-    <a class="menu-card" href="pages/settings.html">
-      <div class="menu-icon"><i class="fa-solid fa-gear"></i></div>
-      <div><h2>Settings</h2><p>音声・表示などの設定を変更する</p></div>
-    </a>
-  </section>
-
-  <section class="home-note">
-    <p>まずは <strong>Name Bank</strong> で名前を確認して、<br>慣れてきたら <strong>Daily Quiz</strong> に挑戦！</p>
-  </section>
-
-  <div class="social-links">
-    <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
-    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+  <div class="update-log" id="updateLog">
+    <h3>更新履歴 v0.3.0</h3>
+    <p>
+      ・共通アプリバーと下部ナビを追加<br>
+      ・iPhoneのセーフエリアへ対応<br>
+      ・PWAとオフラインキャッシュを追加<br>
+      ・オンライン状態表示を追加<br>
+      ・ポケモンデータの読み込みを共通化<br>
+      ・ページ共通デザイン基盤を追加<br>
+    </p>
   </div>
-</div>
 
-<script>
-function toggleUpdateLog(){
-  const log = document.getElementById("updateLog");
-  log.style.display = log.style.display === "block" ? "none" : "block";
-}
-</script>
-<script src="js/app-settings.js?v=1"></script>
-<script src="data/todayPokemon.js?v=3"></script>
-<script src="script.js?v=6"></script>
+  <main class="home-container">
+    <section class="hero-card">
+      <div class="hero-badge">Pokémon English Practice</div>
+      <div class="hero-sheep-wrap">
+        <div class="sheep-glow"></div>
+        <img src="assets/images/sheep.PNG" class="hero-sheep" alt="GET Sheep">
+      </div>
+      <h1>GET</h1>
+      <p class="hero-subtitle">Global EN Trainer</p>
+      <p class="hero-text">ポケモンの英語名を、ゆるく・楽しく・実用的に覚えるためのトレーニングアプリ。</p>
+      <a class="start-button" href="pages/dailyquiz.html">DAILY QUIZ</a>
+
+      <div class="today-card type-electric" id="todayCard" onclick="goTodayPokemonDetail()">
+        <div class="today-bg-symbol" id="todaySymbol">⚡</div>
+        <div class="today-top">
+          <span class="today-label">✨ Today's Pokémon</span>
+          <span class="today-type" id="todayType">ELECTRIC</span>
+        </div>
+        <div class="today-name" id="todayName">Loading...</div>
+        <div class="today-jp" id="todayJP">今日のポケモン</div>
+        <div class="today-bottom">
+          <span class="today-no" id="todayNo">No.---</span>
+          <button class="today-button" type="button" onclick="event.stopPropagation();goTodayPokemonDetail()">LEARN <span>›</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-grid">
+      <a class="menu-card" href="pages/namebank.html">
+        <div class="menu-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div><h2>Name Bank</h2><p>ポケモンの英語名を検索・確認する図鑑</p></div>
+      </a>
+      <a class="menu-card" href="pages/dailyquiz.html">
+        <div class="menu-icon"><i class="fa-solid fa-circle-question"></i></div>
+        <div><h2>Daily Quiz</h2><p>毎日少しずつ英語名を覚えるクイズ</p></div>
+      </a>
+      <a class="menu-card" href="pages/quest.html">
+        <div class="menu-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <div><h2>EN Quest</h2><p>ミッション形式で楽しく英語に慣れる</p></div>
+      </a>
+      <a class="menu-card" href="pages/settings.html">
+        <div class="menu-icon"><i class="fa-solid fa-gear"></i></div>
+        <div><h2>Settings</h2><p>音声・表示などの設定を変更する</p></div>
+      </a>
+    </section>
+
+    <section class="home-note">
+      <p>まずは <strong>Name Bank</strong> で名前を確認して、<br>慣れてきたら <strong>Daily Quiz</strong> に挑戦！</p>
+    </section>
+  </main>
+
+  <script>
+    function toggleUpdateLog(){
+      const log=document.getElementById("updateLog");
+      log.style.display=log.style.display==="block"?"none":"block";
+    }
+  </script>
+  <script src="js/pokemon-data.js?v=1"></script>
+  <script src="js/app-settings.js?v=2"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>
