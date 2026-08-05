@@ -1,8 +1,9 @@
 "use strict";
 
-const CACHE_VERSION = "get-v1-phase1-20260805b";
+const CACHE_VERSION = "get-v1-phase1-20260805c";
 const CORE_CACHE = CACHE_VERSION + "-core";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
+const MATCH_OPTIONS = {ignoreSearch:true};
 
 const CORE_ASSETS = [
   "./",
@@ -85,16 +86,16 @@ self.addEventListener("fetch",event => {
           return response;
         })
         .catch(async () => (
-          await caches.match(request) ||
-          await caches.match("./index.html") ||
-          await caches.match("./offline.html")
+          await caches.match(request,MATCH_OPTIONS) ||
+          await caches.match("./index.html",MATCH_OPTIONS) ||
+          await caches.match("./offline.html",MATCH_OPTIONS)
         ))
     );
     return;
   }
 
   event.respondWith(
-    caches.match(request).then(cached => {
+    caches.match(request,MATCH_OPTIONS).then(cached => {
       const network = fetch(request)
         .then(response => {
           if(response && response.ok){
