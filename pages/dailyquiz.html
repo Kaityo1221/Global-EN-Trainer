@@ -2,49 +2,42 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="bingbot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#ea580c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="GET">
   <title>Daily Quiz - GET</title>
-  <link rel="stylesheet" href="../style.css?v=9">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../assets/images/sheep.PNG">
+  <link rel="stylesheet" href="../style.css?v=10">
+  <link rel="stylesheet" href="../css/foundation.css?v=1" data-get-foundation>
   <link rel="stylesheet" href="../css/quiz.css?v=4">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
-<button class="menu-button" onclick="openMenu()">☰</button>
+  <main class="container quiz-container">
+    <h1>Daily Quiz</h1>
+    <p>Daily Pokémon EN Challenge</p>
 
-<nav id="sideMenu" class="side-menu">
-  <button class="menu-close-button" onclick="closeMenu()">×</button>
-  <a href="../index.html">Home</a>
-  <a href="./namebank.html">Name Bank</a>
-  <a href="./dailyquiz.html">Daily Quiz</a>
-  <a href="./quest.html">EN Quest</a>
-  <a href="./settings.html">Settings</a>
-</nav>
+    <section class="quiz-card" id="quizCard">
+      <div class="quiz-status">
+        <span id="quizCount">1 / 10</span>
+        <span id="quizScore">Score 0</span>
+      </div>
+      <div class="quiz-question-label">このポケモンの英語名は？</div>
+      <div class="quiz-question" id="quizQuestion">Loading...</div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+      <button class="quiz-next-button" id="quizNextButton" onclick="nextQuiz()" disabled hidden aria-hidden="true" type="button">Next</button>
+    </section>
+  </main>
 
-<main class="container quiz-container">
-  <h1>Daily Quiz</h1>
-  <p>Daily Pokémon EN Challenge</p>
-
-  <section class="quiz-card" id="quizCard">
-    <div class="quiz-status">
-      <span id="quizCount">1 / 10</span>
-      <span id="quizScore">Score 0</span>
-    </div>
-
-    <div class="quiz-question-label">このポケモンの英語名は？</div>
-    <div class="quiz-question" id="quizQuestion">Loading...</div>
-    <div class="quiz-options" id="quizOptions"></div>
-    <div class="quiz-result" id="quizResult" aria-live="polite"></div>
-
-    <button class="quiz-next-button" id="quizNextButton" onclick="nextQuiz()" disabled hidden aria-hidden="true">Next</button>
-  </section>
-</main>
-
-<audio id="enquestBgm" src="../assets/sounds/enquest-bgm.mp3" loop preload="auto"></audio>
-<script src="../script.js?v=6"></script>
-<script src="../js/app-settings.js?v=1"></script>
-<script src="../js/quiz.js?v=5"></script>
+  <audio id="enquestBgm" src="../assets/sounds/enquest-bgm.mp3" loop preload="none"></audio>
+  <script src="../js/app-settings.js?v=2"></script>
+  <script src="../js/pokemon-data.js?v=1"></script>
+  <script src="../script.js?v=7"></script>
+  <script src="../js/quiz.js?v=5"></script>
+  <script src="../js/quiz-data-bridge.js?v=1"></script>
 </body>
 </html>
