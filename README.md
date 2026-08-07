@@ -4,12 +4,30 @@ Pokémonの英語名を、検索・クイズ・ゲームで楽しく覚えるた
 
 ## Features
 
+### Daily Training
+
+- ホームを開いて約3分で完了する毎日の学習セット
+- Today's Pokémon、3問クイズ、CA Englishの3段階
+- 日付ごとに問題とフレーズを固定
+- 回答途中からの再開
+- 連続学習日数と自己ベストを端末へ保存
+- 曜日、時刻、進行状況に応じたGET Sheepメッセージ
+- 90日分の日次履歴を保持
+
 ### Today's Pokémon
 
 - 日付に応じて毎日1匹を表示
 - 英語名・日本語名・図鑑番号・タイプを確認
 - Name Bankの該当ポケモンへ直接移動
 - `data/gen1.json`〜`gen9.json`を正本として使用
+
+### CA English
+
+- Community Ambassadorの現場を想定した短い英語案内
+- Check-in、集合、移動、レイド、安全、混雑、初参加者対応など
+- 英文と日本語訳を表示
+- Settingsの速度を使った英語音声読み上げ
+- 日替わりフレーズとしてDaily Trainingへ組み込み
 
 ### Name Bank
 
@@ -56,6 +74,13 @@ Pokémonの英語名を、検索・クイズ・ゲームで楽しく覚えるた
 
 ルート直下の`script.js`が、通常ページへ共通アプリバーと下部ナビゲーションを追加し、PWA登録とオンライン状態管理を行います。
 
+### Daily Training
+
+- `js/daily-training.js`: 日次問題、進行、連続日数、途中再開を管理
+- `data/ca-phrases.js`: CA実戦英語のフレーズ集
+- `css/daily-home.css`: ホーム専用のDaily Training UI
+- Local Storageキー: `getDailyTrainingV1`
+
 ### Pokémon data
 
 ポケモンデータの正本は以下の9ファイルです。
@@ -67,12 +92,12 @@ data/gen2.json
 data/gen9.json
 ```
 
-`js/pokemon-data.js`が9ファイルを一度だけ読み込み、Today's Pokémon、Name Bank、Daily Quiz、NAME ARENAへ共有します。`data/todayPokemon.js`は互換性確認用の旧ファイルで、新しい画面からは読み込みません。
+`js/pokemon-data.js`が9ファイルを一度だけ読み込み、Today's Pokémon、Name Bank、Daily Training、Daily Quiz、NAME ARENAへ共有します。`data/todayPokemon.js`は互換性確認用の旧ファイルで、新しい画面からは読み込みません。
 
 ### PWA
 
 - `manifest.webmanifest`: ホーム画面アプリ情報
-- `sw.js`: アプリシェル、画面、ポケモンデータのキャッシュ
+- `sw.js`: アプリシェル、画面、ポケモンデータ、CA英語のキャッシュ
 - `offline.html`: 通信不能時のフォールバック
 - `css/foundation.css`: セーフエリア、共通ナビ、デザイントークン
 
@@ -99,12 +124,15 @@ Global-EN-Trainer/
 ├─ script.js
 ├─ assets/
 ├─ css/
-│  └─ foundation.css
+│  ├─ foundation.css
+│  └─ daily-home.css
 ├─ data/
+│  ├─ ca-phrases.js
 │  ├─ gen1.json
 │  ├─ ...
 │  └─ gen9.json
 ├─ js/
+│  ├─ daily-training.js
 │  ├─ pokemon-data.js
 │  └─ ...
 └─ pages/
@@ -122,7 +150,7 @@ python -m http.server 8000
 
 ## Version
 
-Current version: **v0.3.0 / v1.0 Phase 1**
+Current version: **v0.4.0 / v1.0 Phase 2**
 
 ## Issue Numbering
 
