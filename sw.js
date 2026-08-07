@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "get-v1-phase1-20260805c";
+const CACHE_VERSION = "get-v1-phase2-20260807a";
 const CORE_CACHE = CACHE_VERSION + "-core";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const MATCH_OPTIONS = {ignoreSearch:true};
@@ -12,6 +12,7 @@ const CORE_ASSETS = [
   "./manifest.webmanifest",
   "./style.css",
   "./css/foundation.css",
+  "./css/daily-home.css",
   "./css/bank.css",
   "./css/bank-v2.css",
   "./css/quiz.css",
@@ -22,6 +23,7 @@ const CORE_ASSETS = [
   "./script.js",
   "./js/app-settings.js",
   "./js/pokemon-data.js",
+  "./js/daily-training.js",
   "./js/pokemon.js",
   "./js/quiz.js",
   "./js/quiz-data-bridge.js",
@@ -30,6 +32,7 @@ const CORE_ASSETS = [
   "./js/storage.js",
   "./js/namearena-game.js",
   "./js/namearena-data-bridge.js",
+  "./data/ca-phrases.js",
   "./pages/namebank.html",
   "./pages/dailyquiz.html",
   "./pages/quest.html",

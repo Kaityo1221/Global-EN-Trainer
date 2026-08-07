@@ -11,74 +11,169 @@
   <title>GET - Global EN Trainer</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/images/sheep.PNG">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css?v=10">
   <link rel="stylesheet" href="css/foundation.css?v=1" data-get-foundation>
+  <link rel="stylesheet" href="css/daily-home.css?v=1">
 </head>
 <body>
-  <div class="version-badge" onclick="toggleUpdateLog()">v0.3.0</div>
+  <div class="version-badge" onclick="toggleUpdateLog()">v0.4.0</div>
 
   <div class="update-log" id="updateLog">
-    <h3>更新履歴 v0.3.0</h3>
+    <h3>更新履歴 v0.4.0</h3>
     <p>
-      ・共通アプリバーと下部ナビを追加<br>
-      ・iPhoneのセーフエリアへ対応<br>
-      ・PWAとオフラインキャッシュを追加<br>
-      ・オンライン状態表示を追加<br>
-      ・ポケモンデータの読み込みを共通化<br>
-      ・ページ共通デザイン基盤を追加<br>
+      ・毎朝3分のDaily Trainingを追加<br>
+      ・今日の3問クイズをホームへ統合<br>
+      ・CA実戦英語フレーズを追加<br>
+      ・連続学習日数と自己ベストを追加<br>
+      ・日次進行の保存と途中再開に対応<br>
+      ・GET Sheepの日替わりメッセージを追加<br>
     </p>
   </div>
 
-  <main class="home-container">
-    <section class="hero-card">
-      <div class="hero-badge">Pokémon English Practice</div>
-      <div class="hero-sheep-wrap">
-        <div class="sheep-glow"></div>
-        <img src="assets/images/sheep.PNG" class="hero-sheep" alt="GET Sheep">
-      </div>
-      <h1>GET</h1>
-      <p class="hero-subtitle">Global EN Trainer</p>
-      <p class="hero-text">ポケモンの英語名を、ゆるく・楽しく・実用的に覚えるためのトレーニングアプリ。</p>
-      <a class="start-button" href="pages/dailyquiz.html">DAILY QUIZ</a>
+  <main class="daily-home">
+    <div id="dailyDashboard" class="daily-dashboard">
+      <section class="daily-overview" aria-labelledby="dailyTitle">
+        <div class="daily-overview-top">
+          <div>
+            <p class="daily-eyebrow">TODAY'S 3-MINUTE TRAINING</p>
+            <h1 id="dailyTitle">Daily Training</h1>
+            <div id="dailyDate" class="daily-date">今日のトレーニング</div>
+          </div>
 
-      <div class="today-card type-electric" id="todayCard" onclick="goTodayPokemonDetail()">
-        <div class="today-bg-symbol" id="todaySymbol">⚡</div>
-        <div class="today-top">
-          <span class="today-label">✨ Today's Pokémon</span>
-          <span class="today-type" id="todayType">ELECTRIC</span>
+          <div class="daily-streak-card" aria-label="連続学習日数">
+            <span class="daily-streak-label">STREAK</span>
+            <strong id="dailyStreak" class="daily-streak-value">0日</strong>
+            <span id="dailyBest" class="daily-streak-best">BEST 0日</span>
+          </div>
         </div>
-        <div class="today-name" id="todayName">Loading...</div>
-        <div class="today-jp" id="todayJP">今日のポケモン</div>
-        <div class="today-bottom">
-          <span class="today-no" id="todayNo">No.---</span>
-          <button class="today-button" type="button" onclick="event.stopPropagation();goTodayPokemonDetail()">LEARN <span>›</span></button>
+
+        <div class="daily-sheep-message">
+          <img src="assets/images/sheep.PNG" alt="GET Sheep">
+          <div id="dailySheepMessage" class="daily-sheep-bubble" aria-live="polite">
+            今日のトレーニングを準備しているよ。
+          </div>
         </div>
+
+        <div class="daily-progress-head">
+          <span>今日の進み具合</span>
+          <span id="dailyProgressText">LOADING</span>
+        </div>
+        <div class="daily-progress-track" aria-hidden="true">
+          <div id="dailyProgressFill" class="daily-progress-fill"></div>
+        </div>
+      </section>
+
+      <div class="daily-steps">
+        <section class="daily-step-card" aria-labelledby="dailyPokemonHeading">
+          <div class="daily-step-header">
+            <div class="daily-step-title">
+              <span class="daily-step-number">1</span>
+              <div>
+                <h2 id="dailyPokemonHeading">Today's Pokémon</h2>
+                <p>今日の英語名をひとつ覚える</p>
+              </div>
+            </div>
+            <span class="daily-step-status">TODAY</span>
+          </div>
+
+          <div class="daily-pokemon-panel">
+            <div>
+              <div id="dailyPokemonName" class="daily-pokemon-name">Loading...</div>
+              <div id="dailyPokemonJp" class="daily-pokemon-jp">今日のポケモン</div>
+              <div id="dailyPokemonType" class="daily-pokemon-type">TYPE</div>
+            </div>
+            <button id="dailyPokemonDetail" class="daily-detail-button" type="button">
+              Name Bankへ
+            </button>
+          </div>
+        </section>
+
+        <section id="dailyQuizStep" class="daily-step-card" aria-labelledby="dailyQuizHeading">
+          <div class="daily-step-header">
+            <div class="daily-step-title">
+              <span class="daily-step-number">2</span>
+              <div>
+                <h2 id="dailyQuizHeading">3 Question Quiz</h2>
+                <p>日本語名から英語名を選ぶ</p>
+              </div>
+            </div>
+            <span id="dailyQuizCounter" class="daily-step-status">1 / 3</span>
+          </div>
+
+          <div id="dailyQuizQuestion" class="daily-quiz-question">Loading...</div>
+          <div id="dailyQuizOptions" class="daily-answer-grid"></div>
+          <div id="dailyQuizFeedback" class="daily-quiz-feedback" aria-live="polite"></div>
+          <button id="dailyQuizNext" class="daily-primary-button" type="button" hidden disabled>
+            次の問題
+          </button>
+        </section>
+
+        <section id="dailyPhraseStep" class="daily-step-card" aria-labelledby="dailyPhraseHeading" hidden>
+          <div class="daily-step-header">
+            <div class="daily-step-title">
+              <span class="daily-step-number">3</span>
+              <div>
+                <h2 id="dailyPhraseHeading">CA English</h2>
+                <p>現場で使う一言を声に出す</p>
+              </div>
+            </div>
+            <span class="daily-step-status">FINAL</span>
+          </div>
+
+          <div class="daily-phrase-card">
+            <span id="dailyPhraseScene" class="daily-phrase-scene">CA ENGLISH</span>
+            <div id="dailyPhraseEn" class="daily-phrase-en">Loading...</div>
+            <div id="dailyPhraseJp" class="daily-phrase-jp"></div>
+            <div class="daily-phrase-actions">
+              <button id="dailyPhraseSpeak" class="daily-secondary-button" type="button">
+                🔊 聞く
+              </button>
+              <button id="dailyPhraseDone" class="daily-primary-button" type="button">
+                覚えた・完了
+              </button>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
 
-    <section class="menu-grid">
-      <a class="menu-card" href="pages/namebank.html">
-        <div class="menu-icon"><i class="fa-solid fa-book-open"></i></div>
-        <div><h2>Name Bank</h2><p>ポケモンの英語名を検索・確認する図鑑</p></div>
-      </a>
-      <a class="menu-card" href="pages/dailyquiz.html">
-        <div class="menu-icon"><i class="fa-solid fa-circle-question"></i></div>
-        <div><h2>Daily Quiz</h2><p>毎日少しずつ英語名を覚えるクイズ</p></div>
-      </a>
-      <a class="menu-card" href="pages/quest.html">
-        <div class="menu-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-        <div><h2>EN Quest</h2><p>ミッション形式で楽しく英語に慣れる</p></div>
-      </a>
-      <a class="menu-card" href="pages/settings.html">
-        <div class="menu-icon"><i class="fa-solid fa-gear"></i></div>
-        <div><h2>Settings</h2><p>音声・表示などの設定を変更する</p></div>
-      </a>
-    </section>
+      <section id="dailyCompletion" class="daily-completion" hidden aria-live="polite">
+        <div class="daily-completion-mark">✓</div>
+        <h2>Today's Training Complete!</h2>
+        <p>今日の英語をひとつ、現場へ持っていこう。<br>明日は新しい3問とCAフレーズが待っているよ。</p>
+        <div class="daily-completion-stats">
+          <div class="daily-completion-stat">
+            <span>QUIZ SCORE</span>
+            <strong id="dailyCompletionScore">0 / 3</strong>
+          </div>
+          <div class="daily-completion-stat">
+            <span>STREAK</span>
+            <strong id="dailyCompletionStreak">1日連続</strong>
+          </div>
+        </div>
+      </section>
 
-    <section class="home-note">
-      <p>まずは <strong>Name Bank</strong> で名前を確認して、<br>慣れてきたら <strong>Daily Quiz</strong> に挑戦！</p>
-    </section>
+      <section class="daily-shortcuts" aria-labelledby="dailyExploreHeading">
+        <h2 id="dailyExploreHeading">もっと練習する</h2>
+        <div class="daily-shortcut-grid">
+          <a href="pages/namebank.html">
+            <strong>Name Bank</strong>
+            <span>英語名を検索・読み上げ</span>
+          </a>
+          <a href="pages/dailyquiz.html">
+            <strong>10問 Quiz</strong>
+            <span>もっと問題を解く</span>
+          </a>
+          <a href="pages/quest.html">
+            <strong>EN Quest</strong>
+            <span>ゲーム形式で挑戦</span>
+          </a>
+          <a href="pages/settings.html">
+            <strong>Settings</strong>
+            <span>音声速度や表示を変更</span>
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <script>
@@ -88,7 +183,9 @@
     }
   </script>
   <script src="js/pokemon-data.js?v=1"></script>
+  <script src="data/ca-phrases.js?v=1"></script>
   <script src="js/app-settings.js?v=2"></script>
   <script src="script.js?v=7"></script>
+  <script src="js/daily-training.js?v=1"></script>
 </body>
 </html>
