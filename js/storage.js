@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if(resetLearningButton){
     resetLearningButton.addEventListener("click", () => {
       const ok = window.confirm(
-        "クイズやJunPokoなどの進行データをリセットします。よろしいですか？"
+        "Daily Training、クイズ、JunPokoなどの進行データをリセットします。よろしいですか？"
       );
 
       if(!ok){
