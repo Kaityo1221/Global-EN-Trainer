@@ -16,17 +16,15 @@
   <link rel="stylesheet" href="css/daily-home.css?v=1">
 </head>
 <body>
-  <div class="version-badge" onclick="toggleUpdateLog()">v0.4.0</div>
+  <div class="version-badge" onclick="toggleUpdateLog()">v0.4.1</div>
 
   <div class="update-log" id="updateLog">
-    <h3>更新履歴 v0.4.0</h3>
+    <h3>更新履歴 v0.4.1</h3>
     <p>
-      ・毎朝3分のDaily Trainingを追加<br>
-      ・今日の3問クイズをホームへ統合<br>
-      ・CA実戦英語フレーズを追加<br>
-      ・連続学習日数と自己ベストを追加<br>
-      ・日次進行の保存と途中再開に対応<br>
-      ・GET Sheepの日替わりメッセージを追加<br>
+      ・Daily Trainingの読み込み停止を修正<br>
+      ・共通ポケモンデータAPIを修正<br>
+      ・古いJSが残るPWAキャッシュを改善<br>
+      ・Service Worker更新時の自動再読み込みを追加<br>
     </p>
   </div>
 
@@ -181,8 +179,17 @@
       const log=document.getElementById("updateLog");
       log.style.display=log.style.display==="block"?"none":"block";
     }
+
+    if("serviceWorker" in navigator){
+      let refreshing=false;
+      navigator.serviceWorker.addEventListener("controllerchange",()=>{
+        if(refreshing) return;
+        refreshing=true;
+        window.location.reload();
+      });
+    }
   </script>
-  <script src="js/pokemon-data.js?v=1"></script>
+  <script src="js/pokemon-data.js?v=2"></script>
   <script src="data/ca-phrases.js?v=1"></script>
   <script src="js/app-settings.js?v=2"></script>
   <script src="script.js?v=7"></script>
