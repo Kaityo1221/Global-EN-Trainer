@@ -31,6 +31,10 @@
     return pokemonPromise;
   }
 
+  async function getAllPokemon(){
+    return loadAll();
+  }
+
   function getDateSeed(date = new Date()){
     return (
       date.getFullYear() * 10000 +
@@ -66,6 +70,7 @@
 
   window.GETPokemonData = {
     loadAll,
+    getAllPokemon,
     getDailyPokemon,
     getDateSeed
   };
