@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "get-v1-phase2-20260807a";
+const CACHE_VERSION = "get-v1-phase2-20260808b";
 const CORE_CACHE = CACHE_VERSION + "-core";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const MATCH_OPTIONS = {ignoreSearch:true};
@@ -72,6 +72,21 @@ self.addEventListener("activate",event => {
   );
 });
 
+async function networkFirst(request){
+  try{
+    const response = await fetch(request);
+
+    if(response && response.ok){
+      const copy = response.clone();
+      caches.open(RUNTIME_CACHE).then(cache => cache.put(request,copy));
+    }
+
+    return response;
+  }catch(error){
+    return caches.match(request,MATCH_OPTIONS);
+  }
+}
+
 self.addEventListener("fetch",event => {
   const request = event.request;
   const url = new URL(request.url);
@@ -82,34 +97,40 @@ self.addEventListener("fetch",event => {
 
   if(request.mode === "navigate"){
     event.respondWith(
-      fetch(request)
-        .then(response => {
-          const copy = response.clone();
-          caches.open(RUNTIME_CACHE).then(cache => cache.put(request,copy));
-          return response;
-        })
-        .catch(async () => (
-          await caches.match(request,MATCH_OPTIONS) ||
-          await caches.match("./index.html",MATCH_OPTIONS) ||
-          await caches.match("./offline.html",MATCH_OPTIONS)
-        ))
+      networkFirst(request).then(async response => (
+        response ||
+        await caches.match(request,MATCH_OPTIONS) ||
+        await caches.match("./index.html",MATCH_OPTIONS) ||
+        await caches.match("./offline.html",MATCH_OPTIONS)
+      ))
     );
+    return;
+  }
+
+  const needsFreshContent =
+    request.destination === "script" ||
+    request.destination === "style" ||
+    url.pathname.endsWith(".json") ||
+    url.pathname.endsWith(".webmanifest");
+
+  if(needsFreshContent){
+    event.respondWith(networkFirst(request));
     return;
   }
 
   event.respondWith(
     caches.match(request,MATCH_OPTIONS).then(cached => {
-      const network = fetch(request)
-        .then(response => {
-          if(response && response.ok){
-            const copy = response.clone();
-            caches.open(RUNTIME_CACHE).then(cache => cache.put(request,copy));
-          }
-          return response;
-        })
-        .catch(() => cached);
+      if(cached){
+        return cached;
+      }
 
-      return cached || network;
+      return fetch(request).then(response => {
+        if(response && response.ok){
+          const copy = response.clone();
+          caches.open(RUNTIME_CACHE).then(cache => cache.put(request,copy));
+        }
+        return response;
+      });
     })
   );
 });
