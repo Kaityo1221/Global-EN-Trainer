@@ -53,19 +53,32 @@ function ensureHeadMetadata(){
   }
 
   const metas = [
-    ["theme-color","#ea580c"],
+    ["theme-color","#151744"],
     ["apple-mobile-web-app-capable","yes"],
-    ["apple-mobile-web-app-status-bar-style","default"],
+    ["apple-mobile-web-app-status-bar-style","black-translucent"],
     ["apple-mobile-web-app-title","GET"]
   ];
 
   metas.forEach(([name,content]) => {
-    if(document.querySelector(`meta[name="${name}"]`)) return;
+    const existing = document.querySelector(`meta[name="${name}"]`);
+    if(existing){
+      existing.content = content;
+      return;
+    }
     const meta = document.createElement("meta");
     meta.name = name;
     meta.content = content;
     document.head.appendChild(meta);
   });
+}
+
+function ensureGlassTheme(){
+  if(document.querySelector('link[data-get-glass-theme]')) return;
+  const theme = document.createElement("link");
+  theme.rel = "stylesheet";
+  theme.href = getRootPrefix() + "css/glass-theme.css?v=1";
+  theme.dataset.getGlassTheme = "true";
+  document.head.appendChild(theme);
 }
 
 function getPageTitle(){
@@ -258,6 +271,7 @@ window.goTodayPokemonDetail = function(){
 };
 
 ensureHeadMetadata();
+ensureGlassTheme();
 registerServiceWorker();
 
 window.addEventListener("online",updateNetworkStatus);
