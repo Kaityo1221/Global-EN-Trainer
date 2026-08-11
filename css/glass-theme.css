@@ -1,0 +1,405 @@
+/* GET Glass UI Redesign
+   Deep violet/blue foundation + layered glass + soft 3D depth
+*/
+
+:root{
+  --get-bg-top:#10183f;
+  --get-bg-mid:#26215f;
+  --get-bg-bottom:#181238;
+  --get-surface:rgba(48,55,118,.62);
+  --get-surface-strong:rgba(54,58,122,.82);
+  --get-surface-soft:rgba(255,255,255,.09);
+  --get-primary:#9b8cff;
+  --get-primary-dark:#f6f3ff;
+  --get-accent:#ff8fc7;
+  --get-accent-2:#68c8ff;
+  --get-text:#f8f7ff;
+  --get-text-muted:#cbc9ea;
+  --get-border:rgba(255,255,255,.24);
+  --get-border-strong:rgba(255,255,255,.42);
+  --get-shadow:0 18px 46px rgba(5,8,34,.34),0 0 30px rgba(119,104,255,.09);
+  --get-glow:0 0 0 1px rgba(255,255,255,.13) inset,0 12px 30px rgba(8,12,45,.26),0 0 24px rgba(122,108,255,.16);
+  --get-radius-sm:16px;
+  --get-radius-md:22px;
+  --get-radius-lg:30px;
+}
+
+html{
+  color-scheme:dark;
+  background:#11183b;
+}
+
+body{
+  position:relative;
+  isolation:isolate;
+  color:var(--get-text);
+  background:
+    radial-gradient(circle at 14% 8%,rgba(164,87,255,.32),transparent 30%),
+    radial-gradient(circle at 88% 18%,rgba(56,182,255,.30),transparent 31%),
+    radial-gradient(circle at 78% 86%,rgba(255,94,180,.18),transparent 28%),
+    linear-gradient(155deg,var(--get-bg-top) 0%,var(--get-bg-mid) 46%,var(--get-bg-bottom) 100%) !important;
+  background-attachment:fixed;
+}
+
+body::before,
+body::after{
+  content:"";
+  position:fixed;
+  pointer-events:none;
+  z-index:-2;
+}
+
+body::before{
+  inset:-18vh -20vw;
+  background:
+    radial-gradient(ellipse at 22% 36%,rgba(137,91,255,.35),transparent 28%),
+    radial-gradient(ellipse at 76% 22%,rgba(72,183,255,.30),transparent 30%),
+    radial-gradient(ellipse at 66% 72%,rgba(255,111,193,.17),transparent 24%),
+    conic-gradient(from 210deg at 50% 50%,transparent,rgba(99,122,255,.15),transparent 26%,rgba(188,94,255,.12),transparent 55%);
+  filter:blur(26px) saturate(128%);
+  opacity:.96;
+  animation:getAuroraDrift 20s ease-in-out infinite alternate;
+}
+
+body::after{
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 12% 18%,rgba(255,255,255,.68) 0 1px,transparent 2px),
+    radial-gradient(circle at 86% 28%,rgba(255,255,255,.5) 0 1.2px,transparent 2.3px),
+    radial-gradient(circle at 31% 72%,rgba(145,214,255,.55) 0 1px,transparent 2px),
+    radial-gradient(circle at 72% 82%,rgba(255,165,219,.44) 0 1px,transparent 2px),
+    linear-gradient(105deg,transparent 0 46%,rgba(255,255,255,.045) 50%,transparent 54%);
+  background-size:180px 180px,260px 260px,220px 220px,300px 300px,100% 100%;
+  opacity:.65;
+  animation:getParticlesDrift 30s linear infinite;
+}
+
+@keyframes getAuroraDrift{
+  0%{transform:translate3d(-2%,-1%,0) scale(1)}
+  100%{transform:translate3d(3%,2%,0) scale(1.07)}
+}
+
+@keyframes getParticlesDrift{
+  from{background-position:0 0,0 0,0 0,0 0,0 0}
+  to{background-position:0 110px,70px 150px,-40px 130px,90px 170px,0 0}
+}
+
+/* Large translucent backdrop planes */
+.daily-home::before,
+.container::before{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  left:50%;
+  top:8vh;
+  width:min(760px,88vw);
+  height:76vh;
+  transform:translateX(-50%) rotate(-2deg);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:42px;
+  background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(111,105,255,.03));
+  box-shadow:0 32px 90px rgba(4,7,30,.18),inset 0 1px 0 rgba(255,255,255,.12);
+  -webkit-backdrop-filter:blur(3px);
+  backdrop-filter:blur(3px);
+}
+
+h1,h2,h3,strong,label{
+  color:var(--get-text) !important;
+}
+
+p,
+.daily-date,
+.daily-step-title p,
+.daily-pokemon-jp,
+.daily-phrase-jp,
+.daily-completion p,
+.daily-shortcut-grid span{
+  color:var(--get-text-muted) !important;
+}
+
+a{color:#eef3ff}
+
+/* Shared glass surfaces */
+.daily-overview,
+.daily-step-card,
+.daily-completion,
+.daily-shortcuts,
+.quiz-card,
+.settings-card,
+.bank-card,
+.pokemon-card,
+.result-card,
+.arena-card,
+.namearena-card,
+[class*="panel"],
+[class*="card"]{
+  border-color:var(--get-border) !important;
+  box-shadow:var(--get-shadow) !important;
+}
+
+.daily-overview,
+.daily-step-card,
+.daily-completion,
+.daily-shortcuts{
+  background:linear-gradient(145deg,rgba(93,91,168,.46),rgba(37,45,100,.58)) !important;
+  border:1px solid var(--get-border) !important;
+  -webkit-backdrop-filter:blur(24px) saturate(145%);
+  backdrop-filter:blur(24px) saturate(145%);
+  box-shadow:var(--get-glow) !important;
+}
+
+.daily-overview{
+  background:
+    radial-gradient(circle at 86% 4%,rgba(255,125,201,.23),transparent 155px),
+    radial-gradient(circle at 14% 100%,rgba(91,196,255,.16),transparent 170px),
+    linear-gradient(145deg,rgba(97,86,177,.60),rgba(33,43,102,.72)) !important;
+}
+
+.daily-overview::after{
+  background:rgba(123,118,255,.16) !important;
+  box-shadow:0 0 80px rgba(119,105,255,.25);
+}
+
+.daily-eyebrow,
+.daily-streak-label,
+.daily-streak-best,
+.daily-step-status,
+.daily-pokemon-type,
+.daily-progress-head{
+  color:#dcd8ff !important;
+}
+
+.daily-streak-card,
+.daily-sheep-bubble,
+.daily-pokemon-panel,
+.daily-quiz-question,
+.daily-phrase-card,
+.daily-completion-stat,
+.daily-shortcut-grid a{
+  border:1px solid rgba(255,255,255,.22) !important;
+  background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.075)) !important;
+  color:var(--get-text) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(145%);
+  backdrop-filter:blur(18px) saturate(145%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 10px 24px rgba(4,7,34,.18) !important;
+}
+
+.daily-sheep-bubble::before{
+  background:rgba(82,79,150,.82) !important;
+  border-color:rgba(255,255,255,.20) !important;
+}
+
+.daily-streak-value,
+.daily-completion-stat strong{
+  color:#ff9bd0 !important;
+  text-shadow:0 0 18px rgba(255,120,196,.28);
+}
+
+.daily-progress-track{
+  background:rgba(255,255,255,.13) !important;
+  box-shadow:inset 0 2px 8px rgba(1,3,25,.25);
+}
+
+.daily-progress-fill{
+  background:linear-gradient(90deg,#72cfff,#a88cff 52%,#ff8fc7) !important;
+  box-shadow:0 0 18px rgba(133,164,255,.48);
+}
+
+.daily-step-number{
+  color:#fff !important;
+  background:linear-gradient(145deg,#777eff,#bb86ff) !important;
+  box-shadow:0 8px 18px rgba(90,82,220,.34),inset 0 1px 0 rgba(255,255,255,.32);
+}
+
+.daily-step-status,
+.daily-phrase-scene{
+  background:rgba(178,159,255,.16) !important;
+  border:1px solid rgba(255,255,255,.16);
+  color:#e9e2ff !important;
+}
+
+.daily-pokemon-name,
+.daily-quiz-question,
+.daily-phrase-en{
+  color:#fff !important;
+}
+
+.daily-detail-button,
+.daily-primary-button,
+.search-button,
+.quiz-next-button,
+.primary-button,
+button[type="submit"]{
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.34) !important;
+  background:linear-gradient(135deg,#6b8cff 0%,#a579ff 52%,#ff88c8 100%) !important;
+  box-shadow:0 12px 26px rgba(91,78,222,.34),0 0 26px rgba(255,119,195,.16),inset 0 1px 0 rgba(255,255,255,.30) !important;
+}
+
+.daily-secondary-button,
+.filter-button,
+.side-rate-button,
+.side-top-button{
+  color:#f6f2ff !important;
+  border:1px solid rgba(255,255,255,.22) !important;
+  background:rgba(255,255,255,.11) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 8px 20px rgba(4,7,34,.16) !important;
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+}
+
+button:active,
+a:active{
+  transform:translateY(1px) scale(.985);
+}
+
+/* Inputs */
+input,
+select,
+textarea,
+.pokemon-search{
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.23) !important;
+  background:rgba(255,255,255,.10) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 8px 20px rgba(4,7,34,.12) !important;
+  -webkit-backdrop-filter:blur(16px);
+  backdrop-filter:blur(16px);
+}
+
+input::placeholder,
+textarea::placeholder{color:rgba(237,236,255,.58) !important}
+
+select option{background:#27245b;color:#fff}
+
+/* App chrome */
+.get-app-bar{
+  margin:10px max(12px,env(safe-area-inset-right)) 0 max(12px,env(safe-area-inset-left));
+  left:0;
+  right:0;
+  border:1px solid var(--get-border) !important;
+  border-radius:22px;
+  background:linear-gradient(145deg,rgba(83,83,160,.66),rgba(31,39,91,.70)) !important;
+  box-shadow:0 18px 38px rgba(2,5,29,.26),inset 0 1px 0 rgba(255,255,255,.16) !important;
+  -webkit-backdrop-filter:blur(24px) saturate(150%);
+  backdrop-filter:blur(24px) saturate(150%);
+}
+
+.get-app-title{color:#fff !important}
+.get-app-title small{color:#d8d0ff !important}
+.get-app-logo{background:rgba(255,255,255,.13) !important}
+
+.get-bottom-nav{
+  left:50% !important;
+  right:auto !important;
+  bottom:calc(10px + var(--get-safe-bottom)) !important;
+  width:min(500px,calc(100vw - 24px)) !important;
+  min-height:68px !important;
+  padding:7px !important;
+  border:1px solid var(--get-border-strong) !important;
+  border-radius:25px !important;
+  transform:translateX(-50%) !important;
+  background:linear-gradient(145deg,rgba(91,89,168,.58),rgba(34,42,94,.72)) !important;
+  box-shadow:0 18px 38px rgba(2,4,25,.38),0 0 28px rgba(108,97,255,.10),inset 0 1px 0 rgba(255,255,255,.20) !important;
+  -webkit-backdrop-filter:blur(26px) saturate(155%);
+  backdrop-filter:blur(26px) saturate(155%);
+}
+
+.get-bottom-nav a{color:#d8d7f2 !important}
+.get-bottom-nav a.is-active{
+  color:#fff !important;
+  background:linear-gradient(145deg,rgba(125,118,255,.48),rgba(255,124,198,.18)) !important;
+  box-shadow:0 7px 20px rgba(101,92,255,.22),inset 0 1px 0 rgba(255,255,255,.18);
+}
+
+.get-bottom-nav a:nth-child(3){
+  transform:translateY(-12px) scale(1.08);
+  border:1px solid rgba(255,255,255,.42);
+  background:linear-gradient(145deg,#687fff,#a877ff 55%,#ff8fc7) !important;
+  color:#fff !important;
+  box-shadow:0 12px 28px rgba(75,75,223,.42),0 0 28px rgba(160,119,255,.25),inset 0 1px 0 rgba(255,255,255,.32);
+}
+
+.version-badge,
+.update-log{
+  color:#f7f3ff !important;
+  border:1px solid rgba(255,255,255,.20) !important;
+  background:rgba(42,46,103,.78) !important;
+  box-shadow:0 12px 30px rgba(2,5,29,.28) !important;
+  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px);
+}
+
+.update-log p{color:#d5d1ee !important}
+
+/* Legacy navigation */
+.menu-button,
+.side-menu,
+.side-menu a{
+  color:#fff !important;
+  border-color:rgba(255,255,255,.20) !important;
+  background:rgba(42,46,103,.78) !important;
+  -webkit-backdrop-filter:blur(22px);
+  backdrop-filter:blur(22px);
+}
+
+.menu-button,.side-menu{box-shadow:0 16px 34px rgba(2,5,29,.30) !important}
+.menu-close-button{background:linear-gradient(135deg,#7187ff,#bc7fff,#ff8fc7) !important}
+
+/* Name Bank / Quiz / Settings generic harmonization */
+.container>h1{
+  color:#fff !important;
+  text-shadow:0 0 28px rgba(132,119,255,.28) !important;
+}
+
+.container>p{color:#c7c7e9 !important}
+
+.filter-button.active,
+.filter-button:hover{
+  color:#fff !important;
+  background:linear-gradient(135deg,#6d86ff,#a67eff,#ff8fc7) !important;
+  box-shadow:0 8px 22px rgba(92,82,224,.28) !important;
+}
+
+.pokemon-card,
+.quiz-card,
+.settings-section,
+.setting-card{
+  border:1px solid rgba(255,255,255,.20) !important;
+  background:linear-gradient(145deg,rgba(86,84,160,.48),rgba(32,40,92,.62)) !important;
+  color:#fff !important;
+  box-shadow:var(--get-glow) !important;
+  -webkit-backdrop-filter:blur(22px) saturate(145%);
+  backdrop-filter:blur(22px) saturate(145%);
+}
+
+/* Preserve EN Quest artwork while converting overlays to glass */
+.quest-screen{isolation:isolate}
+.junpoko-mission-bar,
+.junpoko-awake-overlay{
+  border-color:rgba(255,255,255,.22) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(150%);
+  backdrop-filter:blur(18px) saturate(150%);
+}
+.junpoko-mission-card{
+  border-color:rgba(255,255,255,.20) !important;
+  box-shadow:0 12px 26px rgba(3,5,29,.24) !important;
+}
+.bgm-start-button{
+  border:1px solid rgba(255,255,255,.32) !important;
+  background:rgba(66,70,145,.58) !important;
+  color:#fff !important;
+  box-shadow:0 10px 24px rgba(3,5,29,.28),0 0 22px rgba(118,104,255,.18) !important;
+  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter:blur(18px);
+}
+
+@media(max-width:560px){
+  body:not(.get-immersive){padding-left:14px !important;padding-right:14px !important}
+  .daily-home::before,.container::before{width:94vw;border-radius:32px}
+  .daily-overview,.daily-step-card,.daily-completion,.daily-shortcuts{border-radius:24px !important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  body::before,body::after{animation:none !important}
+}
