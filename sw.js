@@ -1,6 +1,6 @@
 "use strict";
 
-const CACHE_VERSION = "get-v1-phase2-20260808b";
+const CACHE_VERSION = "get-v1-glass-ui-20260812a";
 const CORE_CACHE = CACHE_VERSION + "-core";
 const RUNTIME_CACHE = CACHE_VERSION + "-runtime";
 const MATCH_OPTIONS = {ignoreSearch:true};
@@ -12,6 +12,7 @@ const CORE_ASSETS = [
   "./manifest.webmanifest",
   "./style.css",
   "./css/foundation.css",
+  "./css/glass-theme.css",
   "./css/daily-home.css",
   "./css/bank.css",
   "./css/bank-v2.css",
